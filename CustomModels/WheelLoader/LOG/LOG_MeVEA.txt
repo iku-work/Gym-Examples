@@ -1,0 +1,8 @@
+05:04:01: Model Scripting_tutorial loaded, using config and resources from C:/Program Files (x86)/Mevea/
+05:04:05: NOTE: File "" is not present. Continuing...
+05:04:05: Setting camera to body 0: Ground
+05:04:05: Head Tracking inactive
+05:04:10: Total loading time 8.722048
+05:04:26: Warning: in 3ds loader: file has no nodes, traversing by meshes instead
+05:04:43: Warning: in 3ds loader: file has no nodes, traversing by meshes instead
+05:05:01: Warning: in 3ds loader: file has no nodes, traversing by meshes instead

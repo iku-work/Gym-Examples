@@ -1,0 +1,4 @@
+04:00:19: DMClient started, nSolvers=0, solverID=1002
+04:00:19: Allocating memory for message vectors, m_nkpl=-1, m_nvis=-1, size=504 (additional 100)
+04:00:19: ID 1002, sending pdu 1002 
+04:00:19: filename: C:\Data\Mevea-Gym-Toolbox2\CustomModels\Jib_Crane\Jib_Crane.mvs, length 63

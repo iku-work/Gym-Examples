@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MeVEASimulation>
+  <Environment simulationName="Excavator Simulator" nVisualizations="1" useParticles="Yes" particlesInThread="Yes" particleCellsInThread="Yes" collisionGroupDefinitionsFile="./Collision_library_Excavator.xml" nCollisionThreads="4" />
+  <Models ModelFile="Excavator_nobucket.xml" solverID="1" useArchive="No" MPKFile="" hydraulicsSchematicFile="Excavator_schematic.xml" />
+  <World WorldFile="Excavator_world.xml" />
+</MeVEASimulation>

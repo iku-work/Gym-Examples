@@ -1,0 +1,1635 @@
+#Ascii Scene
+#Version 78
+#Generator OpenSceneGraph 2.9.17
+osg::Group
+{
+    UniqueID 6
+    UserDataContainer TRUE
+    {
+        osg::DefaultUserDataContainer
+        {
+            UniqueID 7
+            UDC_Descriptions 3
+            {
+                "USE_BUMP_MAP s_mat_diffuse"
+                "USE_BUMP_SCALE 10.0"
+                "USE_BUMP_UV_INDEX 0"
+            }
+        }
+    }
+    StateSet TRUE
+    {
+        osg::StateSet
+        {
+            UniqueID 8
+            Name "texture_order_state"
+            DataVariance STATIC
+            ModeList 2
+            {
+                GL_CULL_FACE ON
+                GL_BLEND ON
+            }
+            TextureAttributeList 5
+            {
+                Data 1
+                {
+                    osg::Texture2D
+                    {
+                        UniqueID 1
+                        Name "s_mat_dirt_normal"
+                        WRAP_S REPEAT
+                        WRAP_T REPEAT
+                        WRAP_R CLAMP_TO_EDGE
+                        MIN_FILTER LINEAR_MIPMAP_LINEAR
+                        MAG_FILTER LINEAR
+                        UnRefImageDataAfterApply TRUE
+                        ResizeNonPowerOfTwoHint TRUE
+                        Image TRUE
+                        {
+                            UniqueID 9
+                            FileName "default_normal.png"
+                            WriteHint 0 2
+                            DataVariance STATIC
+                        }
+                    }
+                    Value OFF
+                }
+                Data 1
+                {
+                    osg::Texture2D
+                    {
+                        UniqueID 2
+                        Name "s_mat_normal"
+                        WRAP_S REPEAT
+                        WRAP_T REPEAT
+                        WRAP_R CLAMP_TO_EDGE
+                        MIN_FILTER LINEAR_MIPMAP_LINEAR
+                        MAG_FILTER LINEAR
+                        UnRefImageDataAfterApply TRUE
+                        ResizeNonPowerOfTwoHint TRUE
+                        Image TRUE
+                        {
+                            UniqueID 10
+                            FileName "default_normal.png"
+                            WriteHint 0 2
+                            DataVariance STATIC
+                        }
+                    }
+                    Value OFF
+                }
+                Data 1
+                {
+                    osg::Texture2D
+                    {
+                        UniqueID 3
+                        Name "s_ao_wear_dust"
+                        WRAP_S REPEAT
+                        WRAP_T REPEAT
+                        WRAP_R CLAMP_TO_EDGE
+                        MIN_FILTER LINEAR_MIPMAP_LINEAR
+                        MAG_FILTER LINEAR
+                        UnRefImageDataAfterApply TRUE
+                        ResizeNonPowerOfTwoHint TRUE
+                        Image TRUE
+                        {
+                            UniqueID 11
+                            FileName "default.png"
+                            WriteHint 0 2
+                            DataVariance STATIC
+                        }
+                    }
+                    Value OFF
+                }
+                Data 1
+                {
+                    osg::Texture2D
+                    {
+                        UniqueID 4
+                        Name "s_mat_diffuse"
+                        WRAP_S REPEAT
+                        WRAP_T REPEAT
+                        WRAP_R CLAMP_TO_EDGE
+                        MIN_FILTER LINEAR_MIPMAP_LINEAR
+                        MAG_FILTER LINEAR
+                        UnRefImageDataAfterApply TRUE
+                        ResizeNonPowerOfTwoHint TRUE
+                        Image TRUE
+                        {
+                            UniqueID 12
+                            FileName "default.png"
+                            WriteHint 0 2
+                            DataVariance STATIC
+                        }
+                    }
+                    Value OFF
+                }
+                Data 1
+                {
+                    osg::Texture2D
+                    {
+                        UniqueID 5
+                        Name "s_mat_specular"
+                        WRAP_S REPEAT
+                        WRAP_T REPEAT
+                        WRAP_R CLAMP_TO_EDGE
+                        MIN_FILTER LINEAR_MIPMAP_LINEAR
+                        MAG_FILTER LINEAR
+                        UnRefImageDataAfterApply TRUE
+                        ResizeNonPowerOfTwoHint TRUE
+                        Image TRUE
+                        {
+                            UniqueID 13
+                            FileName "default.png"
+                            WriteHint 0 2
+                            DataVariance STATIC
+                        }
+                    }
+                    Value OFF
+                }
+            }
+            RenderBinMode USE_RENDERBIN_DETAILS
+            BinNumber 0
+            BinName "DepthSortedBin"
+        }
+    }
+    Children 2
+    {
+        osg::Group
+        {
+            UniqueID 14
+            StateSet TRUE
+            {
+                osg::StateSet
+                {
+                    UniqueID 15
+                    Name "texture_definitions"
+                    DataVariance STATIC
+                    TextureModeList 1 { Data 1 { GL_TEXTURE_2D ON } }
+                    TextureAttributeList 0
+                    {
+                    }
+                }
+            }
+        }
+        osg::Group
+        {
+            UniqueID 16
+            StateSet TRUE
+            {
+                osg::StateSet
+                {
+                    UniqueID 17
+                    Name "generic_stateset"
+                    DataVariance STATIC
+                    ModeList 1
+                    {
+                        GL_CULL_FACE ON
+                    }
+                    AttributeList 2
+                    {
+                        osg::BlendFunc
+                        {
+                            UniqueID 18
+                            SourceRGB SRC_ALPHA
+                            SourceAlpha ONE
+                            DestinationRGB ONE_MINUS_SRC_ALPHA
+                            DestinationAlpha ONE
+                        }
+                        Value OFF
+                        osg::Material
+                        {
+                            UniqueID 19
+                            Ambient   TRUE Front  0.000  0.000  0.000 1      Back  0.000  0.000  0.000 1
+                            Diffuse   TRUE Front  0.000  0.000  0.000  1.000 Back  0.000  0.000  0.000  1.000
+                            Specular  TRUE Front  1.000  1.000  1.000 1      Back  1.000  1.000  1.000 1
+                            Emission  TRUE Front  0.000  0.000  0.000 1      Back  0.000  0.000  0.000 1
+                            Shininess TRUE Front  0.098 Back  0.098
+                        }
+                        Value OFF
+                    }
+                    TextureModeList 1 { Data 1 { GL_TEXTURE_2D ON } }
+                    TextureAttributeList 5
+                    {
+                        Data 1 { osg::Texture2D { UniqueID 1 } Value OFF }
+                        Data 1 { osg::Texture2D { UniqueID 2 } Value OFF }
+                        Data 1 { osg::Texture2D { UniqueID 3 } Value OFF }
+                        Data 1 { osg::Texture2D { UniqueID 4 } Value OFF }
+                        Data 1 { osg::Texture2D { UniqueID 5 } Value OFF }
+                    }
+                    UniformList 11
+                    {
+                        osg::Uniform
+                        {
+                            UniqueID 20
+                            Name "fresnel_factor"
+                            Type FLOAT
+                            NumElements 1
+                            Elements TRUE ArrayID 21 FloatArray 1
+                            {
+                                1.250
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 22
+                            Name "fresnel_power"
+                            Type FLOAT
+                            NumElements 1
+                            Elements TRUE ArrayID 23 FloatArray 1
+                            {
+                                5.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 24
+                            Name "gloss_factor"
+                            Type FLOAT
+                            NumElements 1
+                            Elements TRUE ArrayID 25 FloatArray 1
+                            {
+                                1.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 26
+                            Name "invert_z"
+                            Type INT
+                            NumElements 1
+                            Elements TRUE ArrayID 27 IntArray 1
+                            {
+                                0.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 28
+                            Name "material_scale"
+                            Type FLOAT
+                            NumElements 1
+                            Elements TRUE ArrayID 29 FloatArray 1
+                            {
+                                1.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 30
+                            Name "mirror_color"
+                            Type FLOAT_VEC3
+                            NumElements 1
+                            Elements TRUE ArrayID 31 FloatArray 3
+                            {
+                                1.000
+                                1.000
+                                1.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 32
+                            Name "pob1"
+                            Type FLOAT_VEC3
+                            NumElements 1
+                            Elements TRUE ArrayID 33 FloatArray 3
+                            {
+                                1.000
+                                0.000
+                                2.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 34
+                            Name "pob2"
+                            Type FLOAT_VEC3
+                            NumElements 1
+                            Elements TRUE ArrayID 35 FloatArray 3
+                            {
+                                1.000
+                                -1.000
+                                2.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 36
+                            Name "reflect_factor"
+                            Type FLOAT
+                            NumElements 1
+                            Elements TRUE ArrayID 37 FloatArray 1
+                            {
+                                1.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 38
+                            Name "translucency"
+                            Type FLOAT
+                            NumElements 1
+                            Elements TRUE ArrayID 39 FloatArray 1
+                            {
+                                0.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 40
+                            Name "transmit_color"
+                            Type FLOAT_VEC3
+                            NumElements 1
+                            Elements TRUE ArrayID 41 FloatArray 3
+                            {
+                                1.000
+                                1.000
+                                1.000
+                            }
+                        }
+                        Value OFF
+                    }
+                }
+            }
+            Children 3
+            {
+                osg::Geode
+                {
+                    UniqueID 42
+                    Name "NAME_HERE"
+                    StateSet TRUE
+                    {
+                        osg::StateSet
+                        {
+                            UniqueID 43
+                            Name "generic_stateset"
+                            DataVariance STATIC
+                            UniformList 1
+                            {
+                                osg::Uniform
+                                {
+                                    UniqueID 44
+                                    Name "major_axis"
+                                    Type INT
+                                    NumElements 1
+                                    Elements TRUE ArrayID 45 IntArray 1
+                                    {
+                                        0.000
+                                    }
+                                }
+                                Value OFF
+                            }
+                        }
+                    }
+                    Drawables 1
+                    {
+                        osg::Geometry
+                        {
+                            UniqueID 46
+                            Name "TODO: some name here"
+                            DataVariance STATIC
+                            PrimitiveSetList 1
+                            {
+                                DrawElementsUInt GL_TRIANGLES 174
+                                {
+                                      66   64   52
+                                      54   66   52
+                                      65   62   63
+                                      65   63   67
+                                      58   56   60
+                                      61   58   60
+                                       0   57   59
+                                       0   59    1
+                                      63   62   64
+                                      66   63   64
+                                      53   65   67
+                                      53   67   55
+                                      12    4    8
+                                      33   12    8
+                                      33    8   29
+                                      33   29   16
+                                      21   33   16
+                                      25   21   16
+                                      25   16   23
+                                      18   25   23
+                                      18   23   14
+                                      18   14   27
+                                      31   18   27
+                                      31   27    6
+                                      10   31    6
+                                      10    6    2
+                                      32   11   46
+                                      50   32   46
+                                      30    9   45
+                                      49   30   45
+                                      22   26   38
+                                      43   22   38
+                                      15   24   37
+                                      39   15   37
+                                      36    5   13
+                                      36   13   47
+                                       9    5   36
+                                      45    9   36
+                                      35    3    7
+                                      35    7   44
+                                      19   32   50
+                                      41   19   50
+                                      17   30   49
+                                      40   17   49
+                                      34   22   43
+                                      51   34   43
+                                      48   28   15
+                                      48   15   39
+                                      11    3   35
+                                      46   11   35
+                                      26   20   42
+                                      38   26   42
+                                      24   17   40
+                                      37   24   40
+                                      47   13   34
+                                      47   34   51
+                                      44    7   28
+                                      44   28   48
+                                }
+                            }
+                            VertexData
+                            {
+                                Array TRUE ArrayID 47 Vec3fArray 68
+                                {
+                                     -0.03510000   0.01760000  -0.02540000 
+                                     -0.03510000  -0.01760000  -0.02540000 
+                                     -0.03720000   0.00000000   0.02780000 
+                                     -0.03720000   0.00000000   0.02780000 
+                                     -0.03720000   0.00000000  -0.02780000 
+                                     -0.03720000   0.00000000  -0.02780000 
+                                     -0.03720000   0.01060000   0.02570000 
+                                     -0.03720000   0.01060000   0.02570000 
+                                     -0.03720000   0.01060000  -0.02570000 
+                                     -0.03720000   0.01060000  -0.02570000 
+                                     -0.03720000  -0.01060000   0.02570000 
+                                     -0.03720000  -0.01060000   0.02570000 
+                                     -0.03720000  -0.01060000  -0.02570000 
+                                     -0.03720000  -0.01060000  -0.02570000 
+                                     -0.03720000   0.02570000   0.01060000 
+                                     -0.03720000   0.02570000   0.01060000 
+                                     -0.03720000   0.02570000  -0.01060000 
+                                     -0.03720000   0.02570000  -0.01060000 
+                                     -0.03720000  -0.02570000   0.01060000 
+                                     -0.03720000  -0.02570000   0.01060000 
+                                     -0.03720000  -0.02570000   0.01060000 
+                                     -0.03720000  -0.02570000  -0.01060000 
+                                     -0.03720000  -0.02570000  -0.01060000 
+                                     -0.03720000   0.02780000   0.00000000 
+                                     -0.03720000   0.02780000   0.00000000 
+                                     -0.03720000  -0.02780000  -0.00000000 
+                                     -0.03720000  -0.02780000  -0.00000000 
+                                     -0.03720000   0.01970000   0.01970000 
+                                     -0.03720000   0.01970000   0.01970000 
+                                     -0.03720000   0.01970000  -0.01970000 
+                                     -0.03720000   0.01970000  -0.01970000 
+                                     -0.03720000  -0.01970000   0.01970000 
+                                     -0.03720000  -0.01970000   0.01970000 
+                                     -0.03720000  -0.01970000  -0.01970000 
+                                     -0.03720000  -0.01970000  -0.01970000 
+                                     -0.04210000   0.00000000   0.03300000 
+                                     -0.04210000   0.00000000  -0.03300000 
+                                     -0.04210000   0.03300000   0.00000000 
+                                     -0.04210000  -0.03300000  -0.00000000 
+                                     -0.04210000   0.03050000   0.01260000 
+                                     -0.04210000   0.03050000  -0.01260000 
+                                     -0.04210000  -0.03050000   0.01260000 
+                                     -0.04210000  -0.03050000   0.01260000 
+                                     -0.04210000  -0.03050000  -0.01260000 
+                                     -0.04210000   0.01260000   0.03050000 
+                                     -0.04210000   0.01260000  -0.03050000 
+                                     -0.04210000  -0.01260000   0.03050000 
+                                     -0.04210000  -0.01260000  -0.03050000 
+                                     -0.04210000   0.02340000   0.02340000 
+                                     -0.04210000   0.02340000  -0.02340000 
+                                     -0.04210000  -0.02340000   0.02340000 
+                                     -0.04210000  -0.02340000  -0.02340000 
+                                      0.03120000   0.01760000   0.03120000 
+                                      0.03120000   0.01760000  -0.03120000 
+                                      0.03120000  -0.01760000   0.03120000 
+                                      0.03120000  -0.01760000  -0.03120000 
+                                     -0.03120000   0.01760000   0.03120000 
+                                     -0.03120000   0.01760000  -0.03120000 
+                                     -0.03120000  -0.01760000   0.03120000 
+                                     -0.03120000  -0.01760000  -0.03120000 
+                                     -0.03500000   0.01760000   0.02550000 
+                                     -0.03500000  -0.01760000   0.02550000 
+                                      0.04410000   0.01760000   0.00000000 
+                                      0.04410000  -0.01760000   0.00000000 
+                                      0.04080000   0.01760000   0.01690000 
+                                      0.04080000   0.01760000  -0.01690000 
+                                      0.04080000  -0.01760000   0.01690000 
+                                      0.04080000  -0.01760000  -0.01690000 
+                                }
+                                Indices FALSE
+                                Binding BIND_PER_VERTEX
+                                Normalize 0
+                            }
+                            NormalData
+                            {
+                                Array TRUE ArrayID 48 Vec3fArray 68
+                                {
+                                     -0.83139998   0.00000000  -0.55559999 
+                                     -0.83139998   0.00000000  -0.55559999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002  -0.00000000   0.68419999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002  -0.00000000  -0.68419999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002   0.26179999   0.63209999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002   0.26179999  -0.63209999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002  -0.26179999   0.63209999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002  -0.26179999  -0.63209999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002   0.63209999   0.26179999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002   0.63209999  -0.26179999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002  -0.63209999   0.26179999 
+                                      0.72930002  -0.63209999   0.26179999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002  -0.63209999  -0.26179999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002   0.68419999   0.00000000 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002  -0.68419999   0.00000000 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002   0.48379999   0.48379999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002   0.48379999  -0.48379999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002  -0.48379999   0.48379999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.72930002  -0.48379999  -0.48379999 
+                                      0.72930002  -0.00000000   0.68419999 
+                                      0.72930002  -0.00000000  -0.68419999 
+                                      0.72930002   0.68419999   0.00000000 
+                                      0.72930002  -0.68419999   0.00000000 
+                                      0.72930002   0.63209999   0.26179999 
+                                      0.72930002   0.63209999  -0.26179999 
+                                      0.72930002  -0.63209999   0.26179999 
+                                      0.72930002  -0.63209999   0.26179999 
+                                      0.72930002  -0.63209999  -0.26179999 
+                                      0.72930002   0.26179999   0.63209999 
+                                      0.72930002   0.26179999  -0.63209999 
+                                      0.72930002  -0.26179999   0.63209999 
+                                      0.72930002  -0.26179999  -0.63209999 
+                                      0.72930002   0.48379999   0.48379999 
+                                      0.72930002   0.48379999  -0.48379999 
+                                      0.72930002  -0.48379999   0.48379999 
+                                      0.72930002  -0.48379999  -0.48379999 
+                                      0.70709997  -0.00000000   0.70709997 
+                                      0.70709997  -0.00000000  -0.70709997 
+                                      0.70709997  -0.00000000   0.70709997 
+                                      0.70709997  -0.00000000  -0.70709997 
+                                     -0.70709997   0.00000000   0.70709997 
+                                     -0.70709997   0.00000000  -0.70709997 
+                                     -0.70709997   0.00000000   0.70709997 
+                                     -0.70709997   0.00000000  -0.70709997 
+                                     -0.83139998   0.00000000   0.55559999 
+                                     -0.83139998   0.00000000   0.55559999 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      1.00000000  -0.00000000   0.00000000 
+                                      0.92390001  -0.00000000   0.38270000 
+                                      0.92390001  -0.00000000  -0.38270000 
+                                      0.92390001  -0.00000000   0.38270000 
+                                      0.92390001  -0.00000000  -0.38270000 
+                                }
+                                Indices FALSE
+                                Binding BIND_PER_VERTEX
+                                Normalize 0
+                            }
+                            TexCoordData 1
+                            {
+                                Data
+                                {
+                                    Array TRUE ArrayID 49 Vec2fArray 68
+                                    {
+                                          0.70270002   0.03220000 
+                                          0.61199999   0.03220000 
+                                          0.81999999   0.46039999 
+                                          0.45179999   0.97729999 
+                                          0.84780002   0.60020000 
+                                          0.18770000   0.97729999 
+                                          0.79420000   0.47099999 
+                                          0.41880000   0.97729999 
+                                          0.81999999   0.60020000 
+                                          0.22070000   0.97729999 
+                                          0.84780002   0.46039999 
+                                          0.48480001   0.97729999 
+                                          0.87349999   0.58960003 
+                                          0.15470000   0.97729999 
+                                          0.76389998   0.51639998 
+                                          0.35280001   0.97729999 
+                                          0.77460003   0.56989998 
+                                          0.28680000   0.97729999 
+                                          0.89319998   0.49070001 
+                                          0.55080003   0.97729999 
+                                          0.02270000   0.97729999 
+                                          0.90380001   0.54420000 
+                                          0.08870000   0.97729999 
+                                          0.76389998   0.54420000 
+                                          0.31979999   0.97729999 
+                                          0.90380001   0.51639998 
+                                          0.05570000   0.97729999 
+                                          0.77460003   0.49070001 
+                                          0.38580000   0.97729999 
+                                          0.79420000   0.58960003 
+                                          0.25369999   0.97729999 
+                                          0.87349999   0.47099999 
+                                          0.51779997   0.97729999 
+                                          0.89319998   0.56989998 
+                                          0.12170000   0.97729999 
+                                          0.45179999   0.95899999 
+                                          0.18770000   0.95899999 
+                                          0.31979999   0.95899999 
+                                          0.05570000   0.95899999 
+                                          0.35280001   0.95899999 
+                                          0.28680000   0.95899999 
+                                          0.55080003   0.95899999 
+                                          0.02270000   0.95899999 
+                                          0.08870000   0.95899999 
+                                          0.41880000   0.95899999 
+                                          0.22070000   0.95899999 
+                                          0.48480001   0.95899999 
+                                          0.15470000   0.95899999 
+                                          0.38580000   0.95899999 
+                                          0.25369999   0.95899999 
+                                          0.51779997   0.95899999 
+                                          0.12170000   0.95899999 
+                                          0.70270002   0.39850000 
+                                          0.70270002   0.22470000 
+                                          0.61199999   0.39850000 
+                                          0.61199999   0.22470000 
+                                          0.70270002   0.57220000 
+                                          0.70270002   0.05090000 
+                                          0.61199999   0.57220000 
+                                          0.61199999   0.05090000 
+                                          0.70270002   0.59079999 
+                                          0.61199999   0.59079999 
+                                          0.70270002   0.31160000 
+                                          0.61199999   0.31160000 
+                                          0.70270002   0.35499999 
+                                          0.70270002   0.26809999 
+                                          0.61199999   0.35499999 
+                                          0.61199999   0.26809999 
+                                    }
+                                    Indices FALSE
+                                    Binding BIND_PER_VERTEX
+                                    Normalize 0
+                                }
+                            }
+                        }
+                    }
+                }
+                osg::Geode
+                {
+                    UniqueID 50
+                    Name "NAME_HERE"
+                    StateSet TRUE
+                    {
+                        osg::StateSet
+                        {
+                            UniqueID 51
+                            Name "generic_stateset"
+                            DataVariance STATIC
+                            UniformList 1
+                            {
+                                osg::Uniform
+                                {
+                                    UniqueID 52
+                                    Name "major_axis"
+                                    Type INT
+                                    NumElements 1
+                                    Elements TRUE ArrayID 53 IntArray 1
+                                    {
+                                        1.000
+                                    }
+                                }
+                                Value OFF
+                            }
+                        }
+                    }
+                    Drawables 1
+                    {
+                        osg::Geometry
+                        {
+                            UniqueID 54
+                            Name "TODO: some name here"
+                            DataVariance STATIC
+                            PrimitiveSetList 1
+                            {
+                                DrawElementsUInt GL_TRIANGLES 342
+                                {
+                                      33   38   83
+                                      78   33   83
+                                      30   33   78
+                                      75   30   78
+                                      32   30   75
+                                      77   32   75
+                                      37   32   77
+                                      82   37   77
+                                      34   39   84
+                                      79   34   84
+                                      31   35   80
+                                      76   31   80
+                                      36   31   76
+                                      81   36   76
+                                      40   36   81
+                                      85   40   81
+                                      88   26   90
+                                     112   88   90
+                                     112   90  114
+                                     112  114   98
+                                      96  112   98
+                                       0   96   98
+                                       0   98    2
+                                       0    2  106
+                                     104    0  106
+                                     104  106  123
+                                     120  104  123
+                                     120  123   52
+                                      49  120   52
+                                     139  111  130
+                                      48  139  130
+                                     139    6   10
+                                     139   10  111
+                                       6  135  103
+                                       6  103   10
+                                     135   44  119
+                                     135  119  103
+                                      44  143   95
+                                      44   95  119
+                                     143   87   29
+                                      95  143   29
+                                      29   87  142
+                                      29  142   93
+                                      93  142   43
+                                     117   93   43
+                                     117   43  134
+                                     101  117  134
+                                     101  134   11
+                                       8  101   11
+                                       8   11  138
+                                     109    8  138
+                                     127  109  138
+                                     127  138   47
+                                     125  107  137
+                                     125  137   46
+                                     107    3    5
+                                     107    5  137
+                                      99  133    5
+                                       3   99    5
+                                     115   42  133
+                                      99  115  133
+                                      91  141   42
+                                     115   91   42
+                                      27   86  141
+                                      27  141   91
+                                     140   86   27
+                                      89  140   27
+                                      41  140   89
+                                      41   89  113
+                                     132   41  113
+                                     132  113   97
+                                       4  132   97
+                                       4   97    1
+                                       4    1  105
+                                     136    4  105
+                                     136  105  122
+                                      45  136  122
+                                      69  127   47
+                                      69   47   74
+                                      94   28   92
+                                      94   92  116
+                                     118   94  116
+                                     118  116  100
+                                     102  118  100
+                                     102  100    7
+                                       9  102    7
+                                     110    9    7
+                                     110    7  108
+                                     129  110  108
+                                     129  108  126
+                                      58  129  126
+                                      58  126   55
+                                      57  128   68
+                                      71  131   60
+                                      56   67   24
+                                      19   56   24
+                                      49   52   16
+                                      14   49   16
+                                      53   64   23
+                                      17   53   23
+                                      22   61   50
+                                      22   50   15
+                                      20   58   55
+                                      20   55   18
+                                      25   70   59
+                                      25   59   21
+                                      54  124   66
+                                      63  121   51
+                                      45  122   62
+                                      73   45   62
+                                      65  125   46
+                                      65   46   12
+                                      48  130   72
+                                      13   48   72
+                                }
+                            }
+                            VertexData
+                            {
+                                Array TRUE ArrayID 55 Vec3fArray 144
+                                {
+                                      0.00000000   0.02240000   0.03930000 
+                                      0.00000000   0.02240000   0.03930000 
+                                      0.00000000   0.02240000  -0.03930000 
+                                      0.00000000   0.02240000  -0.03930000 
+                                      0.00000000   0.01760000   0.04410000 
+                                      0.00000000   0.01760000  -0.04410000 
+                                      0.00000000  -0.01760000  -0.04410000 
+                                     -0.00000000  -0.02240000   0.03930000 
+                                     -0.00000000  -0.02240000   0.03930000 
+                                     -0.00000000  -0.02240000  -0.03930000 
+                                     -0.00000000  -0.02240000  -0.03930000 
+                                     -0.00000000  -0.01760000   0.04410000 
+                                     -0.03510000   0.01760000  -0.02540000 
+                                     -0.03510000  -0.01760000  -0.02540000 
+                                     -0.03720000   0.02240000   0.02000000 
+                                     -0.03720000   0.02240000   0.02000000 
+                                     -0.03720000   0.02240000  -0.02000000 
+                                     -0.03720000   0.02240000  -0.02000000 
+                                     -0.03720000  -0.02240000   0.02000000 
+                                     -0.03720000  -0.02240000   0.02000000 
+                                     -0.03720000  -0.02240000  -0.02000000 
+                                     -0.03720000  -0.02240000  -0.02000000 
+                                     -0.03720000   0.02060000   0.02330000 
+                                     -0.03720000   0.02060000  -0.02330000 
+                                     -0.03720000  -0.02060000   0.02330000 
+                                     -0.03720000  -0.02060000  -0.02330000 
+                                      0.03930000   0.02240000   0.00000000 
+                                      0.03930000   0.02240000   0.00000000 
+                                      0.03930000  -0.02240000   0.00000000 
+                                      0.03930000  -0.02240000   0.00000000 
+                                     -0.04210000   0.03300000   0.00000000 
+                                     -0.04210000  -0.03300000  -0.00000000 
+                                     -0.04210000   0.03050000   0.01260000 
+                                     -0.04210000   0.03050000  -0.01260000 
+                                     -0.04210000  -0.03050000   0.01260000 
+                                     -0.04210000  -0.03050000   0.01260000 
+                                     -0.04210000  -0.03050000  -0.01260000 
+                                     -0.04210000   0.02340000   0.02340000 
+                                     -0.04210000   0.02340000  -0.02340000 
+                                     -0.04210000  -0.02340000   0.02340000 
+                                     -0.04210000  -0.02340000  -0.02340000 
+                                      0.03120000   0.01760000   0.03120000 
+                                      0.03120000   0.01760000  -0.03120000 
+                                      0.03120000  -0.01760000   0.03120000 
+                                      0.03120000  -0.01760000  -0.03120000 
+                                     -0.03120000   0.01760000   0.03120000 
+                                     -0.03120000   0.01760000  -0.03120000 
+                                     -0.03120000  -0.01760000   0.03120000 
+                                     -0.03120000  -0.01760000  -0.03120000 
+                                     -0.03290000   0.02240000   0.02000000 
+                                     -0.03290000   0.02240000   0.02000000 
+                                     -0.03290000   0.02240000   0.02000000 
+                                     -0.03290000   0.02240000  -0.02000000 
+                                     -0.03290000   0.02240000  -0.02000000 
+                                     -0.03290000   0.02240000  -0.02000000 
+                                     -0.03290000  -0.02240000   0.02000000 
+                                     -0.03290000  -0.02240000   0.02000000 
+                                     -0.03290000  -0.02240000   0.02000000 
+                                     -0.03290000  -0.02240000  -0.02000000 
+                                     -0.03290000  -0.02240000  -0.02000000 
+                                     -0.03290000  -0.02240000  -0.02000000 
+                                     -0.03290000   0.02060000   0.02330000 
+                                     -0.03290000   0.02060000   0.02330000 
+                                     -0.03290000   0.02060000   0.02330000 
+                                     -0.03290000   0.02060000  -0.02330000 
+                                     -0.03290000   0.02060000  -0.02330000 
+                                     -0.03290000   0.02060000  -0.02330000 
+                                     -0.03290000  -0.02060000   0.02330000 
+                                     -0.03290000  -0.02060000   0.02330000 
+                                     -0.03290000  -0.02060000   0.02330000 
+                                     -0.03290000  -0.02060000  -0.02330000 
+                                     -0.03290000  -0.02060000  -0.02330000 
+                                     -0.03290000  -0.02060000  -0.02330000 
+                                     -0.03500000   0.01760000   0.02550000 
+                                     -0.03500000  -0.01760000   0.02550000 
+                                     -0.40779999   0.03300000  -0.00000000 
+                                     -0.40779999  -0.03300000  -0.00000000 
+                                     -0.40779999   0.03050000   0.01260000 
+                                     -0.40779999   0.03050000  -0.01260000 
+                                     -0.40779999  -0.03050000   0.01260000 
+                                     -0.40779999  -0.03050000   0.01260000 
+                                     -0.40779999  -0.03050000  -0.01260000 
+                                     -0.40779999   0.02340000   0.02340000 
+                                     -0.40779999   0.02340000  -0.02340000 
+                                     -0.40779999  -0.02340000   0.02340000 
+                                     -0.40779999  -0.02340000  -0.02340000 
+                                      0.04410000   0.01760000   0.00000000 
+                                      0.04410000  -0.01760000   0.00000000 
+                                      0.03630000   0.02240000   0.01500000 
+                                      0.03630000   0.02240000   0.01500000 
+                                      0.03630000   0.02240000  -0.01500000 
+                                      0.03630000   0.02240000  -0.01500000 
+                                      0.03630000  -0.02240000   0.01500000 
+                                      0.03630000  -0.02240000   0.01500000 
+                                      0.03630000  -0.02240000  -0.01500000 
+                                      0.03630000  -0.02240000  -0.01500000 
+                                      0.01500000   0.02240000   0.03630000 
+                                      0.01500000   0.02240000   0.03630000 
+                                      0.01500000   0.02240000  -0.03630000 
+                                      0.01500000   0.02240000  -0.03630000 
+                                      0.01500000  -0.02240000   0.03630000 
+                                      0.01500000  -0.02240000   0.03630000 
+                                      0.01500000  -0.02240000  -0.03630000 
+                                      0.01500000  -0.02240000  -0.03630000 
+                                     -0.01500000   0.02240000   0.03630000 
+                                     -0.01500000   0.02240000   0.03630000 
+                                     -0.01500000   0.02240000  -0.03630000 
+                                     -0.01500000   0.02240000  -0.03630000 
+                                     -0.01500000  -0.02240000   0.03630000 
+                                     -0.01500000  -0.02240000   0.03630000 
+                                     -0.01500000  -0.02240000  -0.03630000 
+                                     -0.01500000  -0.02240000  -0.03630000 
+                                      0.02780000   0.02240000   0.02780000 
+                                      0.02780000   0.02240000   0.02780000 
+                                      0.02780000   0.02240000  -0.02780000 
+                                      0.02780000   0.02240000  -0.02780000 
+                                      0.02780000  -0.02240000   0.02780000 
+                                      0.02780000  -0.02240000   0.02780000 
+                                      0.02780000  -0.02240000  -0.02780000 
+                                      0.02780000  -0.02240000  -0.02780000 
+                                     -0.02780000   0.02240000   0.02780000 
+                                     -0.02780000   0.02240000   0.02780000 
+                                     -0.02780000   0.02240000   0.02780000 
+                                     -0.02780000   0.02240000  -0.02780000 
+                                     -0.02780000   0.02240000  -0.02780000 
+                                     -0.02780000   0.02240000  -0.02780000 
+                                     -0.02780000  -0.02240000   0.02780000 
+                                     -0.02780000  -0.02240000   0.02780000 
+                                     -0.02780000  -0.02240000   0.02780000 
+                                     -0.02780000  -0.02240000  -0.02780000 
+                                     -0.02780000  -0.02240000  -0.02780000 
+                                     -0.02780000  -0.02240000  -0.02780000 
+                                      0.01690000   0.01760000   0.04080000 
+                                      0.01690000   0.01760000  -0.04080000 
+                                      0.01690000  -0.01760000   0.04080000 
+                                      0.01690000  -0.01760000  -0.04080000 
+                                     -0.01690000   0.01760000   0.04080000 
+                                     -0.01690000   0.01760000  -0.04080000 
+                                     -0.01690000  -0.01760000   0.04080000 
+                                     -0.01690000  -0.01760000  -0.04080000 
+                                      0.04080000   0.01760000   0.01690000 
+                                      0.04080000   0.01760000  -0.01690000 
+                                      0.04080000  -0.01760000   0.01690000 
+                                      0.04080000  -0.01760000  -0.01690000 
+                                }
+                                Indices FALSE
+                                Binding BIND_PER_VERTEX
+                                Normalize 0
+                            }
+                            NormalData
+                            {
+                                Array TRUE ArrayID 56 Vec3fArray 144
+                                {
+                                      0.00000000   1.00000000   0.00000000 
+                                      0.00000000   0.71390003   0.70020002 
+                                      0.00000000   1.00000000   0.00000000 
+                                      0.00000000   0.71390003  -0.70020002 
+                                      0.00000000   0.71390003   0.70020002 
+                                      0.00000000   0.71390003  -0.70020002 
+                                     -0.00000000  -0.71390003  -0.70020002 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                     -0.00000000  -0.71390003   0.70020002 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                     -0.00000000  -0.71390003  -0.70020002 
+                                     -0.00000000  -0.71390003   0.70020002 
+                                     -0.58789998   0.70709997  -0.39280000 
+                                     -0.58789998  -0.70709997  -0.39280000 
+                                      0.00000000   1.00000000   0.00000000 
+                                      0.00000000   0.87410003   0.48559999 
+                                      0.00000000   1.00000000   0.00000000 
+                                      0.00000000   0.87410003  -0.48570001 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                     -0.00000000  -0.87410003   0.48559999 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                     -0.00000000  -0.87410003  -0.48559999 
+                                      0.00000000   0.87410003   0.48559999 
+                                      0.00000000   0.87410003  -0.48570001 
+                                     -0.00000000  -0.87410003   0.48559999 
+                                     -0.00000000  -0.87410003  -0.48559999 
+                                      0.00000000   1.00000000   0.00000000 
+                                      0.70020002   0.71390003   0.00000000 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                      0.70020002  -0.71390003  -0.00000000 
+                                      0.00000000   1.00000000   0.00000000 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                      0.00000000   0.92390001   0.38270000 
+                                      0.00000000   0.92390001  -0.38270000 
+                                     -0.00000000  -0.92390001   0.38270000 
+                                     -0.00000000  -0.92390001   0.38270000 
+                                     -0.00000000  -0.92390001  -0.38270000 
+                                      0.00000000   0.70709997   0.70709997 
+                                      0.00000000   0.70709997  -0.70709997 
+                                     -0.00000000  -0.70709997   0.70709997 
+                                     -0.00000000  -0.70709997  -0.70709997 
+                                      0.49509999   0.71390003   0.49509999 
+                                      0.49509999   0.71390003  -0.49509999 
+                                      0.49509999  -0.71390003   0.49509999 
+                                      0.49509999  -0.71390003  -0.49509999 
+                                     -0.49509999   0.71390003   0.49509999 
+                                     -0.49509999   0.71390003  -0.49509999 
+                                     -0.49509999  -0.71390003   0.49509999 
+                                     -0.49509999  -0.71390003  -0.49509999 
+                                      0.00000000   1.00000000   0.00000000 
+                                      0.00000000   0.87410003   0.48559999 
+                                     -0.58789998   0.70709997   0.39280000 
+                                      0.00000000   1.00000000   0.00000000 
+                                      0.00000000   0.87410003  -0.48570001 
+                                     -0.58800000   0.70700002  -0.39289999 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                     -0.00000000  -0.87410003   0.48559999 
+                                     -0.58789998  -0.70709997   0.39280000 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                     -0.00000000  -0.87410003  -0.48559999 
+                                     -0.58789998  -0.70709997  -0.39280000 
+                                      0.00000000   0.87410003   0.48559999 
+                                     -0.58789998   0.70709997   0.39280000 
+                                     -0.58789998   0.70709997   0.39280000 
+                                      0.00000000   0.87410003  -0.48570001 
+                                     -0.58800000   0.70709997  -0.39280000 
+                                     -0.58800000   0.70709997  -0.39280000 
+                                     -0.00000000  -0.87410003   0.48559999 
+                                     -0.58789998  -0.70709997   0.39280000 
+                                     -0.58789998  -0.70709997   0.39280000 
+                                     -0.00000000  -0.87410003  -0.48559999 
+                                     -0.58789998  -0.70709997  -0.39280000 
+                                     -0.58789998  -0.70709997  -0.39280000 
+                                     -0.58789998   0.70709997   0.39280000 
+                                     -0.58789998  -0.70709997   0.39280000 
+                                      0.00000000   1.00000000   0.00000000 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                      0.00000000   0.92390001   0.38270000 
+                                      0.00000000   0.92390001  -0.38270000 
+                                     -0.00000000  -0.92390001   0.38270000 
+                                     -0.00000000  -0.92390001   0.38270000 
+                                     -0.00000000  -0.92390001  -0.38270000 
+                                      0.00000000   0.70709997   0.70709997 
+                                      0.00000000   0.70709997  -0.70709997 
+                                     -0.00000000  -0.70709997   0.70709997 
+                                     -0.00000000  -0.70709997  -0.70709997 
+                                      0.70020002   0.71390003   0.00000000 
+                                      0.70020002  -0.71390003  -0.00000000 
+                                      0.00000000   1.00000000   0.00000000 
+                                      0.64690000   0.71390003   0.26800001 
+                                      0.00000000   1.00000000   0.00000000 
+                                      0.64690000   0.71390003  -0.26800001 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                      0.64690000  -0.71390003   0.26800001 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                      0.64690000  -0.71390003  -0.26800001 
+                                      0.00000000   1.00000000   0.00000000 
+                                      0.26800001   0.71390003   0.64690000 
+                                      0.00000000   1.00000000   0.00000000 
+                                      0.26800001   0.71390003  -0.64690000 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                      0.26789999  -0.71390003   0.64690000 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                      0.26800001  -0.71390003  -0.64690000 
+                                      0.00000000   1.00000000   0.00000000 
+                                     -0.26800001   0.71390003   0.64690000 
+                                      0.00000000   1.00000000   0.00000000 
+                                     -0.26789999   0.71390003  -0.64690000 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                     -0.26800001  -0.71390003   0.64690000 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                     -0.26800001  -0.71390003  -0.64690000 
+                                      0.00000000   1.00000000   0.00000000 
+                                      0.49509999   0.71390003   0.49509999 
+                                      0.00000000   1.00000000   0.00000000 
+                                      0.49509999   0.71390003  -0.49509999 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                      0.49509999  -0.71390003   0.49509999 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                      0.49509999  -0.71390003  -0.49509999 
+                                      0.00000000   1.00000000   0.00000000 
+                                     -0.49509999   0.71390003   0.49509999 
+                                     -0.49509999   0.71390003   0.49509999 
+                                      0.00000000   1.00000000   0.00000000 
+                                     -0.49509999   0.71390003  -0.49509999 
+                                     -0.49509999   0.71390003  -0.49509999 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                     -0.49509999  -0.71390003   0.49509999 
+                                     -0.49509999  -0.71390003   0.49509999 
+                                     -0.00000000  -1.00000000  -0.00000000 
+                                     -0.49509999  -0.71390003  -0.49509999 
+                                     -0.49509999  -0.71390003  -0.49509999 
+                                      0.26800001   0.71390003   0.64690000 
+                                      0.26800001   0.71390003  -0.64690000 
+                                      0.26789999  -0.71390003   0.64690000 
+                                      0.26800001  -0.71390003  -0.64690000 
+                                     -0.26800001   0.71390003   0.64690000 
+                                     -0.26789999   0.71390003  -0.64690000 
+                                     -0.26800001  -0.71390003   0.64690000 
+                                     -0.26800001  -0.71390003  -0.64690000 
+                                      0.64690000   0.71390003   0.26800001 
+                                      0.64690000   0.71390003  -0.26800001 
+                                      0.64690000  -0.71390003   0.26800001 
+                                      0.64690000  -0.71390003  -0.26800001 
+                                }
+                                Indices FALSE
+                                Binding BIND_PER_VERTEX
+                                Normalize 0
+                            }
+                            TexCoordData 1
+                            {
+                                Data
+                                {
+                                    Array TRUE ArrayID 57 Vec2fArray 144
+                                    {
+                                          0.69690001   0.84700000 
+                                          0.71850002   0.48530000 
+                                          0.69690001   0.64560002 
+                                          0.71850002   0.13779999 
+                                          0.70270002   0.48530000 
+                                          0.70270002   0.13779999 
+                                          0.61199999   0.13779999 
+                                          0.86460000   0.22409999 
+                                          0.59619999   0.48530000 
+                                          0.86460000   0.02270000 
+                                          0.59619999   0.13779999 
+                                          0.61199999   0.48530000 
+                                          0.70270002   0.03220000 
+                                          0.61199999   0.03220000 
+                                          0.79229999   0.79769999 
+                                          0.79229999   0.79769999 
+                                          0.79229999   0.69499999 
+                                          0.79229999   0.69499999 
+                                          0.95999998   0.17470001 
+                                          0.95999998   0.17470001 
+                                          0.95999998   0.07210000 
+                                          0.95999998   0.07210000 
+                                          0.79229999   0.80610001 
+                                          0.79229999   0.68660003 
+                                          0.95999998   0.18320000 
+                                          0.95999998   0.06370000 
+                                          0.59619999   0.74629998 
+                                          0.71850002   0.31160000 
+                                          0.76389998   0.12340000 
+                                          0.59619999   0.31160000 
+                                          0.31979999   0.95899999 
+                                          0.05570000   0.95899999 
+                                          0.35280001   0.95899999 
+                                          0.28680000   0.95899999 
+                                          0.55080003   0.95899999 
+                                          0.02270000   0.95899999 
+                                          0.08870000   0.95899999 
+                                          0.38580000   0.95899999 
+                                          0.25369999   0.95899999 
+                                          0.51779997   0.95899999 
+                                          0.12170000   0.95899999 
+                                          0.70270002   0.39850000 
+                                          0.70270002   0.22470000 
+                                          0.61199999   0.39850000 
+                                          0.61199999   0.22470000 
+                                          0.70270002   0.57220000 
+                                          0.70270002   0.05090000 
+                                          0.61199999   0.57220000 
+                                          0.61199999   0.05090000 
+                                          0.78140002   0.79769999 
+                                          0.78140002   0.79769999 
+                                          0.78140002   0.79769999 
+                                          0.78140002   0.69499999 
+                                          0.78140002   0.69499999 
+                                          0.78140002   0.69499999 
+                                          0.94910002   0.17470001 
+                                          0.94910002   0.17470001 
+                                          0.94910002   0.17470001 
+                                          0.94910002   0.07210000 
+                                          0.94910002   0.07210000 
+                                          0.94910002   0.07210000 
+                                          0.78140002   0.80610001 
+                                          0.71850002   0.59079999 
+                                          0.78140002   0.80610001 
+                                          0.78140002   0.68660003 
+                                          0.71850002   0.03220000 
+                                          0.78140002   0.68660003 
+                                          0.94910002   0.18320000 
+                                          0.94910002   0.18320000 
+                                          0.59619999   0.59079999 
+                                          0.94910002   0.06370000 
+                                          0.94910002   0.06370000 
+                                          0.59619999   0.03220000 
+                                          0.70270002   0.59079999 
+                                          0.61199999   0.59079999 
+                                          0.31979999   0.02270000 
+                                          0.05570000   0.02270000 
+                                          0.35280001   0.02270000 
+                                          0.28680000   0.02270000 
+                                          0.55080003   0.02270000 
+                                          0.02270000   0.02270000 
+                                          0.08870000   0.02270000 
+                                          0.38580000   0.02270000 
+                                          0.25369999   0.02270000 
+                                          0.51779997   0.02270000 
+                                          0.12170000   0.02270000 
+                                          0.70270002   0.31160000 
+                                          0.61199999   0.31160000 
+                                          0.60390002   0.78490001 
+                                          0.71850002   0.35499999 
+                                          0.60390002   0.70779997 
+                                          0.71850002   0.26809999 
+                                          0.77160001   0.16190000 
+                                          0.59619999   0.35499999 
+                                          0.77160001   0.08490000 
+                                          0.59619999   0.26809999 
+                                          0.65840000   0.83939999 
+                                          0.71850002   0.44190001 
+                                          0.65840000   0.65329999 
+                                          0.71850002   0.18120000 
+                                          0.82609999   0.21640000 
+                                          0.59619999   0.44190001 
+                                          0.82609999   0.03040000 
+                                          0.59619999   0.18130000 
+                                          0.73540002   0.83939999 
+                                          0.71850002   0.52880001 
+                                          0.73540002   0.65329999 
+                                          0.71850002   0.09440000 
+                                          0.90319997   0.21640000 
+                                          0.59619999   0.52880001 
+                                          0.90319997   0.03040000 
+                                          0.59619999   0.09440000 
+                                          0.62570000   0.81750000 
+                                          0.71850002   0.39840001 
+                                          0.62570000   0.67510003 
+                                          0.71850002   0.22470000 
+                                          0.79339999   0.19460000 
+                                          0.59619999   0.39850000 
+                                          0.79339999   0.05220000 
+                                          0.59619999   0.22470000 
+                                          0.76810002   0.81750000 
+                                          0.76810002   0.81750000 
+                                          0.71850002   0.57220000 
+                                          0.76810002   0.67510003 
+                                          0.76810002   0.67510003 
+                                          0.71850002   0.05090000 
+                                          0.93580002   0.19460000 
+                                          0.59619999   0.57220000 
+                                          0.93580002   0.19460000 
+                                          0.93580002   0.05220000 
+                                          0.59619999   0.05090000 
+                                          0.93580002   0.05220000 
+                                          0.70270002   0.44190001 
+                                          0.70270002   0.18120000 
+                                          0.61199999   0.44190001 
+                                          0.61199999   0.18130000 
+                                          0.70270002   0.52880001 
+                                          0.70270002   0.09440000 
+                                          0.61199999   0.52880001 
+                                          0.61199999   0.09440000 
+                                          0.70270002   0.35499999 
+                                          0.70270002   0.26809999 
+                                          0.61199999   0.35499999 
+                                          0.61199999   0.26809999 
+                                    }
+                                    Indices FALSE
+                                    Binding BIND_PER_VERTEX
+                                    Normalize 0
+                                }
+                            }
+                        }
+                    }
+                }
+                osg::Geode
+                {
+                    UniqueID 58
+                    Name "NAME_HERE"
+                    StateSet TRUE
+                    {
+                        osg::StateSet
+                        {
+                            UniqueID 59
+                            Name "generic_stateset"
+                            DataVariance STATIC
+                            UniformList 1
+                            {
+                                osg::Uniform
+                                {
+                                    UniqueID 60
+                                    Name "major_axis"
+                                    Type INT
+                                    NumElements 1
+                                    Elements TRUE ArrayID 61 IntArray 1
+                                    {
+                                        2.000
+                                    }
+                                }
+                                Value OFF
+                            }
+                        }
+                    }
+                    Drawables 1
+                    {
+                        osg::Geometry
+                        {
+                            UniqueID 62
+                            Name "TODO: some name here"
+                            DataVariance STATIC
+                            PrimitiveSetList 1
+                            {
+                                DrawElementsUInt GL_TRIANGLES 132
+                                {
+                                      23   21   47
+                                      49   23   47
+                                      27   23   49
+                                      53   27   49
+                                      22   26   52
+                                      48   22   52
+                                      20   22   48
+                                      46   20   48
+                                      24   20   46
+                                      50   24   46
+                                      28   24   50
+                                      54   28   50
+                                      21   25   51
+                                      47   21   51
+                                      25   29   55
+                                      51   25   55
+                                      35   61   63
+                                      35   63   37
+                                      62   60   34
+                                      36   62   34
+                                      58   56    0
+                                       3   58    0
+                                      57   31   33
+                                      57   33   59
+                                      61    1    2
+                                      61    2   63
+                                       3    0   60
+                                      62    3   60
+                                      32   30   56
+                                      58   32   56
+                                       1   57   59
+                                       1   59    2
+                                       7   41   11
+                                      19    7   11
+                                      14    4    6
+                                      14    6   18
+                                      42   38    8
+                                      12   42    8
+                                       9   39    5
+                                       9    5   15
+                                      44   43   13
+                                      16   44   13
+                                      10   40   45
+                                      10   45   17
+                                }
+                            }
+                            VertexData
+                            {
+                                Array TRUE ArrayID 63 Vec3fArray 64
+                                {
+                                      0.00000000   0.01760000   0.04410000 
+                                      0.00000000   0.01760000  -0.04410000 
+                                      0.00000000  -0.01760000  -0.04410000 
+                                     -0.00000000  -0.01760000   0.04410000 
+                                     -0.03510000   0.01760000  -0.02540000 
+                                     -0.03510000   0.01760000  -0.02540000 
+                                     -0.03510000  -0.01760000  -0.02540000 
+                                     -0.03510000  -0.01760000  -0.02540000 
+                                     -0.03720000   0.02060000   0.02330000 
+                                     -0.03720000   0.02060000  -0.02330000 
+                                     -0.03720000  -0.02060000   0.02330000 
+                                     -0.03720000  -0.02060000  -0.02330000 
+                                     -0.03720000   0.01760000   0.02550000 
+                                     -0.03720000   0.01760000   0.02550000 
+                                     -0.03720000   0.01760000  -0.02540000 
+                                     -0.03720000   0.01760000  -0.02540000 
+                                     -0.03720000  -0.01760000   0.02550000 
+                                     -0.03720000  -0.01760000   0.02550000 
+                                     -0.03720000  -0.01760000  -0.02540000 
+                                     -0.03720000  -0.01760000  -0.02540000 
+                                     -0.04210000   0.00000000   0.03300000 
+                                     -0.04210000   0.00000000  -0.03300000 
+                                     -0.04210000   0.01260000   0.03050000 
+                                     -0.04210000   0.01260000  -0.03050000 
+                                     -0.04210000  -0.01260000   0.03050000 
+                                     -0.04210000  -0.01260000  -0.03050000 
+                                     -0.04210000   0.02340000   0.02340000 
+                                     -0.04210000   0.02340000  -0.02340000 
+                                     -0.04210000  -0.02340000   0.02340000 
+                                     -0.04210000  -0.02340000  -0.02340000 
+                                      0.03120000   0.01760000   0.03120000 
+                                      0.03120000   0.01760000  -0.03120000 
+                                      0.03120000  -0.01760000   0.03120000 
+                                      0.03120000  -0.01760000  -0.03120000 
+                                     -0.03120000   0.01760000   0.03120000 
+                                     -0.03120000   0.01760000  -0.03120000 
+                                     -0.03120000  -0.01760000   0.03120000 
+                                     -0.03120000  -0.01760000  -0.03120000 
+                                     -0.03290000   0.02060000   0.02330000 
+                                     -0.03290000   0.02060000  -0.02330000 
+                                     -0.03290000  -0.02060000   0.02330000 
+                                     -0.03290000  -0.02060000  -0.02330000 
+                                     -0.03500000   0.01760000   0.02550000 
+                                     -0.03500000   0.01760000   0.02550000 
+                                     -0.03500000  -0.01760000   0.02550000 
+                                     -0.03500000  -0.01760000   0.02550000 
+                                     -0.40779999   0.00000000   0.03300000 
+                                     -0.40779999   0.00000000  -0.03300000 
+                                     -0.40779999   0.01260000   0.03050000 
+                                     -0.40779999   0.01260000  -0.03050000 
+                                     -0.40779999  -0.01260000   0.03050000 
+                                     -0.40779999  -0.01260000  -0.03050000 
+                                     -0.40779999   0.02340000   0.02340000 
+                                     -0.40779999   0.02340000  -0.02340000 
+                                     -0.40779999  -0.02340000   0.02340000 
+                                     -0.40779999  -0.02340000  -0.02340000 
+                                      0.01690000   0.01760000   0.04080000 
+                                      0.01690000   0.01760000  -0.04080000 
+                                      0.01690000  -0.01760000   0.04080000 
+                                      0.01690000  -0.01760000  -0.04080000 
+                                     -0.01690000   0.01760000   0.04080000 
+                                     -0.01690000   0.01760000  -0.04080000 
+                                     -0.01690000  -0.01760000   0.04080000 
+                                     -0.01690000  -0.01760000  -0.04080000 
+                                }
+                                Indices FALSE
+                                Binding BIND_PER_VERTEX
+                                Normalize 0
+                            }
+                            NormalData
+                            {
+                                Array TRUE ArrayID 64 Vec3fArray 64
+                                {
+                                     -0.00000000  -0.00000000   1.00000000 
+                                      0.00000000   0.00000000  -1.00000000 
+                                      0.00000000   0.00000000  -1.00000000 
+                                     -0.00000000  -0.00000000   1.00000000 
+                                      0.00000000   0.00000000  -1.00000000 
+                                      0.00000000   0.58490002  -0.81110001 
+                                      0.00000000   0.00000000  -1.00000000 
+                                     -0.00000000  -0.58480000  -0.81120002 
+                                      0.00000000   0.60299999   0.79780000 
+                                      0.00000000   0.58490002  -0.81110001 
+                                     -0.00000000  -0.60299999   0.79780000 
+                                     -0.00000000  -0.58480000  -0.81120002 
+                                      0.00000000   0.60299999   0.79780000 
+                                     -0.00000000  -0.00000000   1.00000000 
+                                      0.00000000   0.00000000  -1.00000000 
+                                      0.00000000   0.58490002  -0.81110001 
+                                     -0.00000000  -0.00000000   1.00000000 
+                                     -0.00000000  -0.60299999   0.79780000 
+                                      0.00000000   0.00000000  -1.00000000 
+                                     -0.00000000  -0.58480000  -0.81120002 
+                                     -0.00000000  -0.00000000   1.00000000 
+                                      0.00000000   0.00000000  -1.00000000 
+                                      0.00000000   0.38270000   0.92390001 
+                                      0.00000000   0.38270000  -0.92390001 
+                                     -0.00000000  -0.38270000   0.92390001 
+                                     -0.00000000  -0.38270000  -0.92390001 
+                                      0.00000000   0.70709997   0.70709997 
+                                      0.00000000   0.70709997  -0.70709997 
+                                     -0.00000000  -0.70709997   0.70709997 
+                                     -0.00000000  -0.70709997  -0.70709997 
+                                      0.70709997  -0.00000000   0.70709997 
+                                      0.70709997  -0.00000000  -0.70709997 
+                                      0.70709997  -0.00000000   0.70709997 
+                                      0.70709997  -0.00000000  -0.70709997 
+                                     -0.70709997   0.00000000   0.70709997 
+                                     -0.70709997   0.00000000  -0.70709997 
+                                     -0.70709997   0.00000000   0.70709997 
+                                     -0.70709997   0.00000000  -0.70709997 
+                                      0.00000000   0.60299999   0.79780000 
+                                      0.00000000   0.58490002  -0.81110001 
+                                     -0.00000000  -0.60299999   0.79780000 
+                                     -0.00000000  -0.58480000  -0.81120002 
+                                      0.00000000   0.60299999   0.79780000 
+                                     -0.00000000  -0.00000000   1.00000000 
+                                     -0.00000000  -0.00000000   1.00000000 
+                                     -0.00000000  -0.60299999   0.79780000 
+                                     -0.00000000  -0.00000000   1.00000000 
+                                      0.00000000   0.00000000  -1.00000000 
+                                      0.00000000   0.38270000   0.92390001 
+                                      0.00000000   0.38270000  -0.92390001 
+                                     -0.00000000  -0.38270000   0.92390001 
+                                     -0.00000000  -0.38270000  -0.92390001 
+                                      0.00000000   0.70709997   0.70709997 
+                                      0.00000000   0.70709997  -0.70709997 
+                                     -0.00000000  -0.70709997   0.70709997 
+                                     -0.00000000  -0.70709997  -0.70709997 
+                                      0.38270000  -0.00000000   0.92390001 
+                                      0.38270000  -0.00000000  -0.92390001 
+                                      0.38270000  -0.00000000   0.92390001 
+                                      0.38270000  -0.00000000  -0.92390001 
+                                     -0.38270000   0.00000000   0.92390001 
+                                     -0.38270000   0.00000000  -0.92390001 
+                                     -0.38270000   0.00000000   0.92390001 
+                                     -0.38270000   0.00000000  -0.92390001 
+                                }
+                                Indices FALSE
+                                Binding BIND_PER_VERTEX
+                                Normalize 0
+                            }
+                            TexCoordData 1
+                            {
+                                Data
+                                {
+                                    Array TRUE ArrayID 65 Vec2fArray 64
+                                    {
+                                          0.70270002   0.48530000 
+                                          0.70270002   0.13779999 
+                                          0.61199999   0.13779999 
+                                          0.61199999   0.48530000 
+                                          0.70270002   0.03220000 
+                                          0.70270002   0.03220000 
+                                          0.61199999   0.03220000 
+                                          0.61199999   0.03220000 
+                                          0.71850002   0.60020000 
+                                          0.71850002   0.02270000 
+                                          0.59619999   0.60020000 
+                                          0.59619999   0.02270000 
+                                          0.70270002   0.60020000 
+                                          0.70270002   0.60020000 
+                                          0.70270002   0.02270000 
+                                          0.70270002   0.02270000 
+                                          0.61199999   0.60020000 
+                                          0.61199999   0.60020000 
+                                          0.61199999   0.02270000 
+                                          0.61199999   0.02270000 
+                                          0.45179999   0.95899999 
+                                          0.18770000   0.95899999 
+                                          0.41880000   0.95899999 
+                                          0.22070000   0.95899999 
+                                          0.48480001   0.95899999 
+                                          0.15470000   0.95899999 
+                                          0.38580000   0.95899999 
+                                          0.25369999   0.95899999 
+                                          0.51779997   0.95899999 
+                                          0.12170000   0.95899999 
+                                          0.70270002   0.39850000 
+                                          0.70270002   0.22470000 
+                                          0.61199999   0.39850000 
+                                          0.61199999   0.22470000 
+                                          0.70270002   0.57220000 
+                                          0.70270002   0.05090000 
+                                          0.61199999   0.57220000 
+                                          0.61199999   0.05090000 
+                                          0.71850002   0.59079999 
+                                          0.71850002   0.03220000 
+                                          0.59619999   0.59079999 
+                                          0.59619999   0.03220000 
+                                          0.70270002   0.59079999 
+                                          0.70270002   0.59079999 
+                                          0.61199999   0.59079999 
+                                          0.61199999   0.59079999 
+                                          0.45179999   0.02270000 
+                                          0.18770000   0.02270000 
+                                          0.41880000   0.02270000 
+                                          0.22070000   0.02270000 
+                                          0.48480001   0.02270000 
+                                          0.15470000   0.02270000 
+                                          0.38580000   0.02270000 
+                                          0.25369999   0.02270000 
+                                          0.51779997   0.02270000 
+                                          0.12170000   0.02270000 
+                                          0.70270002   0.44190001 
+                                          0.70270002   0.18120000 
+                                          0.61199999   0.44190001 
+                                          0.61199999   0.18130000 
+                                          0.70270002   0.52880001 
+                                          0.70270002   0.09440000 
+                                          0.61199999   0.52880001 
+                                          0.61199999   0.09440000 
+                                    }
+                                    Indices FALSE
+                                    Binding BIND_PER_VERTEX
+                                    Normalize 0
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

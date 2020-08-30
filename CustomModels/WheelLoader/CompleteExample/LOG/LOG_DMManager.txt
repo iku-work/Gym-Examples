@@ -1,0 +1,38 @@
+16:42:25: DM Manager started
+16:42:26: Manager selects port 4763
+16:42:26: Manager creating model
+16:42:26: Manager waiting for GUI to connect
+16:42:26: Manager got connect from GUI
+16:42:26: DMHandleNewConnection: Got PDU: ID=1002, Type=1002, dsize=0
+16:42:26: GUI going to receive Environment Parameters
+16:42:26: Manager receiving environment:
+16:42:26: FINISHED RECEIVING ENVIRONMENT, xmlname member: C:/Program Files (x86)/Mevea/MeveaModeller/tmp/sample.mvs
+16:42:26: Manager will parse files
+16:42:26: Manager got environment: 1 solvers
+16:42:26: Adding socket to GUI sockets 0
+16:42:26: GUI connected
+16:42:26: GUI ready, creating solvers
+16:42:26: Creating nSolvers = 1 threads from 1 factories
+16:42:26: Creating solver from Standard Factory
+16:42:26: Solver created using Standard Factory
+16:42:26: Select() returns 2: New Connection
+16:42:26: DMHandleNewConnection: Got PDU: ID=0, Type=1001, dsize=0
+16:42:26: Adding socket to Solver Sockets (solverid)
+16:42:26: Solver 0 ready
+16:42:35: GUI -1 wants to start
+16:42:35: Starting all
+16:42:35: Sending start to solver 0
+16:42:35: Got response PDU_ACK from solver 0
+16:42:35: Sending start to GUI, sock[2]!
+16:42:35: Got response PDU_ACK from GUI!
+16:42:42: Simulation time: 6.438000
+16:42:42: Receiving End from Socket 0
+16:42:42: Sending PDU_END to Solver 0
+16:42:42: Receiving PDU_END from Solver 0
+16:42:42: Solver 0 ending as ordered
+16:42:42: Informed GUI that all quitting
+16:42:42: Manager Quitting
+16:42:42: Manager ending...
+16:42:42: Manager in destructor
+16:42:42: Manager destroyes model
+16:42:42: Manager destroyed all, closing...

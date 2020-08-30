@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <World>
+    <Properties useAntiAliasing="Yes" aaSize="8" vsync="Yes" osgPPUFile="" useFragmentLight="Yes" overrideOptions="No" maxActiveLights="8" defaultSceneShader="" useHeadTracking="No" headTrackingMode="Translational" computeNearFar="Yes" displaySizeWidth="0.4" displaySizeHeight="0.3" displaySizeDistance="0.5" MaterialsFileLocation="./../Material_library.xml" motionblur_persistence="0" textureScaleDownFactor="1" textureMaxResolution="512" environmentReflectionCube="../Graphics/Environment/cubemap/cube.hdr" alpha_func_c="GREATER" alpha_ref="0.01" setClearColor="No" useShadows="Yes" shadowUseFragment="Yes" shadowTextureSize="1024" shadowMinLightMargin="10" shadowMaxFarPlane="50" shadowStyle="1" shadowDebugDraw="No" shadowIntensity="0.5" shadowFog="No" defaultShadowShader="" useTouchScreen="No" touchScreenPositionX="0" touchScreenPositionY="0" touchScreenSizeX="1024" touchScreenSizeY="768" touchScreenNames="Meters;Scale" touchScreenFontName="../Graphics/Fonts/Vera.ttf" touchScreenFontSize="18" touchScreenMenuTextureBase="../Graphics/Touchscreen/w_tabs.png" touchScreenMenuTextureHover="../Graphics/Touchscreen/w_tabs.png" useBoxView="No" useGUIBoxView="No" forwardOffset="0" sidewaysOffset="0" heightOffset="0" TaskFile="TaskFile.xml">
+      <clearColor R="0" G="0" B="0" A="1" />
+      <touchScreenBackgroundColor R="0.18" G="0.169" B="0.153" A="1" />
+      <touchScreenFontColor R="0.26" G="0.26" B="0.26" A="1" />
+    </Properties>
+    <Cameras>
+      <Camera_Cabin RefBody="HEAD" RefBodyLookAt="HEAD" AcceptHeadTracking="Yes" fov="45">
+        <Position x="0.05" y="-0.4" z="0" />
+        <LookAt x="1" y="0" z="0" />
+        <UpVector x="0" y="1" z="0" />
+      </Camera_Cabin>
+      <Camera_Left RefBody="Uppercarriage" RefBodyLookAt="Uppercarriage" AcceptHeadTracking="No" fov="45">
+        <Position x="3" y="6" z="12" />
+        <LookAt x="2" y="3" z="0" />
+        <UpVector x="0" y="1" z="0" />
+      </Camera_Left>
+      <Camera_Front RefBody="Uppercarriage" RefBodyLookAt="Uppercarriage" AcceptHeadTracking="No" fov="45">
+        <Position x="10" y="7" z="0" />
+        <LookAt x="4" y="1" z="0" />
+        <UpVector x="0" y="1" z="0" />
+      </Camera_Front>
+      <Camera_Right RefBody="Uppercarriage" RefBodyLookAt="Uppercarriage" AcceptHeadTracking="No" fov="45">
+        <Position x="3" y="6" z="-12" />
+        <LookAt x="2" y="3" z="0" />
+        <UpVector x="0" y="1" z="0" />
+      </Camera_Right>
+      <Camera_Overview RefBody="Uppercarriage" RefBodyLookAt="Uppercarriage" AcceptHeadTracking="No" fov="45">
+        <Position x="15" y="6" z="-12" />
+        <LookAt x="2" y="3" z="0" />
+        <UpVector x="0" y="1" z="0" />
+      </Camera_Overview>
+    </Cameras>
+    <Light />
+    <Scenes>
+      <Scene1 Camera="Camera_Cabin" FoVy="65" ZFront="0.1" ZRear="5e5" DrawAxis="No" AxisScale="0.05" IsActive="Yes" UseFrames="Yes" isActive="Yes" useFrames="Yes" PositionX="200" PositionY="200" SizeX="200" SizeY="200" />
+    </Scenes>
+    <MirrorViews />
+    <Spots>
+      <RearLight_L RefBody="Uppercarriage" Exp="10" CutOff="40" LinearAttenuation="0" ConstantAttenuation="0" QuadraticAttenuation="0.05" IsActive="No">
+        <Position x="-2.95" y="1.2849999666213989" z="-0.329" Fixed="1" />
+        <Direction x="-1" y="-0.1" z="-0.1" />
+        <Diffuse R="1" G="0.945" B="0.456" A="1" />
+        <Specular R="0.9" G="0.9" B="0.9" A="1" />
+        <Ambient R="0.9" G="0.9" B="0.9" A="1" />
+        <RotationAxis x="0" y="0" z="0" velocity="0" />
+      </RearLight_L>
+      <RearLight_R RefBody="Uppercarriage" Exp="10" CutOff="40" LinearAttenuation="0" ConstantAttenuation="0" QuadraticAttenuation="0.05" IsActive="No">
+        <Position x="-2.95" y="1.2849999666213989" z="0.329" Fixed="1" />
+        <Direction x="-1" y="-0.1" z="0.1" />
+        <Diffuse R="1" G="0.945" B="0.456" A="1" />
+        <Specular R="0.9" G="0.9" B="0.9" A="1" />
+        <Ambient R="0.9" G="0.9" B="0.9" A="1" />
+        <RotationAxis x="0" y="0" z="0" velocity="0" />
+      </RearLight_R>
+      <FrontLight_L RefBody="Uppercarriage" Exp="10" CutOff="40" LinearAttenuation="0" ConstantAttenuation="0" QuadraticAttenuation="0.05" IsActive="No">
+        <Position x="1.0440000295639038" y="1.44" z="-0.953" Fixed="1" />
+        <Direction x="1" y="-0.2" z="-0.2" />
+        <Diffuse R="1" G="0.945" B="0.456" A="1" />
+        <Specular R="0.9" G="0.9" B="0.9" A="1" />
+        <Ambient R="0.9" G="0.9" B="0.9" A="1" />
+        <RotationAxis x="0" y="0" z="0" velocity="0" />
+      </FrontLight_L>
+      <FrontLight_R RefBody="Uppercarriage" Exp="10" CutOff="40" LinearAttenuation="0" ConstantAttenuation="0" QuadraticAttenuation="0.05" IsActive="No">
+        <Position x="1.034000039100647" y="1.44" z="0.953" Fixed="1" />
+        <Direction x="1" y="-0.2" z="0.2" />
+        <Diffuse R="1" G="0.945" B="0.456" A="1" />
+        <Specular R="0.9" G="0.9" B="0.9" A="1" />
+        <Ambient R="0.9" G="0.9" B="0.9" A="1" />
+        <RotationAxis x="0" y="0" z="0" velocity="0" />
+      </FrontLight_R>
+      <WarningLight RefBody="Uppercarriage" Exp="10" CutOff="40" LinearAttenuation="0" ConstantAttenuation="0" QuadraticAttenuation="0.05" IsActive="No">
+        <Position x="0.017330000177025795" y="2.35" z="-0.000688" Fixed="0" />
+        <Direction x="0" y="0" z="1" />
+        <Diffuse R="1" G="0.45" B="0" A="1" />
+        <Specular R="0" G="0" B="0" A="1" />
+        <Ambient R="1" G="0.45" B="0" A="1" />
+        <RotationAxis x="0" y="1" z="0" velocity="8" />
+      </WarningLight>
+    </Spots>
+    <VisualElements />
+    <Vegetation />
+    <Trees />
+    <Meters>
+      <TheMachine label="Meter1" iScreen="0" typeC="Texture" layer="Background" textAlignment="" dataName="" dataScale="1" sizeX="1024" sizeY="768" posX="0" posY="0" minAngle="-135" maxAngle="135" minValue="1" maxValue="100" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/excavator/w_background.png" textureMiddle="" textureTop="" fontName="" fontSize="16" standardEvent="0" standardEventC="" event="0" isVertical="No" isOneDirectionalBar="Yes">
+        <Color r="1" g="1" b="1" a="1" />
+        <EndColor r="1" g="1" b="1" a="1" />
+        <FontColor r="0" g="0" b="0" a="1" />
+        <Children>
+          <MainDials label="Meter5" iScreen="0" typeC="Texture" layer="Background" textAlignment="" dataName="" dataScale="1" sizeX="310" sizeY="550" posX="0" posY="72" minAngle="-135" maxAngle="135" minValue="1" maxValue="100" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/excavator/w_meters_underlay.png" textureMiddle="" textureTop="" fontName="" fontSize="16" standardEvent="0" standardEventC="" event="0" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="1" g="1" b="1" a="1" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </MainDials>
+          <DOverlay label="Meter7" iScreen="0" typeC="Texture" layer="Top" textAlignment="" dataName="" dataScale="1" sizeX="310" sizeY="550" posX="0" posY="72" minAngle="-135" maxAngle="135" minValue="1" maxValue="100" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/excavator/w_meters_overlay.png" textureMiddle="" textureTop="" fontName="" fontSize="16" standardEvent="0" standardEventC="" event="0" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="1" g="1" b="1" a="1" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </DOverlay>
+          <B_CameraBucket label="View0" iScreen="0" typeC="ImageButton" layer="Top" textAlignment="" dataName="" dataScale="1" sizeX="64" sizeY="64" posX="484" posY="110" minAngle="-135" maxAngle="135" minValue="3" maxValue="10" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/excavator/w_view_bucket_inactive.png" textureMiddle="../Graphics/Touchscreen/excavator/w_view_bucket_active.png" textureTop="" fontName="" fontSize="16" standardEvent="4" standardEventC="Camera 4" event="218" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="0" g="0" b="0" a="0" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </B_CameraBucket>
+          <B_CameraCabin label="View1" iScreen="0" typeC="ImageButton" layer="Top" textAlignment="" dataName="" dataScale="1" sizeX="64" sizeY="64" posX="587" posY="94" minAngle="-135" maxAngle="135" minValue="3" maxValue="10" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/excavator/w_view_cabin_inactive.png" textureMiddle="../Graphics/Touchscreen/excavator/w_view_cabin_active.png" textureTop="" fontName="" fontSize="16" standardEvent="0" standardEventC="Camera 0" event="218" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="0" g="0" b="0" a="0" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </B_CameraCabin>
+          <B_CameraRear label="View4" iScreen="0" typeC="ImageButton" layer="Top" textAlignment="" dataName="" dataScale="1" sizeX="64" sizeY="64" posX="854" posY="151" minAngle="-135" maxAngle="135" minValue="3" maxValue="10" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/excavator/w_view_reverse_inactive.png" textureMiddle="../Graphics/Touchscreen/excavator/w_view_reverse_active.png" textureTop="" fontName="" fontSize="16" standardEvent="5" standardEventC="Camera 5" event="218" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="0" g="0" b="0" a="0" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </B_CameraRear>
+          <B_CameraLeft label="View2" iScreen="0" typeC="ImageButton" layer="Top" textAlignment="" dataName="" dataScale="1" sizeX="64" sizeY="64" posX="697" posY="94" minAngle="-135" maxAngle="135" minValue="3" maxValue="10" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/excavator/w_view_left_inactive.png" textureMiddle="../Graphics/Touchscreen/excavator/w_view_left_active.png" textureTop="" fontName="" fontSize="16" standardEvent="8" standardEventC="Camera 8" event="218" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="0" g="0" b="0" a="0" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </B_CameraLeft>
+          <B_CameraRight label="View3" iScreen="0" typeC="ImageButton" layer="Top" textAlignment="" dataName="" dataScale="1" sizeX="64" sizeY="64" posX="696" posY="215" minAngle="-135" maxAngle="135" minValue="3" maxValue="10" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/excavator/w_view_right_inactive.png" textureMiddle="../Graphics/Touchscreen/excavator/w_view_right_active.png" textureTop="" fontName="" fontSize="16" standardEvent="9" standardEventC="Camera 9" event="218" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="0" g="0" b="0" a="0" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </B_CameraRight>
+          <B_CameraOverview label="View5" iScreen="0" typeC="ImageButton" layer="Top" textAlignment="" dataName="" dataScale="1" sizeX="64" sizeY="64" posX="924" posY="151" minAngle="-135" maxAngle="135" minValue="3" maxValue="10" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/excavator/w_view_overview_inactive.png" textureMiddle="../Graphics/Touchscreen/excavator/w_view_overview_active.png" textureTop="" fontName="" fontSize="16" standardEvent="3" standardEventC="Camera 3" event="218" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="0" g="0" b="0" a="0" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </B_CameraOverview>
+          <B_Lights label="Lights" iScreen="0" typeC="ImageButton" layer="Top" textAlignment="" dataName="" dataScale="1" sizeX="64" sizeY="64" posX="522" posY="459" minAngle="-135" maxAngle="135" minValue="3" maxValue="10" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/excavator/w_lights_inactive.png" textureMiddle="../Graphics/Touchscreen/excavator/w_lights_active.png" textureTop="" fontName="" fontSize="16" standardEvent="30" standardEventC="Working lights" event="216" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="0" g="0" b="0" a="0" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </B_Lights>
+          <B_EngineActive label="EngineActive" iScreen="0" typeC="ImageButton" layer="Top" textAlignment="" dataName="DS_EngineRunning" dataScale="1" sizeX="64" sizeY="64" posX="752" posY="459" minAngle="-135" maxAngle="135" minValue="3" maxValue="10" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/excavator/w_engine_inactive.png" textureMiddle="../Graphics/Touchscreen/excavator/w_engine_active.png" textureTop="" fontName="" fontSize="16" standardEvent="26" standardEventC="Start engine" event="213" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="0" g="0" b="0" a="0" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </B_EngineActive>
+          <SI_ToolLocked label="ToolLocked" iScreen="0" typeC="StateImage" layer="Top" textAlignment="" dataName="DS_isToolLocked" dataScale="1" sizeX="32" sizeY="32" posX="376" posY="175" minAngle="-135" maxAngle="135" minValue="0" maxValue="1" textureAngle="0" textureOffsetX="-20" textureOffsetY="20" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/excavator/w_tool_lock_active.png" textureMiddle="../Graphics/Touchscreen/excavator/w_tool_lock_inactive.png" textureTop="" fontName="" fontSize="16" standardEvent="0" standardEventC="" event="0" isVertical="Yes" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="0" g="0" b="0" a="0" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </SI_ToolLocked>
+          <Bar_Rev label="Meter2" iScreen="0" typeC="Bar" layer="High" textAlignment="LEFT_BOTTOM" dataName="DS_MotorRPM" dataScale="1" sizeX="47" sizeY="366" posX="189" posY="223" minAngle="-135" maxAngle="135" minValue="0" maxValue="3000" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="" textureMiddle="" textureTop="" fontName="" fontSize="16" standardEvent="0" standardEventC="" event="0" isVertical="Yes" isOneDirectionalBar="Yes">
+            <Color r="0.47843137254901963" g="0.47843137254901963" b="0.47843137254901963" a="1" />
+            <EndColor r="0.47" g="0.47" b="0.47" a="1" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </Bar_Rev>
+          <Bar_RevWhite label="Meter1" iScreen="0" typeC="Bar" layer="Middle" textAlignment="LEFT_BOTTOM" dataName="DS_MotorRPM" dataScale="1" sizeX="47" sizeY="366" posX="189" posY="223" minAngle="-135" maxAngle="135" minValue="0" maxValue="3000" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="" textureMiddle="" textureTop="" fontName="" fontSize="16" standardEvent="0" standardEventC="" event="0" isVertical="Yes" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="1" g="1" b="1" a="1" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </Bar_RevWhite>
+          <Bar_Fuel label="Meter1" iScreen="0" typeC="Bar" layer="Middle" textAlignment="LEFT_BOTTOM" dataName="DS_Fuel_Meter" dataScale="1" sizeX="162" sizeY="22" posX="133" posY="141" minAngle="-135" maxAngle="135" minValue="2e4" maxValue="0" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="" textureMiddle="" textureTop="" fontName="" fontSize="16" standardEvent="0" standardEventC="" event="0" isVertical="Yes" isOneDirectionalBar="Yes">
+            <Color r="0.47843137254901963" g="0.47843137254901963" b="0.47843137254901963" a="1" />
+            <EndColor r="0.47" g="0.47" b="0.47" a="1" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </Bar_Fuel>
+          <Bar_FuelConsumption label="Meter1" iScreen="0" typeC="Bar" layer="Middle" textAlignment="LEFT_BOTTOM" dataName="DS_Cur_FuelC" dataScale="1" sizeX="162" sizeY="22" posX="133" posY="118" minAngle="-135" maxAngle="135" minValue="0" maxValue="40" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="" textureMiddle="" textureTop="" fontName="" fontSize="16" standardEvent="0" standardEventC="" event="0" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="0.47843137254901963" g="0.47843137254901963" b="0.47843137254901963" a="1" />
+            <EndColor r="0.47" g="0.47" b="0.47" a="1" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </Bar_FuelConsumption>
+          <Text_FuelConsumption label="Meter1" iScreen="0" typeC="TextValue" layer="Top" textAlignment="RIGHT_TOP" dataName="DS_Cur_FuelC" dataScale="1" sizeX="30" sizeY="20" posX="273" posY="122" minAngle="-135" maxAngle="135" minValue="1" maxValue="100" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="" textureMiddle="" textureTop="" fontName="../Graphics/Fonts/digital_readout/Digirtu_.ttf" fontSize="16" standardEvent="0" standardEventC="" event="0" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="0.949" g="1" b="1" a="1" />
+            <EndColor r="1" g="1" b="1" a="1" />
+            <FontColor r="1" g="1" b="1" a="1" />
+          </Text_FuelConsumption>
+          <Bar_Power label="Meter1" iScreen="0" typeC="Bar" layer="Middle" textAlignment="LEFT_BOTTOM" dataName="DS_Power" dataScale="1" sizeX="162" sizeY="22" posX="133" posY="95" minAngle="-135" maxAngle="135" minValue="0" maxValue="220" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="" textureMiddle="" textureTop="" fontName="" fontSize="16" standardEvent="0" standardEventC="" event="0" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="0" g="1" b="0" a="1" />
+            <EndColor r="1" g="0" b="0" a="1" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </Bar_Power>
+          <B_Stop label="Meter1" iScreen="0" typeC="ImageButton" layer="High" textAlignment="LEFT_BOTTOM" dataName="" dataScale="1" sizeX="62" sizeY="44" posX="952" posY="714" minAngle="-135" maxAngle="135" minValue="1" maxValue="100" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/w_quit_active.png" textureMiddle="../Graphics/Touchscreen/w_quit_inactive.png" textureTop="" fontName="" fontSize="16" standardEvent="24" standardEventC="Quit Simulator" event="0" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="1" g="1" b="1" a="1" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </B_Stop>
+          <B_Start label="Meter1" iScreen="0" typeC="ImageButton" layer="High" textAlignment="LEFT_BOTTOM" dataName="" dataScale="1" sizeX="62" sizeY="44" posX="880" posY="714" minAngle="-135" maxAngle="135" minValue="1" maxValue="100" textureAngle="0" textureOffsetX="0" textureOffsetY="0" buttonScaleX="50" buttonScaleY="7" needleScale="1" textureBase="../Graphics/Touchscreen/w_pause.png" textureMiddle="../Graphics/Touchscreen/w_play_pause_active.png" textureTop="" fontName="" fontSize="16" standardEvent="25" standardEventC="Start Simulation" event="0" isVertical="No" isOneDirectionalBar="Yes">
+            <Color r="1" g="1" b="1" a="1" />
+            <EndColor r="1" g="1" b="1" a="1" />
+            <FontColor r="0" g="0" b="0" a="1" />
+          </B_Start>
+        </Children>
+      </TheMachine>
+    </Meters>
+    <BoxSources />
+    <BoxViews />
+    <Sounds AttachedToBody="" soundVolumeMultiplier="1" soundViewerDirectionX="0" soundViewerDirectionY="0" soundViewerDirectionZ="-1" soundViewerPositionX="0" soundViewerPositionY="0" soundViewerPositionZ="0" />
+  </World>
+  <WeatherCollection activeWeather="Clear_Day" automaticTransition="No">
+    <Fog>
+      <Fog1 name="Fog1" IsActive="Yes" Start="1" Stop="200" Level="0.004" Filter="0">
+        <Colour R="0.5" G="0.5" B="0.5" A="1" />
+      </Fog1>
+    </Fog>
+    <Ocean>
+      <Ocean name="Ocean" IsActive="No" IsChoppy="No" IsCrestFoam="No" IsEndless="Yes" IsGodRays="Yes" IsSilt="Yes" IsDistortion="Yes" IsGlare="No" UseShaders="Yes" IsReflections="Yes" IsRefractions="Yes" IsUnderWaterDOF="Yes" SurfaceHeight="0" WindSpeed="10" WindX="0" WindY="1" Depth="1000" ReflectionDamping="0.35" Scale="10.0e-9" ChoppyFactor="3.2" CrestFoamHeight="2.2" FoamBottomHeight="2.2" FoamTopHeight="3" AboveWaterFog="0.0012" UnderwaterFog="0.002" GlareAttenuation="0.8" fftGridSize="64" Resolution="256" NumTiles="17">
+        <LightColor r="105" g="138" b="174" />
+        <AboveWaterFogColor r="199" g="226" b="255" />
+        <UnderwaterFogColor r="27" g="57" b="109" />
+        <UnderwaterDiffuseColor r="27" g="57" b="109" />
+        <UnderwaterAttenuation r="0.014999999664723873" g="0.0074999998323619366" b="0.004999999888241291" />
+        <SunDirection x="-0.18221549689769745" y="-0.67743921279907227" z="-0.71265262365341187" />
+        <ScreenDims x="1920" y="1200" />
+        <CylinderSize x="1900" y="4000" />
+      </Ocean>
+    </Ocean>
+    <Sky>
+      <Daytime name="Daytime" IsActive="Yes" Latitude="38.4765" Longitude="25.493" Radius="1000" MoonScale="0" SunScale="1" GroundHeight="0" year="2011" month="5" day="14" hour="9" minute="30" second="1" dayCycleActive="Yes" dayCycleScale="1" useSouthernHemisphere="Yes" mirrorSouthernHemisphere="Yes" moveWithEyePoint="Yes" drawGroundPlane="No" showStars="No" GroundTextureName="" GroundTextureRepeat="1" horizonTexture="">
+        <Shader shaderPath="../Shaders/sky" horizonTexture="../Cubemap/horizon_run_0.jpg" />
+        <Center x="0" y="0" z="0" />
+        <GroundColor r="0.1" g="1" b="0.1" a="1" />
+      </Daytime>
+      <Evening name="Evening" IsActive="Yes" Latitude="38.4765" Longitude="25.493" Radius="1000" MoonScale="0" SunScale="1" GroundHeight="0" year="2016" month="5" day="14" hour="20" minute="0" second="1" dayCycleActive="Yes" dayCycleScale="1" useSouthernHemisphere="Yes" mirrorSouthernHemisphere="Yes" moveWithEyePoint="Yes" drawGroundPlane="No" showStars="No" GroundTextureName="" GroundTextureRepeat="1" horizonTexture="">
+        <Shader shaderPath="../Shaders/sky" horizonTexture="../Cubemap/horizon_run_0.jpg" />
+        <Center x="0" y="0" z="0" />
+        <GroundColor r="0.1" g="1" b="0.1" a="1" />
+      </Evening>
+    </Sky>
+    <LensFlare>
+      <LensFlare name="LensFlare" IsActive="No" lensFlareGeometry="" lensFlareTexture="" Shader="" />
+    </LensFlare>
+    <Wind>
+      <Light_Wind name="Light_Wind" isActive="Yes" isGusty="No" windSpeed="5" windFrequency="0" windAmplitude="0" windDirection="0" angleVariance="0" />
+      <High_Wind name="High_Wind" isActive="Yes" isGusty="Yes" windSpeed="7" windFrequency="0.2" windAmplitude="0.3" windDirection="90" angleVariance="15" />
+    </Wind>
+    <Precipitation>
+      <Light_Rain name="Light_Rain" isActive="Yes" usePreset="No" useRainIntensity="Yes" useSnowIntensity="Yes" rainPreset="Storm" rainType="Rain" rainIntensity="0.5" rainParticleSize="0.03" rainMaxParticleDensity="8.6" rainParticleSpeed="-7" rainNearTransition="25" rainFarTransition="40" snowIntensity="0.5" snowParticleSize="0.04" snowMaxParticleDensity="4" snowParticleSpeed="-2" snowNearTransition="25" snowFarTransition="40">
+        <rainParticleColor r="0.5" g="0.5" b="0.5" a="0" />
+        <snowParticleColor r="0.8" g="0.8" b="0.8" a="0.5" />
+      </Light_Rain>
+      <No_Rain name="No_Rain" isActive="No" usePreset="No" useRainIntensity="Yes" useSnowIntensity="Yes" rainPreset="Storm" rainType="Rain" rainIntensity="1" rainParticleSize="0.03" rainMaxParticleDensity="8.6" rainParticleSpeed="-7" rainNearTransition="25" rainFarTransition="40" snowIntensity="0.5" snowParticleSize="0.04" snowMaxParticleDensity="4" snowParticleSpeed="-2" snowNearTransition="25" snowFarTransition="40">
+        <rainParticleColor r="0.5" g="0.5" b="0.5" a="0" />
+        <snowParticleColor r="0.8" g="0.8" b="0.8" a="0.5" />
+      </No_Rain>
+    </Precipitation>
+    <WeatherCollection>
+      <Clear_Day name="Clear_Day" fogName="Fog1" oceanName="Ocean" skyName="Daytime" flareName="LensFlare" windName="Light_Wind" precipitationName="No_Rain" autoTransitionTime="60" />
+      <Rainy_Day name="Rainy_Day" fogName="Fog1" oceanName="Ocean" skyName="Daytime" flareName="LensFlare" windName="Light_Wind" precipitationName="Light_Rain" autoTransitionTime="60" />
+      <Clear_Evening name="Clear_Evening" fogName="Fog1" oceanName="Ocean" skyName="Evening" flareName="LensFlare" windName="Light_Wind" precipitationName="No_Rain" autoTransitionTime="60" />
+      <Windy_Day name="Windy_Day" fogName="Fog1" oceanName="Ocean" skyName="Daytime" flareName="LensFlare" windName="High_Wind" precipitationName="No_Rain" autoTransitionTime="60" />
+    </WeatherCollection>
+  </WeatherCollection>
+</DMInputFile>

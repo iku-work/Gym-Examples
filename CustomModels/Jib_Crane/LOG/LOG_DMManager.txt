@@ -1,0 +1,16 @@
+04:00:17: DM Manager started
+04:00:19: Manager selects port 4763
+04:00:19: Manager creating model
+04:00:19: Manager waiting for GUI to connect
+04:00:19: Manager got connect from GUI
+04:00:19: DMHandleNewConnection: Got PDU: ID=1002, Type=1002, dsize=0
+04:00:19: GUI going to receive Environment Parameters
+04:00:19: Manager receiving environment:
+04:00:19: FINISHED RECEIVING ENVIRONMENT, xmlname member: C:\Data\Mevea-Gym-Toolbox2\CustomModels\Jib_Crane\Jib_Crane.mvs
+04:00:19: Manager will parse files
+04:00:19: Manager got environment: 1 solvers
+04:00:19: Adding socket to GUI sockets 0
+04:00:19: GUI connected
+04:00:19: GUI ready, creating solvers
+04:00:19: Creating nSolvers = 1 threads from 1 factories
+04:00:19: Creating solver from Standard Factory

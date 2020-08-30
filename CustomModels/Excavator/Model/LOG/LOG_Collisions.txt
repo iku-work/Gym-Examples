@@ -1,0 +1,199 @@
+Collisions group names:
+
+	group #0: Collision_Ground   has 5 collision pairs and 6 bodies
+	group #1: ClampAttacmentBucket   has 1 collision pairs and 2 bodies
+	group #2: Collision_Bucket_Cabin   has 4 collision pairs and 3 bodies
+	group #3: Collision_Bucket_Undercarriage   has 2 collision pairs and 2 bodies
+	group #4: Collision_Dumper   has 0 collision pairs and 6 bodies
+	group #5: Collision_Dumper_Tyres   has 0 collision pairs and 6 bodies
+	group #6: Collision_GroundUppercarriage   has 1 collision pairs and 2 bodies
+	group #7: Collision_GroundMainBoom   has 1 collision pairs and 2 bodies
+	group #8: Collision_GroundDipperArm   has 1 collision pairs and 2 bodies
+	group #9: Collision_GroundBucket   has 1 collision pairs and 2 bodies
+	group #10: Collision_HopperBucket   has 1 collision pairs and 2 bodies
+A total of 17 collision pairs in 11 groups:
+
+
+
+
+************************************************************************************************
+
+************************************************************************************************
+
+Collisions by groups groups:
+
+Group Collision_Ground:
+		Body1 Ground --------> Graphic1 Ground
+											--------> Body2 Undercarriage --------> Graphic2 Undercarriage
+											--------> Body2 MainBoom --------> Graphic2 MainBoom
+											--------> Body2 DipperArm --------> Graphic2 DipperArm
+											--------> Body2 Uppercarriage --------> Graphic2 Uppercarriage
+											--------> Body2 Bucket --------> Graphic2 Bucket
+
+
+
+		Body1 Undercarriage --------> Graphic1 Undercarriage
+											--------> Body2 Ground --------> Graphic2 Ground
+
+
+
+		Body1 MainBoom --------> Graphic1 MainBoom
+											--------> Body2 Ground --------> Graphic2 Ground
+
+
+
+		Body1 DipperArm --------> Graphic1 DipperArm
+											--------> Body2 Ground --------> Graphic2 Ground
+
+
+
+		Body1 Uppercarriage --------> Graphic1 Uppercarriage
+											--------> Body2 Ground --------> Graphic2 Ground
+
+
+
+		Body1 Bucket --------> Graphic1 Bucket
+											--------> Body2 Ground --------> Graphic2 Ground
+
+
+
+Group ClampAttacmentBucket:
+		Body1 Bucket --------> Graphic1 Bucket
+											--------> Body2 BucketAttachment --------> Graphic2 BucketAttachment
+
+
+
+		Body1 BucketAttachment --------> Graphic1 BucketAttachment
+											--------> Body2 Bucket --------> Graphic2 Bucket
+
+
+
+Group Collision_Bucket_Cabin:
+		Body1 Bucket --------> Graphic1 Bucket
+											--------> Body2 MainBoom --------> Graphic2 MainBoom
+											--------> Body2 Uppercarriage --------> Graphic2 Uppercarriage
+		Body1 Bucket --------> Graphic1 Bucket_Teeths
+											--------> Body2 MainBoom --------> Graphic2 MainBoom
+											--------> Body2 Uppercarriage --------> Graphic2 Uppercarriage
+
+
+
+		Body1 MainBoom --------> Graphic1 MainBoom
+											--------> Body2 Bucket --------> Graphic2 Bucket
+											--------> Body2 Bucket --------> Graphic2 Bucket_Teeths
+
+
+
+		Body1 Uppercarriage --------> Graphic1 Uppercarriage
+											--------> Body2 Bucket --------> Graphic2 Bucket
+											--------> Body2 Bucket --------> Graphic2 Bucket_Teeths
+
+
+
+Group Collision_Bucket_Undercarriage:
+		Body1 Bucket --------> Graphic1 Bucket_Teeths
+											--------> Body2 Undercarriage --------> Graphic2 Undercarriage
+		Body1 Bucket --------> Graphic1 Bucket
+											--------> Body2 Undercarriage --------> Graphic2 Undercarriage
+
+
+
+		Body1 Undercarriage --------> Graphic1 Undercarriage
+											--------> Body2 Bucket --------> Graphic2 Bucket
+											--------> Body2 Bucket --------> Graphic2 Bucket_Teeths
+
+
+
+Group Collision_Dumper:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Group Collision_Dumper_Tyres:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Group Collision_GroundUppercarriage:
+		Body1 Ground --------> Graphic1 Environment_COLL
+											--------> Body2 Uppercarriage --------> Graphic2 Coll_Cabin_Graphics
+
+
+
+		Body1 Uppercarriage --------> Graphic1 Coll_Cabin_Graphics
+											--------> Body2 Ground --------> Graphic2 Environment_COLL
+
+
+
+Group Collision_GroundMainBoom:
+		Body1 Ground --------> Graphic1 Environment_COLL
+											--------> Body2 MainBoom --------> Graphic2 Coll_MainBoom_Graphics
+
+
+
+		Body1 MainBoom --------> Graphic1 Coll_MainBoom_Graphics
+											--------> Body2 Ground --------> Graphic2 Environment_COLL
+
+
+
+Group Collision_GroundDipperArm:
+		Body1 Ground --------> Graphic1 Environment_COLL
+											--------> Body2 DipperArm --------> Graphic2 Coll_DipperArm_Graphics
+
+
+
+		Body1 DipperArm --------> Graphic1 Coll_DipperArm_Graphics
+											--------> Body2 Ground --------> Graphic2 Environment_COLL
+
+
+
+Group Collision_GroundBucket:
+		Body1 Ground --------> Graphic1 Environment_COLL
+											--------> Body2 Bucket --------> Graphic2 Coll_Bucket_Graphics
+
+
+
+		Body1 Bucket --------> Graphic1 Coll_Bucket_Graphics
+											--------> Body2 Ground --------> Graphic2 Environment_COLL
+
+
+
+Group Collision_HopperBucket:
+		Body1 Ground --------> Graphic1 COLL_Hopper_Graphics
+											--------> Body2 Bucket --------> Graphic2 Coll_Bucket_Graphics
+
+
+
+		Body1 Bucket --------> Graphic1 Coll_Bucket_Graphics
+											--------> Body2 Ground --------> Graphic2 COLL_Hopper_Graphics
+
+
+

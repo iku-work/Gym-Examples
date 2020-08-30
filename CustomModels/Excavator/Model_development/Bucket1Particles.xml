@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <Particles>
+    <Granular>
+      <HalfSpaceVolumes>
+        <HalfSpaceVolume name="halfspace_0" attachedToBody="Bucket">
+          <HalfSpace>
+            <Position x="0.2757834" y="-0.0508951" z="0" />
+            <Normal x="-0.0001309" y="1" z="4.0e-7" />
+          </HalfSpace>
+          <HalfSpace>
+            <Position x="0.5469851" y="-0.1344274" z="-8.0e-8" />
+            <Normal x="0.6983378" y="0.7157683" z="10.0e-8" />
+          </HalfSpace>
+          <HalfSpace>
+            <Position x="0.2741581" y="-0.9284487" z="-8.0e-8" />
+            <Normal x="0.4259153" y="-0.9047629" z="0" />
+          </HalfSpace>
+          <HalfSpace>
+            <Position x="0.6956915" y="-0.4947501" z="-8.0e-8" />
+            <Normal x="0.9992371" y="-0.0390547" z="0" />
+          </HalfSpace>
+          <HalfSpace>
+            <Position x="0.6662039" y="-0.3040583" z="0" />
+            <Normal x="0.9316269" y="0.3634165" z="-0" />
+          </HalfSpace>
+          <HalfSpace>
+            <Position x="0.6615378" y="-0.6798054" z="0" />
+            <Normal x="0.9367092" y="-0.3501081" z="-8.0e-8" />
+          </HalfSpace>
+          <HalfSpace>
+            <Position x="0.4462706" y="-0.4523106" z="0.45" />
+            <Normal x="2.0e-7" y="0" z="1" />
+          </HalfSpace>
+          <HalfSpace>
+            <Position x="0.4462703" y="-0.4523099" z="-0.45" />
+            <Normal x="0" y="4.0e-7" z="-1" />
+          </HalfSpace>
+        </HalfSpaceVolume>
+      </HalfSpaceVolumes>
+    </Granular>
+  </Particles>
+</DMInputFile>

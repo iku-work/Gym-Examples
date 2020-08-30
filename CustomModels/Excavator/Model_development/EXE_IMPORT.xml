@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <PARAMETERS>
+    <Start_executable_file description="Run startup exe" name="Start exe" type="other" value="./external/putty.exe;true;" minimum="" maximum="" xml_command="CommandRunBatchFile" increment="0" icon="" unit="" address="" query_at="Start" />
+  </PARAMETERS>
+</DMInputFile>

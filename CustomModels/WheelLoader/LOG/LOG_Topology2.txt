@@ -1,0 +1,120 @@
+
+INFORMATION: Checking model "Scripting_tutorial" topology.
+
+
+INFORMATION: Checking of kinematic loops.
+
+INFORMATION: End of kinematic loop at body "JointingBar3", last constraint is "Bar1_Bar3".
+INFORMATION: End of kinematic loop at body "Bucket", last constraint is "Bar4_Bucket".
+INFORMATION: End of kinematic loop at body "BodyFront", last constraint is "Bar3_BodyFront".
+INFORMATION: End of kinematic loop at body "Boom", last constraint is "Boom_Bucket".
+
+INFORMATION: Setting of parent constraints.
+
+INFORMATION: Parent constraint of body "RearAxle" is "Ground_RearAxle".
+INFORMATION: Parent constraint of body "BodyRear" is "RearAxle_BodyRear".
+INFORMATION: Parent constraint of body "BodyFront" is "BodyRear_BodyFront".
+INFORMATION: Parent constraint of body "Boom" is "BodyFront_Boom".
+INFORMATION: Parent constraint of body "JointingBar1" is "Boom_Bar1".
+INFORMATION: Parent constraint of body "JointingBar3" is "Bar1_Bar3".
+INFORMATION: Parent constraint of body "JointingBar2" is "Boom_Bar2".
+INFORMATION: Parent constraint of body "JointingBar4" is "Bar2_Bar4".
+INFORMATION: Parent constraint of body "Bucket" is "Bar4_Bucket".
+
+INFORMATION: Checking of constraint order.
+
+Current body Bucket, parent constraint Bar4_Bucket constraintIndex = 9, parent body JointingBar4
+Current body JointingBar4, parent constraint Bar2_Bar4 constraintIndex = 8, parent body JointingBar2
+Current body JointingBar2, parent constraint Boom_Bar2 constraintIndex = 7, parent body Boom
+Current body Boom, parent constraint BodyFront_Boom constraintIndex = 3, parent body BodyFront
+Current body BodyFront, parent constraint BodyRear_BodyFront constraintIndex = 2, parent body BodyRear
+Current body BodyRear, parent constraint RearAxle_BodyRear constraintIndex = 1, parent body RearAxle
+Current body RearAxle, parent constraint Ground_RearAxle constraintIndex = 0, parent body Ground
+
+Current body JointingBar4, parent constraint Bar2_Bar4 constraintIndex = 8, parent body JointingBar2
+Current body JointingBar2, parent constraint Boom_Bar2 constraintIndex = 7, parent body Boom
+Current body Boom, parent constraint BodyFront_Boom constraintIndex = 3, parent body BodyFront
+Current body BodyFront, parent constraint BodyRear_BodyFront constraintIndex = 2, parent body BodyRear
+Current body BodyRear, parent constraint RearAxle_BodyRear constraintIndex = 1, parent body RearAxle
+Current body RearAxle, parent constraint Ground_RearAxle constraintIndex = 0, parent body Ground
+
+Current body JointingBar2, parent constraint Boom_Bar2 constraintIndex = 7, parent body Boom
+Current body Boom, parent constraint BodyFront_Boom constraintIndex = 3, parent body BodyFront
+Current body BodyFront, parent constraint BodyRear_BodyFront constraintIndex = 2, parent body BodyRear
+Current body BodyRear, parent constraint RearAxle_BodyRear constraintIndex = 1, parent body RearAxle
+Current body RearAxle, parent constraint Ground_RearAxle constraintIndex = 0, parent body Ground
+
+Current body JointingBar3, parent constraint Bar1_Bar3 constraintIndex = 5, parent body JointingBar1
+Current body JointingBar1, parent constraint Boom_Bar1 constraintIndex = 4, parent body Boom
+Current body Boom, parent constraint BodyFront_Boom constraintIndex = 3, parent body BodyFront
+Current body BodyFront, parent constraint BodyRear_BodyFront constraintIndex = 2, parent body BodyRear
+Current body BodyRear, parent constraint RearAxle_BodyRear constraintIndex = 1, parent body RearAxle
+Current body RearAxle, parent constraint Ground_RearAxle constraintIndex = 0, parent body Ground
+
+Current body JointingBar1, parent constraint Boom_Bar1 constraintIndex = 4, parent body Boom
+Current body Boom, parent constraint BodyFront_Boom constraintIndex = 3, parent body BodyFront
+Current body BodyFront, parent constraint BodyRear_BodyFront constraintIndex = 2, parent body BodyRear
+Current body BodyRear, parent constraint RearAxle_BodyRear constraintIndex = 1, parent body RearAxle
+Current body RearAxle, parent constraint Ground_RearAxle constraintIndex = 0, parent body Ground
+
+Current body Boom, parent constraint BodyFront_Boom constraintIndex = 3, parent body BodyFront
+Current body BodyFront, parent constraint BodyRear_BodyFront constraintIndex = 2, parent body BodyRear
+Current body BodyRear, parent constraint RearAxle_BodyRear constraintIndex = 1, parent body RearAxle
+Current body RearAxle, parent constraint Ground_RearAxle constraintIndex = 0, parent body Ground
+
+Current body BodyFront, parent constraint BodyRear_BodyFront constraintIndex = 2, parent body BodyRear
+Current body BodyRear, parent constraint RearAxle_BodyRear constraintIndex = 1, parent body RearAxle
+Current body RearAxle, parent constraint Ground_RearAxle constraintIndex = 0, parent body Ground
+
+Current body BodyRear, parent constraint RearAxle_BodyRear constraintIndex = 1, parent body RearAxle
+Current body RearAxle, parent constraint Ground_RearAxle constraintIndex = 0, parent body Ground
+
+Current body RearAxle, parent constraint Ground_RearAxle constraintIndex = 0, parent body Ground
+
+
+
+INFORMATION: Updated model topology:
+
+INFORMATION: Bodies
+INFORMATION: Parent body of "RearAxle" is "Ground".
+INFORMATION: Parent body of "BodyRear" is "RearAxle".
+INFORMATION: Parent body of "BodyFront" is "BodyRear".
+INFORMATION: Parent body of "Boom" is "BodyFront".
+INFORMATION: Parent body of "JointingBar1" is "Boom".
+INFORMATION: Parent body of "JointingBar3" is "JointingBar1".
+INFORMATION: Parent body of "JointingBar2" is "Boom".
+INFORMATION: Parent body of "JointingBar4" is "JointingBar2".
+INFORMATION: Parent body of "Bucket" is "JointingBar4".
+
+INFORMATION: Constraints
+INFORMATION: Preceding body of constraint "Ground_RearAxle" is "Ground".
+INFORMATION: Following body of constraint "Ground_RearAxle" is "RearAxle".
+
+INFORMATION: Preceding body of constraint "RearAxle_BodyRear" is "RearAxle".
+INFORMATION: Following body of constraint "RearAxle_BodyRear" is "BodyRear".
+
+INFORMATION: Preceding body of constraint "BodyRear_BodyFront" is "BodyRear".
+INFORMATION: Following body of constraint "BodyRear_BodyFront" is "BodyFront".
+
+INFORMATION: Preceding body of constraint "BodyFront_Boom" is "BodyFront".
+INFORMATION: Following body of constraint "BodyFront_Boom" is "Boom".
+
+INFORMATION: Preceding body of constraint "Boom_Bar1" is "Boom".
+INFORMATION: Following body of constraint "Boom_Bar1" is "JointingBar1".
+
+INFORMATION: Preceding body of constraint "Bar1_Bar3" is "JointingBar1".
+INFORMATION: Following body of constraint "Bar1_Bar3" is "JointingBar3".
+
+INFORMATION: Constraint "Bar3_BodyFront" is a cut joint.
+
+INFORMATION: Preceding body of constraint "Boom_Bar2" is "Boom".
+INFORMATION: Following body of constraint "Boom_Bar2" is "JointingBar2".
+
+INFORMATION: Preceding body of constraint "Bar2_Bar4" is "JointingBar2".
+INFORMATION: Following body of constraint "Bar2_Bar4" is "JointingBar4".
+
+INFORMATION: Preceding body of constraint "Bar4_Bucket" is "JointingBar4".
+INFORMATION: Following body of constraint "Bar4_Bucket" is "Bucket".
+
+INFORMATION: Constraint "Boom_Bucket" is a cut joint.
+

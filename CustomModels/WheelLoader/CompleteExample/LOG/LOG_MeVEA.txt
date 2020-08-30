@@ -1,0 +1,4 @@
+16:42:25: Model Scripting_tutorial loaded, using config and resources from C:/Program Files (x86)/Mevea/
+16:42:28: Setting camera to body 0: Ground
+16:42:28: Head Tracking inactive
+16:42:28: Total loading time 3.809950

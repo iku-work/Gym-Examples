@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?Mevea_Task_Editor v0.0?>
+<DMInputFile>
+ <TaskDefinitions>
+  <TaskGroups>
+   <TaskGroup_1 description="Excavator Tasks" Tasks="Level_1_start;Load_soil_to_hopper;Load_soil_to_hopper_success;Load_soil_to_hopper_fail;" image=""/>
+  </TaskGroups>
+  <Tasks>
+   <Level_1_start isContinuous="No" StartConditionNames="" maximumduration="20.0" EndConditions="Skip_button_pressed" endSimulationOnCriticalError="No" ActivateParticleGroup="" TaskFaults="" Trackers="" ReStoreParticleStateFromFile="" isActive="No" recordResultsInterval="1.0" hasTimer="No" CriticalEndConditions="" maximumduration_as_cerror="No" ErrorConditions="" StoreParticleStateToFile="">
+    <WaitForStartInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <StartInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage="Soil_loading_to_hopper_start"/>
+    <EndInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <ErrorInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <CriticalErrorInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <GeneralInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+   </Level_1_start>
+   <Load_soil_to_hopper_success isContinuous="No" StartConditionNames="Soil_loading_task_success" maximumduration="20.0" EndConditions="" endSimulationOnCriticalError="Yes" ActivateParticleGroup="" TaskFaults="" Trackers="" ReStoreParticleStateFromFile="" isActive="No" recordResultsInterval="1.0" hasTimer="No" CriticalEndConditions="Skip_button_pressed" maximumduration_as_cerror="Yes" ErrorConditions="" StoreParticleStateToFile="">
+    <WaitForStartInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <StartInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage="" Meter="Soil_loading_online_report;Engine_rpm"/>
+    <EndInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <ErrorInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <CriticalErrorInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <GeneralInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+   </Load_soil_to_hopper_success>
+   <Load_soil_to_hopper_fail isContinuous="Yes" StartConditionNames="Soil_loading_task_failed" maximumduration="20.0" EndConditions="" endSimulationOnCriticalError="Yes" ActivateParticleGroup="" TaskFaults="" Trackers="" ReStoreParticleStateFromFile="" isActive="No" recordResultsInterval="1.0" hasTimer="No" CriticalEndConditions="Skip_button_pressed" maximumduration_as_cerror="Yes" ErrorConditions="" StoreParticleStateToFile="">
+    <WaitForStartInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <StartInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage="Soil_loading_to_hopper_fail"/>
+    <EndInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <ErrorInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <CriticalErrorInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <GeneralInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+   </Load_soil_to_hopper_fail>
+   <Load_soil_to_hopper isContinuous="No" StartConditionNames="" maximumduration="300.0" EndConditions="Total_mass_in_hopper" endSimulationOnCriticalError="No" ActivateParticleGroup="" TaskFaults="" Trackers="Bucket_in_relation_to_lowercarriage;Time_tracker" ReStoreParticleStateFromFile="" isActive="No" recordResultsInterval="1.0" hasTimer="Yes" CriticalEndConditions="" maximumduration_as_cerror="Yes" ErrorConditions="" StoreParticleStateToFile="">
+    <WaitForStartInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <StartInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage="" Meter="Soil_progress;Engine_rpm"/>
+    <EndInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <ErrorInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <CriticalErrorInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <GeneralInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+   </Load_soil_to_hopper>
+   <Level_2_start isContinuous="No" StartConditionNames="" maximumduration="0.0" endSimulationOnCriticalError="Yes" EndConditions="" ActivateParticleGroup="" TaskFaults="" Trackers="" ReStoreParticleStateFromFile="" isActive="No" recordResultsInterval="1.0" hasTimer="Yes" maximumduration_as_cerror="Yes" CriticalEndConditions="" ErrorConditions="" StoreParticleStateToFile="">
+    <WaitForStartInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <StartInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <EndInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <ErrorInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <CriticalErrorInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+    <GeneralInstructions Sound="" ImageCollection="" Graphic="" Text="" HudImage=""/>
+   </Level_2_start>
+  </Tasks>
+  <Conditions>
+   <ValueConditions>
+    <Total_mass_in_hopper valueLimit="1000" primName="DS_TASK_Mass_in_hopper" subType="DataSource" limitType="Greater" holdTime="1"/>
+    <Soil_loading_task_failed valueLimit="0" primName="DS_TASK_SoilLoading_critical_error" subType="DataSource" limitType="Greater" holdTime="1"/>
+    <Skip_button_pressed valueLimit="0" primName="DS_TASK_Close_instruction" subType="DataSource" limitType="Greater" holdTime="0"/>
+    <Soil_loading_task_success valueLimit="1" primName="DS_TASK_SoilLoading_critical_error" subType="DataSource" limitType="Less" holdTime="0"/>
+    <Soil_loading_level_2 valueLimit="0" primName="DS_TASK_Close_instruction" subType="DataSource" limitType="Equal" holdTime="1"/>
+   </ValueConditions>
+  </Conditions>
+  <VisualHelpers>
+   <Meters>
+    <Soil_loading_online_report y="0.5" width="1024" background_image="../Graphics/TaskImages/Soil_loading_to_hopper_success.png" type="Number Display" x="0.5" height="768">
+     <Duration_minutes font="../Graphics/TaskImages/ahronbd.ttf" alignment="LEFT_CENTER" numdecimals="0" width="120" position_x="386" variable="DS_SoilLoadingTime_min" font_color="1;1;1;1" height="60" position_y="445"/>
+     <Duration_seconds font="../Graphics/TaskImages/ahronbd.ttf" alignment="RIGHT_CENTER" numdecimals="0" width="120" position_x="515" variable="DS_SoilLoadingTime_sec" font_color="1;1;1;1" height="60" position_y="445"/>
+    </Soil_loading_online_report>
+    <Engine_rpm min_value="1500" gauge_background_image="../Graphics/TaskImages/gauge_back_200x200.png" max_value="2400" gauge_tap_image="../Graphics/TaskImages/tap_500x500.png" gauge_needle_width="5" y="0.769444" gauge_needle_image="../Graphics/TaskImages/Handle_for_500x500_gauge.png" width="200" gauge_min_angle="-90.0" gauge_needle_height="80" gauge_tap_width="50" type="Gauge" x="0.876563" gauge_max_angle="90.0" variable="DS_MotorRPM" height="200"/>
+    <Soil_progress min_value="0.0" bar_margin_bottom="0" max_value="1000" y="0.808333" width="64" bar_margin_right="0" type="Bar Diagram" x="0.0359375" foreground_image="../Graphics/TaskImages/Bar_0_50_100_trans_ripped.png" background_image="../Graphics/TaskImages/BG_progress.png" bar_margin_top="0" variable="DS_TASK_Mass_in_hopper" bar_margin_left="0" height="256">
+     <top_color g="0" a="1" r="0" b="1"/>
+     <bottom_color g="0" a="1" r="1" b="0"/>
+    </Soil_progress>
+   </Meters>
+   <HudImage>
+    <Soil_loading_to_hopper_start imageFile="../Graphics/TaskImages/Soil_loading_to_hopper_start.png" y="0.5" displaytime="0" x="0.5" alpha="1" scaley="1" scalex="1"/>
+    <Soil_loading_to_hopper_fail imageFile="../Graphics/TaskImages/Soil_loading_to_hopper_fail.png" y="0.5" displaytime="0" x="0.5" alpha="1" scaley="1" scalex="1"/>
+   </HudImage>
+  </VisualHelpers>
+  <Trackers>
+   <PositionTrackers>
+    <Bucket_in_relation_to_lowercarriage refObject="Undercarriage" subType="TRACK_XZ" explanation="" highRangeResultText="" lowRangeLimit="0.0" LongRangeLimit="1.0" midRangeResultText="" midRangeLimit="0.5" lowRangeResutText="" extremeRangeResultText="" trackObject="Bucket" recordResultsType="PLOT2D">
+     <trackablePosition y="0" z="0" x="0"/>
+     <referencePosition y="0" z="0" x="0"/>
+    </Bucket_in_relation_to_lowercarriage>
+   </PositionTrackers>
+   <ValueTrackers>
+    <Time_tracker explanation="Simulation time" highRangeResultText="" lowRangeLimit="0.0" LongRangeLimit="1.0" PrintName="DS_Time" midRangeResultText="" midRangeLimit="0.5" lowRangeResutText="" extremeRangeResultText="" recordResultsType="FINALVALUES"/>
+   </ValueTrackers>
+  </Trackers>
+ </TaskDefinitions>
+</DMInputFile>

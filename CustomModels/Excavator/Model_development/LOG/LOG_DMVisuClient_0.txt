@@ -1,0 +1,5 @@
+14:09:13: DMClient started, nSolvers=0, solverID=1002
+14:09:13: Allocating memory for message vectors, m_nkpl=-1, m_nvis=-1, size=1624 (additional 100)
+14:09:13: ID 1002, sending pdu 1002 
+14:09:13: filename: Excavator.mvs, length 13
+14:10:12: DMClient destr, nSolvers=0, solverID=1002

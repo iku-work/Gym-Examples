@@ -1,0 +1,26 @@
+FormatVersion=5.0 // Do not edit this line!
+Title="Mevea-Excavator"
+
+{SEND}
+
+[ExcavatorOutput]
+ID=650h
+DLC=8
+Var=MotorRPM unsigned 0,16 /u:rpm
+Var=Speed unsigned 16,8 /u:km/h
+
+{RECEIVE}
+
+[ExcavatorInput1]
+ID=600h
+DLC=8
+CycleTime=100 -p
+Var=BucketPos unsigned 0,16 /u:mA /max:600
+Var=BucketNeg unsigned 16,16 /u:mA /max:600
+
+[ExcavatorInput2]
+ID=610h
+DLC=8
+Var=SlewNeg unsigned 0,16 /u:mA /max:600
+Var=SlewPos unsigned 16,16 /u:mA /max:600
+

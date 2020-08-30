@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MeVEASimulation>
+  <Environment simulationName="Tutorial 3" useParticles="Yes" particlesInThread="Yes" particleCellsInThread="Yes" collisionGroupDefinitionsFile="" nCollisionThreads="4" />
+  <Models ModelFile="Tutorial_Scripting.xml" solverID="1" useArchive="No" MPKFile="" hydraulicsSchematicFile="" />
+  <World WorldFile="Tutorial_Scripting_world.xml" />
+</MeVEASimulation>

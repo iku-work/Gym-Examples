@@ -1,0 +1,61 @@
+Collisions group names:
+
+	group #0: Bucket_Ground   has 1 collision pairs and 2 bodies
+	group #1: Bucket_Dumpster   has 1 collision pairs and 2 bodies
+	group #2: Bucket_Fence   has 1 collision pairs and 2 bodies
+	group #3: Bucket_Loading_area   has 1 collision pairs and 2 bodies
+A total of 4 collision pairs in 4 groups:
+
+
+
+
+************************************************************************************************
+
+************************************************************************************************
+
+Collisions by groups groups:
+
+Group Bucket_Ground:
+		Body1 Bucket --------> Graphic1 Coll_Bucket
+											--------> Body2 Ground --------> Graphic2 Graphics_Ground
+
+
+
+		Body1 Ground --------> Graphic1 Graphics_Ground
+											--------> Body2 Bucket --------> Graphic2 Coll_Bucket
+
+
+
+Group Bucket_Dumpster:
+		Body1 Bucket --------> Graphic1 Coll_Bucket
+											--------> Body2 Ground --------> Graphic2 Coll_Dumpster
+
+
+
+		Body1 Ground --------> Graphic1 Coll_Dumpster
+											--------> Body2 Bucket --------> Graphic2 Coll_Bucket
+
+
+
+Group Bucket_Fence:
+		Body1 Bucket --------> Graphic1 Coll_Bucket
+											--------> Body2 Ground --------> Graphic2 Coll_FencedArea
+
+
+
+		Body1 Ground --------> Graphic1 Coll_FencedArea
+											--------> Body2 Bucket --------> Graphic2 Coll_Bucket
+
+
+
+Group Bucket_Loading_area:
+		Body1 Bucket --------> Graphic1 Coll_Bucket
+											--------> Body2 Ground --------> Graphic2 Coll_LoadingFence
+
+
+
+		Body1 Ground --------> Graphic1 Coll_LoadingFence
+											--------> Body2 Bucket --------> Graphic2 Coll_Bucket
+
+
+

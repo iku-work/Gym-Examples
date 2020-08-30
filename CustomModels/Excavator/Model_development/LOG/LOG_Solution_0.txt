@@ -1,0 +1,15 @@
+Log started
+Starting Init
+Init Collisions
+Init TyreCollisions
+End Collision Init
+Setting Client Parameters
+Creating External Connections
+Calling Case Specific Init
+Calling CreateObjects
+Initializing particles
+Creating PrintRequests
+Initializing ScriptEngine
+Calling InitializeObjects
+Solver initialization complete
+Waiting for start command

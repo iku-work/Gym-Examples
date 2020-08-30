@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <World>
+    <Properties useAntiAliasing="Yes" aaSize="8" vsync="Yes" useFragmentLight="Yes" overrideOptions="No" maxActiveLights="8" defaultSceneShader="" useHeadTracking="No" headTrackingMode="Translational" computeNearFar="Yes" displaySizeWidth="0.4" displaySizeHeight="0.3" displaySizeDistance="0.5" MaterialsFileLocation="Material_library.xml" motionblur_persistence="0" textureScaleDownFactor="1" textureMaxResolution="512" environmentReflectionCube="" mergeTextures="No" alpha_func_c="GREATER" alpha_ref="0.01" programDefinitions="" textureDefinitions="" plantDefinitions="" plantPositions="" setClearColor="No" useShadows="Yes" shadowUseFragment="Yes" shadowTextureSize="1024" shadowMinLightMargin="10" shadowMaxFarPlane="50" shadowStyle="1" shadowDebugDraw="No" shadowIntensity="0.5" shadowFog="No" defaultShadowShader="" useForestShadow="No" useTouchScreen="No" touchScreenPositionX="0" touchScreenPositionY="0" touchScreenSizeX="1024" touchScreenSizeY="768" touchScreenNames="Meters;Scale" touchScreenFontName="" touchScreenFontSize="18" touchScreenMenuTextureBase="" touchScreenMenuTextureHover="">
+      <clearColor R="0" G="0" B="0" A="1" />
+      <cameraLimits useCameraLimits="No" xMin="-1000" xMax="1000" yMin="0" yMax="100" zMin="-1000" zMax="1000" />
+      <touchScreenBackgroundColor R="0.18" G="0.169" B="0.153" A="1" />
+      <touchScreenFontColor R="0.26" G="0.26" B="0.26" A="1" />
+    </Properties>
+    <Cameras>
+      <Camera_Left RefBody="Uppercarriage" RefBodyLookAt="Uppercarriage" AcceptHeadTracking="No" AcceptViewAdjustments="Yes" fov="45">
+        <Position x="3" y="6" z="12" />
+        <LookAt x="2" y="0" z="0" />
+        <UpVector x="0" y="1" z="0" />
+      </Camera_Left>
+      <Camera_Front RefBody="Uppercarriage" RefBodyLookAt="Uppercarriage" AcceptHeadTracking="No" AcceptViewAdjustments="Yes" fov="45">
+        <Position x="10" y="7" z="0" />
+        <LookAt x="4" y="1" z="0" />
+        <UpVector x="0" y="1" z="0" />
+      </Camera_Front>
+      <Camera_Right RefBody="Uppercarriage" RefBodyLookAt="Uppercarriage" AcceptHeadTracking="No" AcceptViewAdjustments="Yes" fov="45">
+        <Position x="3" y="6" z="-12" />
+        <LookAt x="2" y="3" z="0" />
+        <UpVector x="0" y="1" z="0" />
+      </Camera_Right>
+      <Camera_Overview RefBody="Uppercarriage" RefBodyLookAt="Uppercarriage" AcceptHeadTracking="No" AcceptViewAdjustments="Yes" fov="45">
+        <Position x="15" y="6" z="-12" />
+        <LookAt x="2" y="3" z="0" />
+        <UpVector x="0" y="1" z="0" />
+      </Camera_Overview>
+    </Cameras>
+    <Scenes>
+      <Scene1 Camera="Camera_Left" DrawAxis="No" FoVy="65" ZFront="0.1" ZRear="5e5" AxisScale="0.05" useFrames="Yes" isActive="Yes" stayOnTop="No" SizeX="200" SizeY="200" PositionX="200" PositionY="200" />
+    </Scenes>
+    <Spots>
+      <RearLight_L RefBody="Uppercarriage" IsActive="No" Exp="10" CutOff="40" LinearAttenuation="0" ConstantAttenuation="0" QuadraticAttenuation="0.05" ShadowActive="No" HaloActive="No" LightActive="Yes">
+        <Position x="-2.95" y="1.2849999666213989258" z="-0.329" Fixed="1" />
+        <Direction x="-1" y="-0.1" z="-0.1" />
+        <Diffuse R="1" G="0.945" B="0.456" A="1" />
+        <Ambient R="0.9" G="0.9" B="0.9" A="1" />
+        <Specular R="0.9" G="0.9" B="0.9" A="1" />
+        <RotationAxis x="0" y="0" z="0" velocity="0" />
+      </RearLight_L>
+      <RearLight_R RefBody="Uppercarriage" IsActive="No" Exp="10" CutOff="40" LinearAttenuation="0" ConstantAttenuation="0" QuadraticAttenuation="0.05" ShadowActive="No" HaloActive="No" LightActive="Yes">
+        <Position x="-2.95" y="1.2849999666213989258" z="0.329" Fixed="1" />
+        <Direction x="-1" y="-0.1" z="0.1" />
+        <Diffuse R="1" G="0.945" B="0.456" A="1" />
+        <Ambient R="0.9" G="0.9" B="0.9" A="1" />
+        <Specular R="0.9" G="0.9" B="0.9" A="1" />
+        <RotationAxis x="0" y="0" z="0" velocity="0" />
+      </RearLight_R>
+      <FrontLight_L RefBody="Uppercarriage" IsActive="No" Exp="10" CutOff="40" LinearAttenuation="0" ConstantAttenuation="0" QuadraticAttenuation="0.05" ShadowActive="No" HaloActive="No" LightActive="Yes">
+        <Position x="1.0440000295639038086" y="1.44" z="-0.953" Fixed="1" />
+        <Direction x="1" y="-0.2" z="-0.2" />
+        <Diffuse R="1" G="0.945" B="0.456" A="1" />
+        <Ambient R="0.9" G="0.9" B="0.9" A="1" />
+        <Specular R="0.9" G="0.9" B="0.9" A="1" />
+        <RotationAxis x="0" y="0" z="0" velocity="0" />
+      </FrontLight_L>
+      <FrontLight_R RefBody="Uppercarriage" IsActive="No" Exp="10" CutOff="40" LinearAttenuation="0" ConstantAttenuation="0" QuadraticAttenuation="0.05" ShadowActive="No" HaloActive="No" LightActive="Yes">
+        <Position x="1.0340000391006469727" y="1.44" z="0.953" Fixed="1" />
+        <Direction x="1" y="-0.2" z="0.2" />
+        <Diffuse R="1" G="0.945" B="0.456" A="1" />
+        <Ambient R="0.9" G="0.9" B="0.9" A="1" />
+        <Specular R="0.9" G="0.9" B="0.9" A="1" />
+        <RotationAxis x="0" y="0" z="0" velocity="0" />
+      </FrontLight_R>
+      <WarningLight RefBody="Uppercarriage" IsActive="No" Exp="10" CutOff="40" LinearAttenuation="0" ConstantAttenuation="0" QuadraticAttenuation="0.05" ShadowActive="No" HaloActive="No" LightActive="Yes">
+        <Position x="0.017330000177025794983" y="2.35" z="-0.000688" Fixed="0" />
+        <Direction x="0" y="0" z="1" />
+        <Diffuse R="1" G="0.45" B="0" A="1" />
+        <Ambient R="1" G="0.45" B="0" A="1" />
+        <Specular R="0" G="0" B="0" A="1" />
+        <RotationAxis x="0" y="1" z="0" velocity="8" />
+      </WarningLight>
+    </Spots>
+    <Sounds AttachedToBody="" soundVolumeMultiplier="1" soundViewerDirectionX="0" soundViewerDirectionY="0" soundViewerDirectionZ="-1" soundViewerPositionX="0" soundViewerPositionY="0" soundViewerPositionZ="0" />
+  </World>
+  <WeatherCollection activeWeather="Clear_Day" automaticTransition="No">
+    <Fog>
+      <Fog1 name="Fog1" IsActive="Yes" Start="1" Stop="200" Level="0.004" Filter="Linear">
+        <Colour R="0.5" G="0.5" B="0.5" A="1" />
+      </Fog1>
+    </Fog>
+    <Ocean>
+      <Ocean name="Ocean" IsActive="No" SurfaceHeight="0" IsGodRays="Yes" IsEndless="Yes" IsSilt="Yes" IsDistortion="Yes" IsGlare="No" GlareAttenuation="0.8" UseShaders="Yes" IsReflections="Yes" IsRefractions="Yes" IsUnderWaterDOF="Yes" IsChoppy="No" ChoppyFactor="3.2" WindSpeed="10" WindX="0" WindY="1" ReflectionDamping="0.35" Depth="1000" Scale="10.0e-9" CrestFoamHeight="2.2" FoamBottomHeight="2.2" FoamTopHeight="3" AboveWaterFog="0.0012" UnderwaterFog="0.002" fftGridSize="64" Resolution="256" NumTiles="17">
+        <LightColor r="105" g="138" b="174" />
+        <AboveWaterFogColor r="199" g="226" b="255" />
+        <UnderwaterFogColor r="27" g="57" b="109" />
+        <UnderwaterDiffuseColor r="27" g="57" b="109" />
+        <UnderwaterAttenuation r="0.015" g="0.0075" b="0.005" />
+        <SunDirection x="-0.18221549689769744873" y="-0.67743921279907226563" z="-0.71265262365341186523" />
+        <ScreenDims x="1920" y="1200" />
+        <CylinderSize x="1900" y="4000" />
+      </Ocean>
+    </Ocean>
+    <Sky>
+      <Daytime name="Daytime" IsActive="Yes" Latitude="38.4765" Longitude="25.493" Radius="1000" MoonScale="0" SunScale="1" useSouthernHemisphere="Yes" mirrorSouthernHemisphere="Yes" moveWithEyePoint="Yes" drawGroundPlane="No" showStars="No" year="2011" month="5" day="14" hour="9" minute="30" second="1" dayCycleActive="Yes" dayCycleScale="1" GroundHeight="0" GroundTextureName="" GroundTextureRepeat="1">
+        <Center x="0" y="0" z="0" />
+        <GroundColor r="0.1" g="1" b="0.1" a="1" />
+        <Shader shaderPath="../Shaders/sky" horizonTexture="../Cubemap/horizon_run_0.jpg" />
+      </Daytime>
+      <Evening name="Evening" IsActive="Yes" Latitude="38.4765" Longitude="25.493" Radius="1000" MoonScale="0" SunScale="1" useSouthernHemisphere="Yes" mirrorSouthernHemisphere="Yes" moveWithEyePoint="Yes" drawGroundPlane="No" showStars="No" year="2016" month="5" day="14" hour="20" minute="0" second="1" dayCycleActive="Yes" dayCycleScale="1" GroundHeight="0" GroundTextureName="" GroundTextureRepeat="1">
+        <Center x="0" y="0" z="0" />
+        <GroundColor r="0.1" g="1" b="0.1" a="1" />
+        <Shader shaderPath="../Shaders/sky" horizonTexture="../Cubemap/horizon_run_0.jpg" />
+      </Evening>
+    </Sky>
+    <LensFlare>
+      <LensFlare name="LensFlare" IsActive="No" lensFlareGeometry="" lensFlareTexture="" Shader="" />
+    </LensFlare>
+    <Wind>
+      <Light_Wind name="Light_Wind" isActive="Yes" isGusty="No" windSpeed="5" windFrequency="0" windAmplitude="0" windDirection="0" angleVariance="0" />
+      <High_Wind name="High_Wind" isActive="Yes" isGusty="Yes" windSpeed="7" windFrequency="0.2" windAmplitude="0.3" windDirection="90" angleVariance="15" />
+    </Wind>
+    <Precipitation>
+      <Light_Rain name="Light_Rain" isActive="Yes" rainType="Rain" usePreset="No" rainPreset="Storm" useRainIntensity="Yes" rainIntensity="0.5" rainParticleSize="0.03" rainMaxParticleDensity="8.6" rainParticleSpeed="-7" rainNearTransition="25" rainFarTransition="40" useSnowIntensity="Yes" snowIntensity="0.5" snowParticleSize="0.04" snowMaxParticleDensity="4" snowParticleSpeed="-2" snowNearTransition="25" snowFarTransition="40">
+        <rainParticleColor r="0.5" g="0.5" b="0.5" a="0" />
+        <snowParticleColor r="0.8" g="0.8" b="0.8" a="0.5" />
+      </Light_Rain>
+      <No_Rain name="No_Rain" isActive="No" rainType="Rain" usePreset="No" rainPreset="Storm" useRainIntensity="Yes" rainIntensity="1" rainParticleSize="0.03" rainMaxParticleDensity="8.6" rainParticleSpeed="-7" rainNearTransition="25" rainFarTransition="40" useSnowIntensity="Yes" snowIntensity="0.5" snowParticleSize="0.04" snowMaxParticleDensity="4" snowParticleSpeed="-2" snowNearTransition="25" snowFarTransition="40">
+        <rainParticleColor r="0.5" g="0.5" b="0.5" a="0" />
+        <snowParticleColor r="0.8" g="0.8" b="0.8" a="0.5" />
+      </No_Rain>
+    </Precipitation>
+    <WeatherCollection>
+      <Clear_Day name="Clear_Day" oceanName="Ocean" skyName="Daytime" flareName="LensFlare" windName="Light_Wind" precipitationName="No_Rain" fogName="Fog1" autoTransitionTime="60" />
+      <Rainy_Day name="Rainy_Day" oceanName="Ocean" skyName="Daytime" flareName="LensFlare" windName="Light_Wind" precipitationName="Light_Rain" fogName="Fog1" autoTransitionTime="60" />
+      <Clear_Evening name="Clear_Evening" oceanName="Ocean" skyName="Evening" flareName="LensFlare" windName="Light_Wind" precipitationName="No_Rain" fogName="Fog1" autoTransitionTime="60" />
+      <Windy_Day name="Windy_Day" oceanName="Ocean" skyName="Daytime" flareName="LensFlare" windName="High_Wind" precipitationName="No_Rain" fogName="Fog1" autoTransitionTime="60" />
+    </WeatherCollection>
+  </WeatherCollection>
+</DMInputFile>

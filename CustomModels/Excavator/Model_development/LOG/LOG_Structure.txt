@@ -1,0 +1,42 @@
+
+Model: Excavator
+
+Number of bodies: 9
+
+Number of generalized coordinates: 54
+
+Number of joint coordinates: 13
+
+Number of constraint equations: 2
+
+--------------------------------------------
+
+Number of DOFs: 11
+
+Number of RDOFs: 11
+
+Number of FDOFs: 0
+
+--------------------------------------------
+
+Number of entries of Cq rows 2 x cols 54 = 108
+
+Number of NZ entries: 18
+
+NNZ / N entries of Cq: 16.67 %
+
+--------------------------------------------
+
+Number of entries of R rows 54 x cols 13 = 702
+
+Number of NZ entries: 135
+
+NNZ / N entries of R: 19.23 %
+
+--------------------------------------------
+
+Number of entries of M rows 54 x cols 54 = 2916
+
+Number of NZ entries: 270
+
+NNZ / N entries of M:  9.26 %

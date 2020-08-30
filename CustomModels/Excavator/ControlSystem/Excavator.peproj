@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PCANExplorerProject Version="5.0" Name="Excavator">
+    <Connections AutoReset="0" IgnoreRTRLength="0" ProcessRTR="1">
+        <Connection Bus="1" Enabled="1" Protocol="0" SymbolsFileName="excavator_can3.sym" BitRate="284" Connection="PCAN-USB1@pcan_usb" Name="Connection1"/>
+    </Connections>
+    <MessageFilters/>
+    <Files>
+        <File RelativePath="excavator_can3.sym"/>
+        <File RelativePath="Panel1.ipf"/>
+    </Files>
+</PCANExplorerProject>

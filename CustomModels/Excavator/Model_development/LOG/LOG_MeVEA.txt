@@ -1,0 +1,7 @@
+14:09:12: Model Excavator loaded, using config and resources from C:/Program Files (x86)/Mevea_SIMULATIONSOFTWARE/
+14:09:15: No reflection map available
+14:09:24: Visualization: Using shader instanced track elements
+14:09:25: Visualization: Using shader instanced track elements
+14:09:28: Setting camera to body 10: HEAD
+14:09:28: Head Tracking active
+14:09:30: Total loading time 18.529382

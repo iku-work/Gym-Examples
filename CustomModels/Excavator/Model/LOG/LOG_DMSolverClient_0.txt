@@ -1,0 +1,2 @@
+05:29:38: DMClient started, nSolvers=1, solverID=0
+05:29:38: ID 0, sending pdu 1001 

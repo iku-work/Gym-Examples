@@ -1,0 +1,15 @@
+{
+    "debug": false,
+    "episode_duration[s]": 45,
+    "excluded_inputs": [],
+    "excluded_items": [
+        "Ground",
+        "Constraints ",
+        "Dummies"
+    ],
+    "model_name": "Tutorial_Scripting",
+    "port": 6002,
+    "render": true,
+    "step_delay[s]": 0.5,
+    "step_max_duration[ms]": 1000
+}

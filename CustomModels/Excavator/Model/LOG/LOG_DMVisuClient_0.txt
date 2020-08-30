@@ -1,0 +1,4 @@
+05:29:37: DMClient started, nSolvers=0, solverID=1002
+05:29:37: Allocating memory for message vectors, m_nkpl=-1, m_nvis=-1, size=1624 (additional 100)
+05:29:37: ID 1002, sending pdu 1002 
+05:29:37: filename: C:\Data\Mevea-Gym-Toolbox2\CustomModels\Excavator\Model\\Scripts\..\Excavator.mvs, length 81

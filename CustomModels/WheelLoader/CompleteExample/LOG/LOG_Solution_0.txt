@@ -1,0 +1,43 @@
+Log started
+Starting Init
+Init Collisions
+Init TyreCollisions
+End Collision Init
+Setting Client Parameters
+Creating External Connections
+Calling Case Specific Init
+Calling CreateObjects
+Initializing particles
+Creating PrintRequests
+Initializing ScriptEngine
+Calling InitializeObjects
+Solver initialization complete
+Waiting for start command
+Start command received
+Starting particles in threaded mode
+
+
+ SOLUTION STARTED
+Analysis length 30000.000000 seconds
+
+Round=500, Average time=  0.000363 Last   0.000393 s Biggest 0.002270
+Round=1000, Average time=  0.000372 Last   0.000368 s Biggest 0.000878
+Round=1500, Average time=  0.000372 Last   0.000442 s Biggest 0.000726
+Round=2000, Average time=  0.000399 Last   0.000399 s Biggest 0.001332
+Round=2500, Average time=  0.000415 Last   0.000460 s Biggest 0.001593
+Round=3000, Average time=  0.000411 Last   0.000516 s Biggest 0.001131
+Round=3500, Average time=  0.000449 Last   0.000382 s Biggest 0.002032
+Round=4000, Average time=  0.000403 Last   0.000449 s Biggest 0.000785
+Ending all collision threads
+Waiting for particle solver
+Ending particle solver
+Main integrator loop ended, run=false
+
+
+ SOLUTION FINISHED
+  6.48 s analysis in   6.4862 s
+ RT.ratio=1.001
+TaskHandler writing results if any
+Store file 
+Solver cleanup done, exiting...
+Ending Simulation, GUI sent stop

@@ -1,0 +1,50 @@
+h[0] = Ground_RearAxle.z0 = 0.000000
+h[1] = Ground_RearAxle.z1 = 0.000000
+h[2] = Ground_RearAxle.z2 = 0.000000
+h[3] = Ground_RearAxle.z3 = 1.000000
+h[4] = Ground_RearAxle.z4 = 0.000000
+h[5] = Ground_RearAxle.z5 = 0.000000
+h[6] = Ground_RearAxle.z6 = 0.000000
+h[7] = RearAxle_BodyRear.z0 = 0.000000
+h[8] = BodyRear_BodyFront.z0 = 0.000000
+h[9] = BodyFront_Boom.z0 = 0.000000
+h[10] = Boom_Bar1.z0 = 0.000000
+h[11] = Bar1_Bar3.z0 = 0.000000
+h[12] = Boom_Bar2.z0 = 0.000000
+h[13] = Bar2_Bar4.z0 = 0.000000
+h[14] = Bar4_Bucket.z0 = 0.000000
+h[15] = Ground_RearAxle.zd0 = 0.000000
+h[16] = Ground_RearAxle.zd1 = 0.000000
+h[17] = Ground_RearAxle.zd2 = 0.000000
+h[18] = Ground_RearAxle.zd3 = 0.000000
+h[19] = Ground_RearAxle.zd4 = 0.000000
+h[20] = Ground_RearAxle.zd5 = 0.000000
+h[21] = RearAxle_BodyRear.zd0 = 0.000000
+h[22] = BodyRear_BodyFront.zd0 = 0.000000
+h[23] = BodyFront_Boom.zd0 = 0.000000
+h[24] = Boom_Bar1.zd0 = 0.000000
+h[25] = Bar1_Bar3.zd0 = 0.000000
+h[26] = Boom_Bar2.zd0 = 0.000000
+h[27] = Bar2_Bar4.zd0 = 0.000000
+h[28] = Bar4_Bucket.zd0 = 0.000000
+Number of differential equations 20 -------
+Tyres --------------------------------------
+h[29] =Tyre_FrontR.alpha = 0.000000
+h[30] =Tyre_FrontL.alpha = 0.000000
+h[31] =Tyre_RearR.alpha = 0.000000
+h[32] =Tyre_RearL.alpha = 0.000000
+Motors -------------------------------------
+h[33] =Volvo_D6E_LBE3.w  = 0.000000
+h[34] =Volvo_D6E_LBE3.wd = 70.000000
+h[35] =Volvo_D6E_LBE3.Md = 0.000000
+Pressures ----------------------------------
+Hydraulic motors ---------------------------
+2/2 Valves ---------------------------------
+PVG32 Valves ----------------------
+L90LS Valves ----------------------
+D1VW Valves ----------------------
+Pressure Compensated Proportional Valves ---
+M4-15 Valves ----------------------
+M200LS Valves ----------------------
+Bosch Rexroth MHRB Valves ----------
+Bucher CINDY Valves ----------------

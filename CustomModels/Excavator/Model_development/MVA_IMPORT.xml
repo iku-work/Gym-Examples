@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <PARAMETERS>
+    <ChooseBucket description="Select bucket 1;Select bucket 2" name="Bucket selection" type="iconselect" value="./Bucket1.mva;./Bucket2.mva" minimum="" maximum="" xml_command="CommandSelectAssembly;CommandSelectAssembly" increment="Bucket 1;Bucket 2" icon="bucket1.png;bucket2.png" unit="" address="Bucket selection" query_at="Start" />
+  </PARAMETERS>
+</DMInputFile>

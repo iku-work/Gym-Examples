@@ -1,0 +1,14 @@
+Log started
+Starting Init
+Init Collisions
+Init TyreCollisions
+End Collision Init
+Setting Client Parameters
+Calling Case Specific Init
+Calling CreateObjects
+Creating collisions objects
+Creating global wind emitter
+Creating virtual sensors
+Simulation objects created
+Creating PrintRequests
+Initializing ScriptEngine

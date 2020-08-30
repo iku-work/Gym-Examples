@@ -1,0 +1,206 @@
+
+
+MODEL STRUCTURE:
+
+Number of bodies : 									9
+Number of joints : 									11
+Number of joint coordinates : 						15
+Number of closed loop constraint equations : 		10
+DOF : 												4
+
+
+
+
+Vector of body preceding body indices :
+0   0   1   2   3   4   5   4   7   8   
+
+
+Preceding bodies :
+
+Ground <-- RearAxle 
+RearAxle <-- BodyRear 
+BodyRear <-- BodyFront 
+BodyFront <-- Boom 
+Boom <-- JointingBar1 
+JointingBar1 <-- JointingBar3 
+Boom <-- JointingBar2 
+JointingBar2 <-- JointingBar4 
+JointingBar4 <-- Bucket 
+
+Vector of kinematic chain final bodies :
+
+
+Body											 Final 
+
+Ground                                   		 No
+RearAxle                                 		 No
+BodyRear                                 		 No
+BodyFront                                		 No
+Boom                                     		 No
+JointingBar1                             		 No
+JointingBar3                             		 Yes
+JointingBar2                             		 No
+JointingBar4                             		 No
+Bucket                                   		 Yes
+
+
+Joints and bodies related to a joint
+
+=================================
+
+Ground_RearAxle 
+
+Number of preceding bodies = 1 
+Number of preceding joints = 1
+---------------------------------
+RearAxle 
+	--> Ground_RearAxle -->
+		Ground
+
+=================================
+
+RearAxle_BodyRear 
+
+Number of preceding bodies = 2 
+Number of preceding joints = 2
+---------------------------------
+BodyRear 
+	--> RearAxle_BodyRear -->
+		RearAxle
+			--> Ground_RearAxle -->
+				Ground
+
+=================================
+
+BodyRear_BodyFront 
+
+Number of preceding bodies = 3 
+Number of preceding joints = 3
+---------------------------------
+BodyFront 
+	--> BodyRear_BodyFront -->
+		BodyRear
+			--> RearAxle_BodyRear -->
+				RearAxle
+					--> Ground_RearAxle -->
+						Ground
+
+=================================
+
+BodyFront_Boom 
+
+Number of preceding bodies = 4 
+Number of preceding joints = 4
+---------------------------------
+Boom 
+	--> BodyFront_Boom -->
+		BodyFront
+			--> BodyRear_BodyFront -->
+				BodyRear
+					--> RearAxle_BodyRear -->
+						RearAxle
+							--> Ground_RearAxle -->
+								Ground
+
+=================================
+
+Boom_Bar1 
+
+Number of preceding bodies = 5 
+Number of preceding joints = 5
+---------------------------------
+JointingBar1 
+	--> Boom_Bar1 -->
+		Boom
+			--> BodyFront_Boom -->
+				BodyFront
+					--> BodyRear_BodyFront -->
+						BodyRear
+							--> RearAxle_BodyRear -->
+								RearAxle
+									--> Ground_RearAxle -->
+										Ground
+
+=================================
+
+Bar1_Bar3 
+
+Number of preceding bodies = 6 
+Number of preceding joints = 6
+---------------------------------
+JointingBar3 
+	--> Bar1_Bar3 -->
+		JointingBar1
+			--> Boom_Bar1 -->
+				Boom
+					--> BodyFront_Boom -->
+						BodyFront
+							--> BodyRear_BodyFront -->
+								BodyRear
+									--> RearAxle_BodyRear -->
+										RearAxle
+											--> Ground_RearAxle -->
+												Ground
+
+=================================
+
+Boom_Bar2 
+
+Number of preceding bodies = 5 
+Number of preceding joints = 5
+---------------------------------
+JointingBar2 
+	--> Boom_Bar2 -->
+		Boom
+			--> BodyFront_Boom -->
+				BodyFront
+					--> BodyRear_BodyFront -->
+						BodyRear
+							--> RearAxle_BodyRear -->
+								RearAxle
+									--> Ground_RearAxle -->
+										Ground
+
+=================================
+
+Bar2_Bar4 
+
+Number of preceding bodies = 6 
+Number of preceding joints = 6
+---------------------------------
+JointingBar4 
+	--> Bar2_Bar4 -->
+		JointingBar2
+			--> Boom_Bar2 -->
+				Boom
+					--> BodyFront_Boom -->
+						BodyFront
+							--> BodyRear_BodyFront -->
+								BodyRear
+									--> RearAxle_BodyRear -->
+										RearAxle
+											--> Ground_RearAxle -->
+												Ground
+
+=================================
+
+Bar4_Bucket 
+
+Number of preceding bodies = 7 
+Number of preceding joints = 7
+---------------------------------
+Bucket 
+	--> Bar4_Bucket -->
+		JointingBar4
+			--> Bar2_Bar4 -->
+				JointingBar2
+					--> Boom_Bar2 -->
+						Boom
+							--> BodyFront_Boom -->
+								BodyFront
+									--> BodyRear_BodyFront -->
+										BodyRear
+											--> RearAxle_BodyRear -->
+												RearAxle
+													--> Ground_RearAxle -->
+														Ground

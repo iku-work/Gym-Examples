@@ -1,0 +1,2 @@
+
+Braking friction of tyre Tyre_RearL has been replaced with brake component Brake_Tyre_RearL. Input connections and powertrain topology have also been updated. Please check the brake functionality.

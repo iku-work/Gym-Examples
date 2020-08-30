@@ -1,0 +1,790 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <Model Name="Scripting_tutorial" Method="4" Integrator="1" SparseSolver="No" dt="0.0015" tstop="3e4" update_frequency="30" error="0.001" hydrIntMethod="0" numHydrIntegr="10" nGSIterations="3" logoImageName="">
+    <Gravitation x="0" y="-9.81" z="0" />
+  </Model>
+  <MevPacker baseDir="" additionalDirs="" skipDirs="" files="" password="" modelId="0" modelIdString="Default" />
+  <ExternalInterface />
+  <Splines>
+    <Spline_Volvo_D6E_LBE3 NPoints="9">
+      <x x1="0" x2="83.8" x3="104.7" x4="125.7" x5="146.6" x6="167.6" x7="188.5" x8="209.4" x9="230.4" />
+      <y y1="200" y2="550" y3="675" y4="715" y5="730" y6="750" y7="650" y8="550" y9="470" />
+    </Spline_Volvo_D6E_LBE3>
+    <Spline_Tyre NPoints="4">
+      <x x1="-0.225" x2="-0.15" x3="0.15" x4="0.225" />
+      <y y1="0.79" y2="0.7915" y3="0.7915" y4="0.79" />
+    </Spline_Tyre>
+  </Splines>
+  <Bodies>
+    <Ground BodyType="Rigid" RelTo="Ground" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="Graphics_Ground;Graphics_Sky;Graphics_Environment;Graphics_FencedArea;Graphics_LoadingArea" CollisionGraphics="Coll_FencedArea;Coll_Dumpster;Coll_LoadingFence">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="0">
+        <I Ixx="0" Iyy="0" Izz="0" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Ground>
+    <RearAxle BodyType="Rigid" RelTo="Ground" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="" CollisionGraphics="">
+      <Position x="0" y="0.7915" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="1000">
+        <I Ixx="450" Iyy="450" Izz="450" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </RearAxle>
+    <BodyRear BodyType="Rigid" RelTo="RearAxle" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="Graphics_BodyRear;Graphics_Windshield" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="6000">
+        <I Ixx="3200" Iyy="1.5e4" Izz="1.5e4" Ixy="700" Izx="100" Iyz="120" />
+        <CM x="0" y="0.2" z="0" />
+        <CMI x="0" y="0.2" z="0" />
+      </Inertia>
+    </BodyRear>
+    <BodyFront BodyType="Rigid" RelTo="BodyRear" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="Graphics_BodyFront" CollisionGraphics="">
+      <Position x="1.503" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="2000">
+        <I Ixx="800" Iyy="1300" Izz="900" Ixy="-80" Izx="0" Iyz="0" />
+        <CM x="0.8" y="0.2" z="0" />
+        <CMI x="0.8" y="0.2" z="0" />
+      </Inertia>
+    </BodyFront>
+    <Boom BodyType="Rigid" RelTo="BodyFront" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="Graphics_Boom" CollisionGraphics="">
+      <Position x="0.857" y="1.207" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="800">
+        <I Ixx="2500" Iyy="450" Izz="550" Ixy="-220" Izx="0" Iyz="0" />
+        <CM x="1.2" y="1.2" z="0" />
+        <CMI x="1.2" y="1.2" z="0" />
+      </Inertia>
+    </Boom>
+    <JointingBar1 BodyType="Rigid" RelTo="Boom" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="Graphics_JointingBar1" CollisionGraphics="">
+      <Position x="0.2125" y="0.342" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="250">
+        <I Ixx="50" Iyy="5" Izz="50" Ixy="-3" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </JointingBar1>
+    <JointingBar3 BodyType="Rigid" RelTo="JointingBar1" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="Graphics_JointingBar3" CollisionGraphics="">
+      <Position x="-0.061" y="-0.2725" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="50">
+        <I Ixx="10" Iyy="1" Izz="10" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="-0.05" y="-0.15" z="0" />
+        <CMI x="-0.05" y="-0.15" z="0" />
+      </Inertia>
+    </JointingBar3>
+    <JointingBar2 BodyType="Rigid" RelTo="Boom" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="Graphics_JointingBar2" CollisionGraphics="">
+      <Position x="1.9795" y="1.6575" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="100">
+        <I Ixx="30" Iyy="1" Izz="30" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0.25" z="0" />
+        <CMI x="0" y="0.25" z="0" />
+      </Inertia>
+    </JointingBar2>
+    <JointingBar4 BodyType="Rigid" RelTo="JointingBar2" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="Graphics_JointingBar4" CollisionGraphics="">
+      <Position x="-0.0225" y="0.5635" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="100">
+        <I Ixx="50" Iyy="1" Izz="50" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </JointingBar4>
+    <Bucket BodyType="Rigid" RelTo="Boom" RelToCS="" FlexFile="" Modes="" Damping="" UsePF="No" VisualizationGraphics="Graphics_Bucket" CollisionGraphics="Coll_Bucket">
+      <Position x="2.1785" y="1.911" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="1300">
+        <I Ixx="1100" Iyy="1350" Izz="850" Ixy="-200" Izx="0" Iyz="0" />
+        <CM x="0.6" y="0" z="0" />
+        <CMI x="0.6" y="0" z="0" />
+      </Inertia>
+    </Bucket>
+  </Bodies>
+  <Dummies>
+    <Dummy_LiftCylinderL DumType="B2BF" RelTo="ForceT_LiftCylinderL" RelToCS="" DumNode="-1" DumInd="1" scriptName="" UsePF="No" VisualizationGraphics="Graphics_LiftCylinder" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="10">
+        <I Ixx="1" Iyy="1" Izz="1" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy_LiftCylinderL>
+    <Dummy_LiftPistonL DumType="B2BF" RelTo="ForceT_LiftCylinderL" RelToCS="" DumNode="-1" DumInd="2" scriptName="" UsePF="No" VisualizationGraphics="Graphics_LiftPiston" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="10">
+        <I Ixx="1" Iyy="1" Izz="1" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy_LiftPistonL>
+    <Dummy_LiftCylinderR DumType="B2BF" RelTo="ForceT_LiftCylinderR" RelToCS="" DumNode="-1" DumInd="1" scriptName="" UsePF="No" VisualizationGraphics="Graphics_LiftCylinder" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="10">
+        <I Ixx="1" Iyy="1" Izz="1" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy_LiftCylinderR>
+    <Dummy_LiftPistonR DumType="B2BF" RelTo="ForceT_LiftCylinderR" RelToCS="" DumNode="-1" DumInd="2" scriptName="" UsePF="No" VisualizationGraphics="Graphics_LiftPiston" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="10">
+        <I Ixx="1" Iyy="1" Izz="1" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy_LiftPistonR>
+    <Dummy_TiltCylinderL DumType="B2BF" RelTo="ForceT_TiltCylinderL" RelToCS="" DumNode="-1" DumInd="1" scriptName="" UsePF="No" VisualizationGraphics="Graphics_TiltCylinder" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="10">
+        <I Ixx="1" Iyy="1" Izz="1" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy_TiltCylinderL>
+    <Dummy_TiltPistonL DumType="B2BF" RelTo="ForceT_TiltCylinderL" RelToCS="" DumNode="-1" DumInd="2" scriptName="" UsePF="No" VisualizationGraphics="Graphics_TiltPiston" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="10">
+        <I Ixx="1" Iyy="1" Izz="1" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy_TiltPistonL>
+    <Dummy_TiltCylinderR DumType="B2BF" RelTo="ForceT_TiltCylinderR" RelToCS="" DumNode="-1" DumInd="1" scriptName="" UsePF="No" VisualizationGraphics="Graphics_TiltCylinder" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="10">
+        <I Ixx="1" Iyy="1" Izz="1" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy_TiltCylinderR>
+    <Dummy_TiltPistonR DumType="B2BF" RelTo="ForceT_TiltCylinderR" RelToCS="" DumNode="-1" DumInd="2" scriptName="" UsePF="No" VisualizationGraphics="Graphics_TiltPiston" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="10">
+        <I Ixx="1" Iyy="1" Izz="1" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy_TiltPistonR>
+    <Dummy_TyreF_R DumType="Tyre" RelTo="Tyre_FrontR" RelToCS="" DumNode="-1" DumInd="0" scriptName="" UsePF="No" VisualizationGraphics="Graphics_TyreRight" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="300">
+        <I Ixx="20" Iyy="20" Izz="100" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy_TyreF_R>
+    <Dummy_TyreF_L DumType="Tyre" RelTo="Tyre_FrontL" RelToCS="" DumNode="-1" DumInd="0" scriptName="" UsePF="No" VisualizationGraphics="Graphics_TyreLeft" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="300">
+        <I Ixx="20" Iyy="20" Izz="100" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy_TyreF_L>
+    <Dummy_TyreR_R DumType="Tyre" RelTo="Tyre_RearR" RelToCS="" DumNode="-1" DumInd="0" scriptName="" UsePF="No" VisualizationGraphics="Graphics_TyreRight" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="300">
+        <I Ixx="20" Iyy="20" Izz="100" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy_TyreR_R>
+    <Dummy_TyreR_L DumType="Tyre" RelTo="Tyre_RearL" RelToCS="" DumNode="-1" DumInd="0" scriptName="" UsePF="No" VisualizationGraphics="Graphics_TyreLeft" CollisionGraphics="">
+      <Position x="0" y="0" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="300">
+        <I Ixx="20" Iyy="20" Izz="100" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy_TyreR_L>
+    <Dummy_Dumpster DumType="Static" RelTo="Ground" RelToCS="" DumNode="-1" DumInd="0" scriptName="" UsePF="No" VisualizationGraphics="Graphics_Dumpster" CollisionGraphics="">
+      <Position x="-11" y="0" z="28" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="10">
+        <I Ixx="1" Iyy="1" Izz="1" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0" y="0" z="0" />
+        <CMI x="0" y="0" z="0" />
+      </Inertia>
+    </Dummy_Dumpster>
+  </Dummies>
+  <Constraints>
+    <Ground_RearAxle Type="0" Active="Yes" CutJoint="No" Body1="Ground" Body1CS="" NodeBody1="0" Body2="RearAxle" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="0" y="0.7915" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="0" z="1" />
+      <uc x="0" y="1" z="0" />
+      <ud x="0" y="1" z="0" />
+    </Ground_RearAxle>
+    <RearAxle_BodyRear Type="3" Active="Yes" CutJoint="No" Body1="RearAxle" Body1CS="" NodeBody1="0" Body2="BodyRear" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="0" y="0" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="0" y="1" z="0" />
+      <ub x="1" y="0" z="0" />
+      <uc x="0" y="0" z="1" />
+      <ud x="0" y="0" z="0" />
+    </RearAxle_BodyRear>
+    <BodyRear_BodyFront Type="3" Active="Yes" CutJoint="No" Body1="BodyRear" Body1CS="" NodeBody1="0" Body2="BodyFront" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="1.503" y="0" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="1" z="0" />
+      <uc x="0" y="0" z="1" />
+      <ud x="0" y="0" z="0" />
+    </BodyRear_BodyFront>
+    <BodyFront_Boom Type="3" Active="Yes" CutJoint="No" Body1="BodyFront" Body1CS="" NodeBody1="0" Body2="Boom" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="0.857" y="1.207" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="0" z="1" />
+      <uc x="0" y="1" z="0" />
+      <ud x="0" y="0" z="0" />
+    </BodyFront_Boom>
+    <Boom_Bar1 Type="3" Active="Yes" CutJoint="No" Body1="Boom" Body1CS="" NodeBody1="0" Body2="JointingBar1" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="0.2125" y="0.342" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="0" z="1" />
+      <uc x="0" y="1" z="0" />
+      <ud x="0" y="0" z="0" />
+    </Boom_Bar1>
+    <Bar1_Bar3 Type="3" Active="Yes" CutJoint="No" Body1="JointingBar1" Body1CS="" NodeBody1="0" Body2="JointingBar3" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="-0.061" y="-0.2725" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="0" z="1" />
+      <uc x="0" y="1" z="0" />
+      <ud x="0" y="0" z="0" />
+    </Bar1_Bar3>
+    <Bar3_BodyFront Type="3" Active="Yes" CutJoint="Yes" Body1="JointingBar3" Body1CS="" NodeBody1="0" Body2="BodyFront" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="-0.1515" y="-0.338" z="0" />
+      <Position2 x="0.859" y="0.939" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="0" z="1" />
+      <uc x="0" y="1" z="0" />
+      <ud x="0" y="0" z="0" />
+    </Bar3_BodyFront>
+    <Boom_Bar2 Type="3" Active="Yes" CutJoint="No" Body1="Boom" Body1CS="" NodeBody1="0" Body2="JointingBar2" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="1.9795" y="1.6575" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="0" z="1" />
+      <uc x="0" y="1" z="0" />
+      <ud x="0" y="0" z="0" />
+    </Boom_Bar2>
+    <Bar2_Bar4 Type="3" Active="Yes" CutJoint="No" Body1="JointingBar2" Body1CS="" NodeBody1="0" Body2="JointingBar4" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="-0.0225" y="0.5635" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="0" z="1" />
+      <uc x="0" y="1" z="0" />
+      <ud x="0" y="0" z="0" />
+    </Bar2_Bar4>
+    <Bar4_Bucket Type="3" Active="Yes" CutJoint="No" Body1="JointingBar4" Body1CS="" NodeBody1="0" Body2="Bucket" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="0.359" y="0.097" z="0" />
+      <Position2 x="0.138" y="0.407" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="0" z="1" />
+      <uc x="0" y="1" z="0" />
+      <ud x="0" y="0" z="0" />
+    </Bar4_Bucket>
+    <Boom_Bucket Type="3" Active="Yes" CutJoint="Yes" Body1="Bucket" Body1CS="" NodeBody1="0" Body2="Boom" Body2CS="" NodeBody2="0" d0="0" JointLength="0.1" JointDiameter="0" UsePF="No">
+      <Position1 x="0" y="0" z="0" />
+      <Position2 x="2.1785" y="1.911" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="0" z="1" />
+      <uc x="0" y="1" z="0" />
+      <ud x="0" y="0" z="0" />
+    </Boom_Bucket>
+  </Constraints>
+  <Forces>
+    <Tyre>
+      <TyreContacts>
+        <Ground_Tyres Body="Ground" Graph="Graphics_Ground" />
+        <Tyres_Fence Body="Ground" Graph="Coll_FencedArea" />
+      </TyreContacts>
+      <Tyre_FrontR UsePF="No" Body="BodyFront" Node="0" Input="Brake_Tyre_FrontR" K="2.6e6" C="1.5e5" e="1" ProfileName="Spline_Tyre" r="0.7915" width="0.225" ModelType="0" Components="0" Orientation="0">
+        <Position x="1.502" y="0" z="0.965" />
+        <FrictionLong Name="Tyre_FrictionLong" Fn="0" s0="5e6" s1="5e4" v0="0.05" c="0" myys="1" myyd="0.7" e="0.5" />
+        <FrictionLat Name="Tyre_FrictionLat" Fn="0" s0="5e6" s1="5e4" v0="0.01" c="10" myys="1" myyd="0.9" e="0.5" />
+      </Tyre_FrontR>
+      <Tyre_FrontL UsePF="No" Body="BodyFront" Node="0" Input="Brake_Tyre_FrontL" K="2e6" C="1e5" e="1" ProfileName="Spline_Tyre" r="0.7915" width="0.225" ModelType="0" Components="0" Orientation="0">
+        <Position x="1.502" y="0" z="-0.965" />
+        <FrictionLong Name="Tyre_FrictionLong" Fn="0" s0="5e6" s1="5e4" v0="0.05" c="0" myys="1" myyd="0.7" e="0.5" />
+        <FrictionLat Name="Tyre_FrictionLat" Fn="0" s0="5e6" s1="5e4" v0="0.01" c="10" myys="1" myyd="0.9" e="0.5" />
+      </Tyre_FrontL>
+      <Tyre_RearR UsePF="No" Body="RearAxle" Node="0" Input="Brake_Tyre_RearR" K="2e6" C="1e5" e="1" ProfileName="Spline_Tyre" r="0.7915" width="0.225" ModelType="0" Components="0" Orientation="0">
+        <Position x="0" y="0" z="0.965" />
+        <FrictionLong Name="Tyre_FrictionLong" Fn="0" s0="5e6" s1="5e4" v0="0.05" c="0" myys="1" myyd="0.7" e="0.5" />
+        <FrictionLat Name="Tyre_FrictionLat" Fn="0" s0="5e6" s1="5e4" v0="0.01" c="10" myys="1" myyd="0.9" e="0.5" />
+      </Tyre_RearR>
+      <Tyre_RearL UsePF="No" Body="RearAxle" Node="0" Input="Brake_Tyre_RearL" K="2e6" C="1e5" e="1" ProfileName="Spline_Tyre" r="0.7915" width="0.225" ModelType="0" Components="0" Orientation="0">
+        <Position x="0" y="0" z="-0.965" />
+        <FrictionLong Name="Tyre_FrictionLong" Fn="0" s0="5e6" s1="5e4" v0="0.05" c="0" myys="1" myyd="0.7" e="0.5" />
+        <FrictionLat Name="Tyre_FrictionLat" Fn="0" s0="5e6" s1="5e4" v0="0.01" c="10" myys="1" myyd="0.9" e="0.5" />
+      </Tyre_RearL>
+    </Tyre>
+    <B2BM>
+      <ForceR_Steering Body1="BodyRear" Body1CS="" NodeBody1="0" Body2="BodyFront" Body2CS="" NodeBody2="0" Input="" K="1e7" C="1e6" Kend="1e7" Cend="1000" Thetamin="-0.698" Thetamax="0.698" Theta0="0" M="0">
+        <fi x="0" y="0" z="1" />
+        <gi x="1" y="0" z="0" />
+        <fj x="0" y="0" z="1" />
+      </ForceR_Steering>
+      <ForceR_RearAxle Body1="BodyRear" Body1CS="" NodeBody1="0" Body2="RearAxle" Body2CS="" NodeBody2="0" Input="" K="0" C="0" Kend="1e7" Cend="4e5" Thetamin="-0.13" Thetamax="0.13" Theta0="0" M="0">
+        <fi x="0" y="0" z="1" />
+        <gi x="0" y="1" z="0" />
+        <fj x="0" y="0" z="1" />
+      </ForceR_RearAxle>
+    </B2BM>
+    <B2BF>
+      <ForceT_LiftCylinderL Body1="BodyFront" Body1CS="" NodeBody1="0" Body2="Boom" Body2CS="" NodeBody2="0" Input="" K="5e6" C="1e5" Kend="1e7" Cend="5e6" L0="1.5331744845254899889" Lmin="0.62" Lmax="1.5331744845254899889" F="0" IsRope="No" KSplName="" CSplName="" CSplHName="">
+        <Position1 x="0.891" y="0.322" z="-0.5605" />
+        <Position2 x="0.702" y="0.495" z="-0.5605" />
+      </ForceT_LiftCylinderL>
+      <ForceT_LiftCylinderR Body1="BodyFront" Body1CS="" NodeBody1="0" Body2="Boom" Body2CS="" NodeBody2="0" Input="" K="5e6" C="1e5" Kend="1e7" Cend="5e6" L0="1.5331744845254899889" Lmin="0.62" Lmax="1.5331744845254899889" F="0" IsRope="No" KSplName="" CSplName="" CSplHName="">
+        <Position1 x="0.891" y="0.322" z="0.5605" />
+        <Position2 x="0.702" y="0.495" z="0.5605" />
+      </ForceT_LiftCylinderR>
+      <ForceT_TiltCylinderL Body1="JointingBar1" Body1CS="" NodeBody1="0" Body2="JointingBar4" Body2CS="" NodeBody2="0" Input="" K="8e6" C="4e5" Kend="1e7" Cend="5e6" L0="1.8927853153487899096" Lmin="1.77" Lmax="2.2" F="0" IsRope="No" KSplName="" CSplName="" CSplHName="">
+        <Position1 x="-0.023" y="0.478" z="-0.5605" />
+        <Position2 x="-0.388" y="-0.105" z="-0.5605" />
+      </ForceT_TiltCylinderL>
+      <ForceT_TiltCylinderR Body1="JointingBar1" Body1CS="" NodeBody1="0" Body2="JointingBar4" Body2CS="" NodeBody2="0" Input="" K="8e6" C="4e5" Kend="1e7" Cend="5e6" L0="1.8927853153487899096" Lmin="1.77" Lmax="2.2" F="0" IsRope="No" KSplName="" CSplName="" CSplHName="">
+        <Position1 x="-0.023" y="0.478" z="0.5605" />
+        <Position2 x="-0.388" y="-0.105" z="0.5605" />
+      </ForceT_TiltCylinderR>
+    </B2BF>
+    <Motor>
+      <Volvo_D6E_LBE3 Type="TConv" PrimName="" SplName="Spline_Volvo_D6E_LBE3" Kw="12" Tao="0.1" idle="70" itot="1" r="0" J="1" MbrMax="1.5e4" BrVel="0.01" wref="0" isRunning="2" stall_limit="0" FCSplName="" SFC="0" idleFC="0" MidleLoad="0" />
+    </Motor>
+    <PowerTrain>
+      <Gears>
+        <GearBox Input="Clutch" Type="Manual" wsu="0" wsd="0" c="0" C="1" ngearf="4" ngearr="4" initialGear="0" ifw0="4" ifw1="2.05" ifw2="1.07" ifw3="0.66" ibw0="4" ibw1="2.05" ibw2="1.07" ibw3="0.66" />
+      </Gears>
+      <Differentials>
+        <MiddleDiff Type="Locked" Input="GearBox" DRatio="0" DwMin="0" DwMax="0" i="1" Klock="5000" Clock="100" />
+        <FrontDiff Type="Open" Input="MiddleDiff" DRatio="0.5" DwMin="0" DwMax="0" i="2.22" Klock="0" Clock="0" />
+        <RearDiff Type="Open" Input="MiddleDiff" DRatio="0.5" DwMin="0" DwMax="0" i="2.22" Klock="0" Clock="0" />
+      </Differentials>
+      <Planets>
+        <Planet_FrontL Input="FrontDiff" i="10" />
+        <Planet_FrontR Input="FrontDiff" i="10" />
+        <Planet_RearL Input="RearDiff" i="10" />
+        <Planet_RearR Input="RearDiff" i="10" />
+      </Planets>
+      <Clutches>
+        <Clutch Input="Volvo_D6E_LBE3" r="1">
+          <Friction Name="Clutch_Friction" Fn="5000" s0="2000" s1="50" v0="0.2" c="0" myys="1" myyd="0.7" e="2" />
+        </Clutch>
+      </Clutches>
+      <Brakes>
+        <Brake_Tyre_FrontR Input="Planet_FrontR" d="1">
+          <Friction Name="Tyre_FrictionLat" Fn="0" s0="5e6" s1="5e4" v0="0.01" c="10" myys="1" myyd="0.9" e="0.5" />
+        </Brake_Tyre_FrontR>
+        <Brake_Tyre_FrontL Input="Planet_FrontL" d="1">
+          <Friction Name="Tyre_FrictionLat" Fn="0" s0="5e6" s1="5e4" v0="0.01" c="10" myys="1" myyd="0.9" e="0.5" />
+        </Brake_Tyre_FrontL>
+        <Brake_Tyre_RearR Input="Planet_RearR" d="1">
+          <Friction Name="Tyre_FrictionLat" Fn="0" s0="5e6" s1="5e4" v0="0.01" c="10" myys="1" myyd="0.9" e="0.5" />
+        </Brake_Tyre_RearR>
+        <Brake_Tyre_RearL Input="Planet_RearL" d="1">
+          <Friction Name="Tyre_FrictionLat" Fn="0" s0="5e6" s1="5e4" v0="0.01" c="10" myys="1" myyd="0.9" e="0.5" />
+        </Brake_Tyre_RearL>
+      </Brakes>
+    </PowerTrain>
+    <Hydraulics Oil_B0="1600000000" />
+  </Forces>
+  <Electrics />
+  <Graphics>
+    <Graphics_Ground Body="Ground" FileName="Graphics/Environment/Ground.3ds" Scale="1.2" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_Ground>
+    <Graphics_BodyRear Body="BodyRear" FileName="Graphics/BodyRear/Body_Rear.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_BodyRear>
+    <Graphics_Windshield Body="BodyRear" FileName="Graphics/Windshield.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_Windshield>
+    <Graphics_BodyFront Body="BodyFront" FileName="Graphics/BodyFront/Body_Front.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_BodyFront>
+    <Graphics_Boom Body="Boom" FileName="Graphics/Boom/Boom.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_Boom>
+    <Graphics_JointingBar1 Body="JointingBar1" FileName="Graphics/JointingBar1/JointingBar1.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_JointingBar1>
+    <Graphics_JointingBar2 Body="JointingBar2" FileName="Graphics/JointingBar2/JointingBar2.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_JointingBar2>
+    <Graphics_JointingBar3 Body="JointingBar3" FileName="Graphics/JointingBar3/JointingBar3.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_JointingBar3>
+    <Graphics_JointingBar4 Body="JointingBar4" FileName="Graphics/JointingBar4/JointingBar4.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_JointingBar4>
+    <Graphics_Bucket Body="Bucket" FileName="Graphics/Bucket/Bucket.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_Bucket>
+    <Graphics_LiftCylinder Body="Dummy_LiftCylinderL;Dummy_LiftCylinderR" FileName="Graphics/LiftS/LiftS.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_LiftCylinder>
+    <Graphics_LiftPiston Body="Dummy_LiftPistonL;Dummy_LiftPistonR" FileName="Graphics/LiftM/LiftM.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_LiftPiston>
+    <Graphics_TiltCylinder Body="Dummy_TiltCylinderL;Dummy_TiltCylinderR" FileName="Graphics/TiltS/TiltS.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_TiltCylinder>
+    <Graphics_TiltPiston Body="Dummy_TiltPistonL;Dummy_TiltPistonR" FileName="Graphics/TiltM/TiltM.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_TiltPiston>
+    <Graphics_TyreRight Body="Dummy_TyreF_R;Dummy_TyreR_R" FileName="Graphics/Tyre/Tyre.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_TyreRight>
+    <Graphics_TyreLeft Body="Dummy_TyreF_L;Dummy_TyreR_L" FileName="Graphics/Tyre/Tyre.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="3.141592653589793116" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_TyreLeft>
+    <Graphics_Sky Body="Ground" FileName="./Graphics/Environment/sky.3ds" Scale="0.5" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_Sky>
+    <Graphics_Environment Body="Ground" FileName="./Graphics/Environment/treeline.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="-1.570796326794896558" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_Environment>
+    <Graphics_Outhouse Body="" FileName="./Graphics/Environment/Outhouse.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_Outhouse>
+    <Coll_Outhouse Body="" FileName="./Graphics/CollisionGraphics/Coll_Outhouse.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="Undefined" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Coll_Outhouse>
+    <Graphics_FencedArea Body="Ground" FileName="./Graphics/Environment/Fence_area.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_FencedArea>
+    <Coll_FencedArea Body="Ground" FileName="./Graphics/CollisionGraphics/Coll_Fence_area.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="GGX untextured" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Coll_FencedArea>
+    <Graphics_Dumpster Body="Dummy_Dumpster" FileName="./Graphics/Environment/Dumpster.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="Yes" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_Dumpster>
+    <Coll_Dumpster Body="Ground" FileName="./Graphics/CollisionGraphics/Coll_Dumpster.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="GGX untextured" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="-11" y="0" z="28" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Coll_Dumpster>
+    <Graphics_LoadingArea Body="Ground" FileName="./Graphics/Environment/Loading_fence.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="Yes" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="18" y="0" z="-13" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_LoadingArea>
+    <Coll_LoadingFence Body="Ground" FileName="./Graphics/CollisionGraphics/Coll_Loading_fence.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="GGX untextured" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="18" y="0" z="-13" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Coll_LoadingFence>
+    <Graphics_ElectricalCenter Body="" FileName="./Graphics/Environment/Electrical_Center.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_ElectricalCenter>
+    <Coll_ElectricalCenter Body="" FileName="./Graphics/CollisionGraphics/Coll_Electrical_Center.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="Undefined" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Coll_ElectricalCenter>
+    <Coll_Bucket Body="Bucket" FileName="./Graphics/CollisionGraphics/Coll_Bucket.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="GGX untextured" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Coll_Bucket>
+    <Graphics_PCubeS Body="" FileName="Graphics/ParticleGraphics/CubeS.3ds" Scale="1" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="Yes" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_PCubeS>
+    <Graphics_PCubeM Body="" FileName="Graphics/ParticleGraphics/CubeM.3ds" Scale="1" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="Yes" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_PCubeM>
+    <Graphics_PCubeL Body="" FileName="Graphics/ParticleGraphics/CubeL.3ds" Scale="1" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="Yes" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_PCubeL>
+    <Graphics_PTetraS Body="" FileName="Graphics/ParticleGraphics/TetraS.3ds" Scale="1" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="Yes" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_PTetraS>
+    <Graphics_PTetraM Body="" FileName="Graphics/ParticleGraphics/TetraM.3ds" Scale="1" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="Yes" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_PTetraM>
+    <Graphics_PTetraL Body="" FileName="Graphics/ParticleGraphics/TetraL.3ds" Scale="1" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="Yes" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_PTetraL>
+    <Graphics_PSphereS Body="" FileName="Graphics/ParticleGraphics/SphereS.3ds" Scale="1" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="Yes" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_PSphereS>
+    <Graphics_PSphereM Body="" FileName="Graphics/ParticleGraphics/SphereM.3ds" Scale="1" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="Yes" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_PSphereM>
+    <Graphics_PSphereL Body="" FileName="Graphics/ParticleGraphics/SphereL.3ds" Scale="1" Transparency="1" CastShadows="Yes" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="Yes" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Graphics_PSphereL>
+    <PCubeS_Coll Body="" FileName="Graphics/ParticleGraphics/CollCubeS.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="Undefined" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </PCubeS_Coll>
+    <PCubeM_Coll Body="" FileName="Graphics/ParticleGraphics/CollCubeM.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="Undefined" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </PCubeM_Coll>
+    <PCubeL_Coll Body="" FileName="Graphics/ParticleGraphics/CollCubeL.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="Undefined" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </PCubeL_Coll>
+    <PTetraS_Coll Body="" FileName="Graphics/ParticleGraphics/CollTetraS.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="Undefined" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </PTetraS_Coll>
+    <PTetraM_Coll Body="" FileName="Graphics/ParticleGraphics/CollTetraM.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="Undefined" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </PTetraM_Coll>
+    <PTetraL_Coll Body="" FileName="Graphics/ParticleGraphics/CollTetraL.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="Undefined" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </PTetraL_Coll>
+    <PSphereS_Coll Body="" FileName="Graphics/ParticleGraphics/CollSphereS.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="Undefined" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </PSphereS_Coll>
+    <PSphereM_Coll Body="" FileName="Graphics/ParticleGraphics/CollSphereM.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="Undefined" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </PSphereM_Coll>
+    <PSphereL_Coll Body="" FileName="Graphics/ParticleGraphics/CollSphereL.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="No" Material="" modShading="Undefined" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="No" useColor="No" isTerrain="No" isPickable="No" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </PSphereL_Coll>
+    <Pillar_Graphics Body="" FileName="Graphics/JibCrane/Pillar.3ds" Scale="1" Transparency="1" CastShadows="No" ReceiveShadows="No" BothSides="No" TransparentBin="No" IsActive="Yes" Material="" modShading="OpenGL" scriptName="" translateVertices="Yes" usePagedLoading="No" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" ocean_reflect="No" ocean_refract="No" ocean_discard="No" TextureName="" normalmap="" bumpMapScale="10" normal_map_index="1" ShaderName="" linkDefaultShaders="Yes" useColor="No" isTerrain="No" isPickable="Yes" disableCulling="No">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0" g="0" b="0" />
+    </Pillar_Graphics>
+  </Graphics>
+  <Collisions>
+    <Bucket_Ground BodyA="Bucket" BodyB="Ground" GraphA="Coll_Bucket" GraphB="Graphics_Ground" K="1e5" e="0.1" c="0" Cvel="0" myy="0.2" NormalDirection="Both" CollisionGroupName="" IgnoreObjectNames="">
+      <Friction Name="Collision_Friction" Fn="0" s0="4000" s1="500" v0="0.01" c="0.1" myys="0.3" myyd="0.1" e="2" />
+    </Bucket_Ground>
+    <Bucket_Dumpster BodyA="Bucket" BodyB="Ground" GraphA="Coll_Bucket" GraphB="Coll_Dumpster" K="2e5" e="0.1" c="0" Cvel="0" myy="0.2" NormalDirection="Both" CollisionGroupName="" IgnoreObjectNames="">
+      <Friction Name="Collision_Friction" Fn="0" s0="4000" s1="500" v0="0.01" c="0.1" myys="0.3" myyd="0.1" e="2" />
+    </Bucket_Dumpster>
+    <Bucket_Fence BodyA="Bucket" BodyB="Ground" GraphA="Coll_Bucket" GraphB="Coll_FencedArea" K="2e5" e="0.1" c="0" Cvel="0" myy="0.2" NormalDirection="Both" CollisionGroupName="" IgnoreObjectNames="">
+      <Friction Name="Collision_Friction" Fn="0" s0="4000" s1="500" v0="0.01" c="0.1" myys="0.3" myyd="0.1" e="2" />
+    </Bucket_Fence>
+    <Bucket_Loading_area BodyA="Bucket" BodyB="Ground" GraphA="Coll_Bucket" GraphB="Coll_LoadingFence" K="2e5" e="0.1" c="0" Cvel="0" myy="0.2" NormalDirection="Both" CollisionGroupName="" IgnoreObjectNames="">
+      <Friction Name="Collision_Friction" Fn="0" s0="4000" s1="500" v0="0.01" c="0.1" myys="0.3" myyd="0.1" e="2" />
+    </Bucket_Loading_area>
+  </Collisions>
+  <DataSources>
+    <DataSource2 Name="DataSource2" TypeName="Body" ComponentName="RearAxle" ParameterName="RearAxle wx" Function="" IirName="" Scale="1" Offset="0" Uniform="No" />
+    <DataSource3 Name="DataSource3" TypeName="Body" ComponentName="BodyRear" ParameterName="BodyRear wz" Function="" IirName="" Scale="1" Offset="0" Uniform="No" />
+    <DataSource4 Name="DataSource4" TypeName="CollisionSensor" ComponentName="CollisionSensor1" ParameterName="CollisionSensor1 nminor" Function="" IirName="" Scale="1" Offset="0" Uniform="No" />
+  </DataSources>
+  <DesignVariables />
+  <ObjectMover />
+  <Inputs>
+    <Lift_Input name="Lift_Input" isActive="Yes" InType="Analog" PrimType="B2BF" JoyNro="1" JoyCh="0" InputSource="" positiveOnly="No" Scale="0.2" B="0" DeadZone="0.25" delay="0" hold="0" scriptName="Script1" PrimSub="2" PrimName="ForceT_LiftCylinderL;ForceT_LiftCylinderR" />
+    <Tilt_Input name="Tilt_Input" isActive="Yes" InType="Analog" PrimType="B2BF" JoyNro="1" JoyCh="1" InputSource="" positiveOnly="No" Scale="0.2" B="0" DeadZone="0.25" delay="0" hold="0" scriptName="" PrimSub="2" PrimName="ForceT_TiltCylinderL;ForceT_TiltCylinderR" />
+    <Steering_Input name="Steering_Input" isActive="Yes" InType="Analog" PrimType="B2BM" JoyNro="0" JoyCh="0" InputSource="" positiveOnly="No" Scale="-0.2" B="0" DeadZone="0.25" delay="0" hold="0" scriptName="" PrimSub="2" PrimName="ForceR_Steering" />
+    <Input_Gear_Up name="Input_Gear_Up" isActive="Yes" InType="Digital" PrimType="GearBox" JoyNro="0" JoyCh="3" InputSource="" positiveOnly="No" Scale="1" B="0" DeadZone="0.25" delay="0" hold="0" scriptName="" PrimSub="0" PrimName="GearBox" />
+    <Input_Gear_Down name="Input_Gear_Down" isActive="Yes" InType="Digital" PrimType="GearBox" JoyNro="0" JoyCh="2" InputSource="" positiveOnly="No" Scale="1" B="0" DeadZone="0.25" delay="0" hold="0" scriptName="" PrimSub="1" PrimName="GearBox" />
+    <Brake_Input name="Brake_Input" isActive="Yes" InType="Analog" PrimType="Brake" JoyNro="0" JoyCh="2" InputSource="" positiveOnly="No" Scale="1e4" B="-1e4" DeadZone="0.05" delay="0" hold="0" scriptName="" PrimSub="0" PrimName="Brake_Tyre_FrontR;Brake_Tyre_FrontL;Brake_Tyre_RearR;Brake_Tyre_RearL" />
+    <Input_Forward name="Input_Forward" isActive="Yes" InType="Digital" PrimType="GearBox" JoyNro="0" JoyCh="5" InputSource="" positiveOnly="No" Scale="0" B="0" DeadZone="0" delay="0" hold="0" scriptName="" PrimSub="2" PrimName="GearBox" />
+    <Input_Reverse name="Input_Reverse" isActive="Yes" InType="Digital" PrimType="GearBox" JoyNro="0" JoyCh="4" InputSource="" positiveOnly="No" Scale="0" B="0" DeadZone="0" delay="0" hold="0" scriptName="" PrimSub="3" PrimName="GearBox" />
+    <Motor_Input name="Motor_Input" isActive="Yes" InType="Analog" PrimType="Motor" JoyNro="1" JoyCh="2" InputSource="" positiveOnly="No" Scale="-80" B="150" DeadZone="0" delay="0" hold="0" scriptName="" PrimSub="0" PrimName="Volvo_D6E_LBE3" />
+    <Clutch_input name="Clutch_input" isActive="Yes" InType="Analog" PrimType="Clutch" JoyNro="0" JoyCh="3" InputSource="" positiveOnly="No" Scale="1000" B="-1000" DeadZone="0.25" delay="0" hold="0" scriptName="" PrimSub="0" PrimName="Clutch" />
+  </Inputs>
+  <Outputs />
+  <MotionPlatformControl />
+  <FMI>
+    <FMI20>
+      <FMICS20 />
+    </FMI20>
+  </FMI>
+  <Particles>
+    <Pile RelToC="Ground" OriRelToC="Ground">
+      <Size x="6" z="6" />
+      <Position x="16.5" y="2" z="-12.5" />
+      <Orientation x="0" y="0" z="0" />
+      <PileParameters IsMixed="1" IsAligned="0" PileType="0" CellIterationInterval="3" CellFraktile="85" ContactFrictionStiffness="0.5" sleepMotion="0" sleepingTimeDelay="3.1829936864479084727e-313" broadPhaseAlgorithm="SAP" bendingModel="2" />
+      <ObjectDimensions x="0.7" y="0.7" z="0.7" />
+      <ParticleFriction Name="Particles_Pile_Friction" Fn="0" s0="2000" s1="300" v0="0.1" c="1.5" myys="0.5" myyd="0.3" e="2" />
+      <MBSFriction Name="Particles_Pile_FrictionMbs" Fn="0" s0="1e5" s1="1e4" v0="0.1" c="10" myys="0.8" myyd="0.5" e="1" />
+      <PGraph>
+        <PGraph_KuutioS TypePsys="RigidBody" DrawType="VisualPrimitive" CollisionType="Particles" is6DOF="Yes" npsys="30" GraphVisName="Graphics_PCubeS" GraphContName="PCubeS_Coll" TriangleContactMaterial="" k_jousi="8e5" c_jousi="7000" k_coll="0" e_coll="0.02" myy="0.7" radius="0.15" useMass="1" M_Psys="250" Vol="0.125" roo="2000" dampingT="0.05" dampingR="0.05" length="1" nparticles="8">
+          <I_Psys Ixx="6.8" Iyy="6.8" Izz="6.8" />
+          <I_unitM Ixx="0.0816667" Iyy="0.0816667" Izz="0.0816667" />
+        </PGraph_KuutioS>
+        <PGraph_KuutioM TypePsys="RigidBody" DrawType="VisualPrimitive" CollisionType="Particles" is6DOF="Yes" npsys="15" GraphVisName="Graphics_PCubeM" GraphContName="PCubeM_Coll" TriangleContactMaterial="" k_jousi="8e5" c_jousi="6000" k_coll="0" e_coll="0.02" myy="0.7" radius="0.2" useMass="1" M_Psys="432" Vol="0.216" roo="2000" dampingT="0.05" dampingR="0.05" length="1" nparticles="9">
+          <I_Psys Ixx="112" Iyy="112" Izz="112" />
+          <I_unitM Ixx="0.12" Iyy="0.12" Izz="0.12" />
+        </PGraph_KuutioM>
+        <PGraph_KuutioL TypePsys="RigidBody" DrawType="VisualPrimitive" CollisionType="Particles" is6DOF="Yes" npsys="5" GraphVisName="Graphics_PCubeL" GraphContName="PCubeL_Coll" TriangleContactMaterial="" k_jousi="8e5" c_jousi="6000" k_coll="0" e_coll="0.02" myy="0.7" radius="0.2" useMass="1" M_Psys="428.25" Vol="0.214125" roo="2000" dampingT="0.05" dampingR="0.05" length="1" nparticles="26">
+          <I_Psys Ixx="393.6" Iyy="393.6" Izz="393.6" />
+          <I_unitM Ixx="0.24" Iyy="0.24" Izz="0.24" />
+        </PGraph_KuutioL>
+        <PGraph_TetraS TypePsys="RigidBody" DrawType="VisualPrimitive" CollisionType="Particles" is6DOF="Yes" npsys="30" GraphVisName="Graphics_PTetraS" GraphContName="PTetraS_Coll" TriangleContactMaterial="" k_jousi="8e5" c_jousi="6000" k_coll="0" e_coll="0.02" myy="0.7" radius="0.15" useMass="1" M_Psys="144" Vol="0.072" roo="2000" dampingT="0.05" dampingR="0.05" length="1" nparticles="5">
+          <I_Psys Ixx="6.8" Iyy="6.8" Izz="6.8" />
+          <I_unitM Ixx="0.08" Iyy="0.08" Izz="0.08" />
+        </PGraph_TetraS>
+        <PGraph_TetraM TypePsys="RigidBody" DrawType="VisualPrimitive" CollisionType="Particles" is6DOF="Yes" npsys="15" GraphVisName="Graphics_PTetraM" GraphContName="PTetraM_Coll" TriangleContactMaterial="" k_jousi="8e5" c_jousi="6000" k_coll="0" e_coll="0.02" myy="0.7" radius="0.2" useMass="1" M_Psys="228" Vol="0.114" roo="2000" dampingT="0.05" dampingR="0.05" length="1" nparticles="9">
+          <I_Psys Ixx="112" Iyy="112" Izz="112" />
+          <I_unitM Ixx="0.12" Iyy="0.12" Izz="0.12" />
+        </PGraph_TetraM>
+        <PGraph_TetraL TypePsys="RigidBody" DrawType="VisualPrimitive" CollisionType="Particles" is6DOF="Yes" npsys="5" GraphVisName="Graphics_PTetraL" GraphContName="PTetraL_Coll" TriangleContactMaterial="" k_jousi="8e5" c_jousi="6000" k_coll="0" e_coll="0.02" myy="0.7" radius="0.25" useMass="1" M_Psys="340" Vol="0.17" roo="2000" dampingT="0.05" dampingR="0.05" length="1" nparticles="14">
+          <I_Psys Ixx="393.6" Iyy="393.6" Izz="393.6" />
+          <I_unitM Ixx="0.24" Iyy="0.24" Izz="0.24" />
+        </PGraph_TetraL>
+        <PGraph_PalloS TypePsys="RigidBody" DrawType="VisualPrimitive" CollisionType="Particles" is6DOF="Yes" npsys="30" GraphVisName="Graphics_PSphereS" GraphContName="PSphereS_Coll" TriangleContactMaterial="" k_jousi="8e5" c_jousi="6000" k_coll="0" e_coll="0.02" myy="0.7" radius="0.15" useMass="1" M_Psys="130.8996" Vol="0.0654498" roo="2000" dampingT="0.05" dampingR="0.05" length="1" nparticles="14">
+          <I_Psys Ixx="2.144" Iyy="2.144" Izz="2.144" />
+          <I_unitM Ixx="0.05" Iyy="0.05" Izz="0.05" />
+        </PGraph_PalloS>
+        <PGraph_PalloM TypePsys="RigidBody" DrawType="VisualPrimitive" CollisionType="Particles" is6DOF="Yes" npsys="15" GraphVisName="Graphics_PSphereM" GraphContName="PSphereM_Coll" TriangleContactMaterial="" k_jousi="8e5" c_jousi="6000" k_coll="0" e_coll="0.02" myy="0.7" radius="0.2" useMass="1" M_Psys="226.1946" Vol="0.1130973" roo="2000" dampingT="0.05" dampingR="0.05" length="1" nparticles="14">
+          <I_Psys Ixx="14.7" Iyy="14.7" Izz="14.7" />
+          <I_unitM Ixx="0.08" Iyy="0.08" Izz="0.08" />
+        </PGraph_PalloM>
+        <PGraph_PalloL TypePsys="RigidBody" DrawType="VisualPrimitive" CollisionType="Particles" is6DOF="Yes" npsys="5" GraphVisName="Graphics_PSphereL" GraphContName="PSphereL_Coll" TriangleContactMaterial="" k_jousi="8e5" c_jousi="6000" k_coll="0" e_coll="0.02" myy="0.7" radius="0.2" useMass="1" M_Psys="763.407" Vol="0.3817035" roo="2000" dampingT="0.05" dampingR="0.05" length="1" nparticles="18">
+          <I_Psys Ixx="217.9" Iyy="217.9" Izz="217.9" />
+          <I_unitM Ixx="0.16" Iyy="0.16" Izz="0.16" />
+        </PGraph_PalloL>
+        <PGraph_ElectricalCenter TypePsys="RigidBody" DrawType="VisualPrimitive" CollisionType="Particles" is6DOF="Yes" npsys="1" GraphVisName="Graphics_ElectricalCenter" GraphContName="Coll_ElectricalCenter" TriangleContactMaterial="" k_jousi="5e5" c_jousi="3000" k_coll="0" e_coll="0.02" myy="0.7" radius="0.2" useMass="0" M_Psys="100" Vol="0" roo="2000" dampingT="0.05" dampingR="0.05" length="1" nparticles="8">
+          <I_Psys Ixx="30" Iyy="20" Izz="40" />
+          <I_unitM Ixx="0.06" Iyy="0.06" Izz="0.06" />
+        </PGraph_ElectricalCenter>
+        <PGraph_Outhouse TypePsys="RigidBody" DrawType="VisualPrimitive" CollisionType="Particles" is6DOF="Yes" npsys="1" GraphVisName="Graphics_Outhouse" GraphContName="Coll_Outhouse" TriangleContactMaterial="" k_jousi="5e5" c_jousi="3000" k_coll="0" e_coll="0.02" myy="0.7" radius="0.2" useMass="0" M_Psys="100" Vol="0" roo="2000" dampingT="0.05" dampingR="0.05" length="1" nparticles="13">
+          <I_Psys Ixx="120" Iyy="40" Izz="110" />
+          <I_unitM Ixx="0.06" Iyy="0.06" Izz="0.06" />
+        </PGraph_Outhouse>
+      </PGraph>
+      <UserInput>
+        <PSysM_ElectricalCenter PGraph="PGraph_ElectricalCenter" index="0" RelToC="Ground" OriRelToC="Ground">
+          <Position x="-10" y="0.2" z="-10" />
+          <Orientation x="0" y="0" z="0" />
+        </PSysM_ElectricalCenter>
+        <PSysM_Outhouse PGraph="PGraph_Outhouse" index="0" RelToC="Ground" OriRelToC="Ground">
+          <Position x="24" y="0.2" z="10" />
+          <Orientation x="-1.570796326794896558" y="1.570796326794896558" z="1.570796326794896558" />
+        </PSysM_Outhouse>
+      </UserInput>
+      <MBSContactGraph>
+        <Contact_Bucket Name="Contact_Bucket" BodyName="Bucket" GraphName="Coll_Bucket" UseCIM="Yes" UseTriangleMesh="Yes" TriangleContactMaterial="" IsStatic="No" GType="3DS" usage="All" k_coll="1e6" e_coll="0.05" myy="0.15" cylRadius="1" cylHeight="1" rollingResistance="0" thicknessValue="0" soilShearing="1" isDestructive="No" />
+        <Contact_Ground Name="Contact_Ground" BodyName="Ground" GraphName="Graphics_Ground" UseCIM="Yes" UseTriangleMesh="Yes" TriangleContactMaterial="" IsStatic="No" GType="3DS" usage="All" k_coll="1e6" e_coll="0.3" myy="0.8" cylRadius="1" cylHeight="1" rollingResistance="0.05" thicknessValue="0" soilShearing="1" isDestructive="No" />
+        <Contact_LoadingFence Name="Contact_LoadingFence" BodyName="Ground" GraphName="Coll_LoadingFence" UseCIM="Yes" UseTriangleMesh="Yes" TriangleContactMaterial="" IsStatic="No" GType="3DS" usage="All" k_coll="1e7" e_coll="0.02" myy="0.75" cylRadius="1" cylHeight="1" rollingResistance="0" thicknessValue="0" soilShearing="1" isDestructive="No" />
+        <Contact_FencedArea Name="Contact_FencedArea" BodyName="Ground" GraphName="Coll_FencedArea" UseCIM="Yes" UseTriangleMesh="Yes" TriangleContactMaterial="" IsStatic="No" GType="3DS" usage="All" k_coll="1e7" e_coll="0.02" myy="0.75" cylRadius="1" cylHeight="1" rollingResistance="0" thicknessValue="0" soilShearing="1" isDestructive="No" />
+        <Contact_TyreFR Name="Contact_TyreFR" BodyName="Tyre_FrontR" GraphName="None" UseCIM="Yes" UseTriangleMesh="Yes" TriangleContactMaterial="" IsStatic="No" GType="Tyre" usage="All" k_coll="1e6" e_coll="0.1" myy="0.55" cylRadius="0.4" cylHeight="0.3" rollingResistance="0" thicknessValue="0" soilShearing="1" isDestructive="No" />
+        <Contact_TyreFL Name="Contact_TyreFL" BodyName="Tyre_FrontL" GraphName="None" UseCIM="Yes" UseTriangleMesh="Yes" TriangleContactMaterial="" IsStatic="No" GType="Tyre" usage="All" k_coll="1e6" e_coll="0.1" myy="0.55" cylRadius="0.4" cylHeight="0.3" rollingResistance="0" thicknessValue="0" soilShearing="1" isDestructive="No" />
+        <Contact_TyreRR Name="Contact_TyreRR" BodyName="Tyre_RearR" GraphName="None" UseCIM="Yes" UseTriangleMesh="Yes" TriangleContactMaterial="" IsStatic="No" GType="Tyre" usage="All" k_coll="1e6" e_coll="0.1" myy="0.55" cylRadius="0.4" cylHeight="0.3" rollingResistance="0" thicknessValue="0" soilShearing="1" isDestructive="No" />
+        <Contact_TyreRL Name="Contact_TyreRL" BodyName="Tyre_RearL" GraphName="None" UseCIM="Yes" UseTriangleMesh="Yes" TriangleContactMaterial="" IsStatic="No" GType="Tyre" usage="All" k_coll="1e6" e_coll="0.1" myy="0.55" cylRadius="0.4" cylHeight="0.3" rollingResistance="0" thicknessValue="0" soilShearing="1" isDestructive="No" />
+      </MBSContactGraph>
+    </Pile>
+    <Granular>
+      <Parameters cellSize="0.4" nBuckets="524287" preAllocation="60000" defGeomSelection="2" maxGranularParticles="1000" globalHeightFieldMaterial="defaultRamboMaterial" />
+    </Granular>
+    <RopeSystems />
+  </Particles>
+  <VirtualSensors>
+    <CollisionSensors>
+      <CollisionSensor1 Body1="Ground" Body2="Bucket" ActiveCollisionGroups="" MinorVelocityLimit="0" SeriousVelocityLimit="0" CriticalVelocityLimit="0" UpdateFrequencyInHz="0" CooldownTime="0" />
+    </CollisionSensors>
+  </VirtualSensors>
+  <Scripting>
+    <Script>
+      <Script1 name="Script1" executionType="Continuous" timingType="Simulation time" fileName="Scripts/mevea.py" />
+    </Script>
+  </Scripting>
+</DMInputFile>

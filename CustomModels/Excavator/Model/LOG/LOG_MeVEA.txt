@@ -1,0 +1,2 @@
+05:29:36: Model Excavator loaded, using config and resources from C:/Program Files (x86)/Mevea/
+05:29:38: Asking for data from existing manager

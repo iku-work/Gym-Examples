@@ -1,0 +1,119 @@
+
+INFORMATION: Checking model "Excavator" topology.
+
+
+INFORMATION: Checking of kinematic loops.
+
+INFORMATION: End of kinematic loop at body "BucketLink_1", last constraint is "DipperArm_BucketLink1".
+INFORMATION: End of kinematic loop at body "Bucket", last constraint is "BucketAttacment_Bucket".
+INFORMATION: End of kinematic loop at body "BucketTiltFrame", last constraint is "BucketLink_2".
+
+INFORMATION: Setting of parent constraints.
+
+INFORMATION: Parent constraint of body "Undercarriage" is "Ground_Undercarriage".
+INFORMATION: Parent constraint of body "Uppercarriage" is "Undercarriage_Uppercarriage".
+INFORMATION: Parent constraint of body "MainBoom" is "Uppercarriage_MainBoom".
+INFORMATION: Parent constraint of body "DipperArm" is "MainBoom_DipperArm".
+INFORMATION: Parent constraint of body "BucketLink_1" is "DipperArm_BucketLink1".
+INFORMATION: Parent constraint of body "BucketTiltFrame" is "DipperArm_BucketTilt".
+INFORMATION: Parent constraint of body "BucketRotator" is "BucketTilt_BucketRotator".
+INFORMATION: Parent constraint of body "BucketAttachment" is "BucketRotator_BucketAttachment".
+INFORMATION: Parent constraint of body "Bucket" is "BucketAttacment_Bucket".
+
+INFORMATION: Checking of constraint order.
+
+Current body Bucket, parent constraint BucketAttacment_Bucket constraintIndex = 9, parent body BucketAttachment
+Current body BucketAttachment, parent constraint BucketRotator_BucketAttachment constraintIndex = 8, parent body BucketRotator
+Current body BucketRotator, parent constraint BucketTilt_BucketRotator constraintIndex = 7, parent body BucketTiltFrame
+Current body BucketTiltFrame, parent constraint DipperArm_BucketTilt constraintIndex = 6, parent body DipperArm
+Current body DipperArm, parent constraint MainBoom_DipperArm constraintIndex = 3, parent body MainBoom
+Current body MainBoom, parent constraint Uppercarriage_MainBoom constraintIndex = 2, parent body Uppercarriage
+Current body Uppercarriage, parent constraint Undercarriage_Uppercarriage constraintIndex = 1, parent body Undercarriage
+Current body Undercarriage, parent constraint Ground_Undercarriage constraintIndex = 0, parent body Ground
+
+Current body BucketAttachment, parent constraint BucketRotator_BucketAttachment constraintIndex = 8, parent body BucketRotator
+Current body BucketRotator, parent constraint BucketTilt_BucketRotator constraintIndex = 7, parent body BucketTiltFrame
+Current body BucketTiltFrame, parent constraint DipperArm_BucketTilt constraintIndex = 6, parent body DipperArm
+Current body DipperArm, parent constraint MainBoom_DipperArm constraintIndex = 3, parent body MainBoom
+Current body MainBoom, parent constraint Uppercarriage_MainBoom constraintIndex = 2, parent body Uppercarriage
+Current body Uppercarriage, parent constraint Undercarriage_Uppercarriage constraintIndex = 1, parent body Undercarriage
+Current body Undercarriage, parent constraint Ground_Undercarriage constraintIndex = 0, parent body Ground
+
+Current body BucketRotator, parent constraint BucketTilt_BucketRotator constraintIndex = 7, parent body BucketTiltFrame
+Current body BucketTiltFrame, parent constraint DipperArm_BucketTilt constraintIndex = 6, parent body DipperArm
+Current body DipperArm, parent constraint MainBoom_DipperArm constraintIndex = 3, parent body MainBoom
+Current body MainBoom, parent constraint Uppercarriage_MainBoom constraintIndex = 2, parent body Uppercarriage
+Current body Uppercarriage, parent constraint Undercarriage_Uppercarriage constraintIndex = 1, parent body Undercarriage
+Current body Undercarriage, parent constraint Ground_Undercarriage constraintIndex = 0, parent body Ground
+
+Current body BucketTiltFrame, parent constraint DipperArm_BucketTilt constraintIndex = 6, parent body DipperArm
+Current body DipperArm, parent constraint MainBoom_DipperArm constraintIndex = 3, parent body MainBoom
+Current body MainBoom, parent constraint Uppercarriage_MainBoom constraintIndex = 2, parent body Uppercarriage
+Current body Uppercarriage, parent constraint Undercarriage_Uppercarriage constraintIndex = 1, parent body Undercarriage
+Current body Undercarriage, parent constraint Ground_Undercarriage constraintIndex = 0, parent body Ground
+
+Current body BucketLink_1, parent constraint DipperArm_BucketLink1 constraintIndex = 4, parent body DipperArm
+Current body DipperArm, parent constraint MainBoom_DipperArm constraintIndex = 3, parent body MainBoom
+Current body MainBoom, parent constraint Uppercarriage_MainBoom constraintIndex = 2, parent body Uppercarriage
+Current body Uppercarriage, parent constraint Undercarriage_Uppercarriage constraintIndex = 1, parent body Undercarriage
+Current body Undercarriage, parent constraint Ground_Undercarriage constraintIndex = 0, parent body Ground
+
+Current body DipperArm, parent constraint MainBoom_DipperArm constraintIndex = 3, parent body MainBoom
+Current body MainBoom, parent constraint Uppercarriage_MainBoom constraintIndex = 2, parent body Uppercarriage
+Current body Uppercarriage, parent constraint Undercarriage_Uppercarriage constraintIndex = 1, parent body Undercarriage
+Current body Undercarriage, parent constraint Ground_Undercarriage constraintIndex = 0, parent body Ground
+
+Current body MainBoom, parent constraint Uppercarriage_MainBoom constraintIndex = 2, parent body Uppercarriage
+Current body Uppercarriage, parent constraint Undercarriage_Uppercarriage constraintIndex = 1, parent body Undercarriage
+Current body Undercarriage, parent constraint Ground_Undercarriage constraintIndex = 0, parent body Ground
+
+Current body Uppercarriage, parent constraint Undercarriage_Uppercarriage constraintIndex = 1, parent body Undercarriage
+Current body Undercarriage, parent constraint Ground_Undercarriage constraintIndex = 0, parent body Ground
+
+Current body Undercarriage, parent constraint Ground_Undercarriage constraintIndex = 0, parent body Ground
+
+
+
+INFORMATION: Updated model topology:
+
+INFORMATION: Bodies
+INFORMATION: Parent body of "Undercarriage" is "Ground".
+INFORMATION: Parent body of "Uppercarriage" is "Undercarriage".
+INFORMATION: Parent body of "MainBoom" is "Uppercarriage".
+INFORMATION: Parent body of "DipperArm" is "MainBoom".
+INFORMATION: Parent body of "BucketLink_1" is "DipperArm".
+INFORMATION: Parent body of "BucketTiltFrame" is "DipperArm".
+INFORMATION: Parent body of "BucketRotator" is "BucketTiltFrame".
+INFORMATION: Parent body of "BucketAttachment" is "BucketRotator".
+INFORMATION: Parent body of "Bucket" is "BucketAttachment".
+
+INFORMATION: Constraints
+INFORMATION: Preceding body of constraint "Ground_Undercarriage" is "Ground".
+INFORMATION: Following body of constraint "Ground_Undercarriage" is "Undercarriage".
+
+INFORMATION: Preceding body of constraint "Undercarriage_Uppercarriage" is "Undercarriage".
+INFORMATION: Following body of constraint "Undercarriage_Uppercarriage" is "Uppercarriage".
+
+INFORMATION: Preceding body of constraint "Uppercarriage_MainBoom" is "Uppercarriage".
+INFORMATION: Following body of constraint "Uppercarriage_MainBoom" is "MainBoom".
+
+INFORMATION: Preceding body of constraint "MainBoom_DipperArm" is "MainBoom".
+INFORMATION: Following body of constraint "MainBoom_DipperArm" is "DipperArm".
+
+INFORMATION: Preceding body of constraint "DipperArm_BucketLink1" is "DipperArm".
+INFORMATION: Following body of constraint "DipperArm_BucketLink1" is "BucketLink_1".
+
+INFORMATION: Constraint "BucketLink_2" is a cut joint.
+
+INFORMATION: Preceding body of constraint "DipperArm_BucketTilt" is "DipperArm".
+INFORMATION: Following body of constraint "DipperArm_BucketTilt" is "BucketTiltFrame".
+
+INFORMATION: Preceding body of constraint "BucketTilt_BucketRotator" is "BucketTiltFrame".
+INFORMATION: Following body of constraint "BucketTilt_BucketRotator" is "BucketRotator".
+
+INFORMATION: Preceding body of constraint "BucketRotator_BucketAttachment" is "BucketRotator".
+INFORMATION: Following body of constraint "BucketRotator_BucketAttachment" is "BucketAttachment".
+
+INFORMATION: Preceding body of constraint "BucketAttacment_Bucket" is "BucketAttachment".
+INFORMATION: Following body of constraint "BucketAttacment_Bucket" is "Bucket".
+

@@ -1,0 +1,19 @@
+05:29:36: DM Manager started
+05:29:37: Manager selects port 4763
+05:29:37: Manager creating model
+05:29:37: Manager waiting for GUI to connect
+05:29:37: Manager got connect from GUI
+05:29:37: DMHandleNewConnection: Got PDU: ID=1002, Type=1002, dsize=0
+05:29:37: GUI going to receive Environment Parameters
+05:29:37: Manager receiving environment:
+05:29:37: FINISHED RECEIVING ENVIRONMENT, xmlname member: C:\Data\Mevea-Gym-Toolbox2\CustomModels\Excavator\Model\\Scripts\..\Excavator.mvs
+05:29:37: Manager will parse files
+05:29:38: Manager got environment: 1 solvers
+05:29:38: Adding socket to GUI sockets 0
+05:29:38: GUI connected
+05:29:38: Select() returns 2: New Connection
+05:29:38: DMHandleNewConnection: Got PDU: ID=1003, Type=1003, dsize=1003
+05:29:38: Wrong connection type!
+05:29:38: GUI ready, creating solvers
+05:29:38: Creating nSolvers = 1 threads from 1 factories
+05:29:38: Creating solver from Standard Factory

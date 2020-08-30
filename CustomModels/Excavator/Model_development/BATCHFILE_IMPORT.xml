@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <PARAMETERS>
+    <Start_batch_file description="Run startup bat" name="Start bat" type="other" value="./external/start.bat;false;/min" minimum="" maximum="" xml_command="CommandRunBatchFile" increment="0" icon="" unit="" address="" query_at="Start" />
+  </PARAMETERS>
+</DMInputFile>

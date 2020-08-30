@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <PARAMETERS>
+    <Hopper_position description="Choose hopper position" name="Hopper position" type="double" value="-55" minimum="-60" maximum="-50" xml_command="CommandSetDummyX" increment="1" icon="" unit="m" address="Dummy_Hopper" query_at="Start" invert_value="false" />
+  </PARAMETERS>
+</DMInputFile>

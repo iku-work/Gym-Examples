@@ -1,0 +1,338 @@
+#Ascii Scene
+#Version 78
+#Generator OpenSceneGraph 2.9.17
+osg::Group
+{
+    UniqueID 3
+    UserDataContainer TRUE
+    {
+        osg::DefaultUserDataContainer
+        {
+            UniqueID 4
+            UDC_Descriptions 3
+            {
+                "USE_BUMP_MAP s_mat_diffuse"
+                "USE_BUMP_SCALE 10.0"
+                "USE_BUMP_UV_INDEX 0"
+            }
+        }
+    }
+    StateSet TRUE
+    {
+        osg::StateSet
+        {
+            UniqueID 5
+            Name "texture_order_state"
+            DataVariance STATIC
+            ModeList 2
+            {
+                GL_CULL_FACE ON
+                GL_BLEND ON
+            }
+            TextureAttributeList 1
+            {
+                Data 1
+                {
+                    osg::Texture2D
+                    {
+                        UniqueID 1
+                        Name "s_water_normal"
+                        WRAP_S REPEAT
+                        WRAP_T REPEAT
+                        WRAP_R CLAMP_TO_EDGE
+                        MIN_FILTER LINEAR_MIPMAP_LINEAR
+                        MAG_FILTER LINEAR
+                        UnRefImageDataAfterApply TRUE
+                        ResizeNonPowerOfTwoHint TRUE
+                        Image TRUE
+                        {
+                            UniqueID 6
+                            FileName "default_normal.png"
+                            WriteHint 0 2
+                            DataVariance STATIC
+                        }
+                    }
+                    Value OFF
+                }
+            }
+            RenderBinMode USE_RENDERBIN_DETAILS
+            BinNumber 0
+            BinName "DepthSortedBin"
+        }
+    }
+    Children 2
+    {
+        osg::Group
+        {
+            UniqueID 7
+            StateSet TRUE
+            {
+                osg::StateSet
+                {
+                    UniqueID 8
+                    Name "texture_definitions"
+                    DataVariance STATIC
+                    TextureModeList 1 { Data 1 { GL_TEXTURE_2D ON } }
+                    TextureAttributeList 1
+                    {
+                        Data 1
+                        {
+                            osg::Texture2D
+                            {
+                                UniqueID 2
+                                WRAP_S REPEAT
+                                WRAP_T REPEAT
+                                WRAP_R CLAMP_TO_EDGE
+                                MIN_FILTER LINEAR_MIPMAP_LINEAR
+                                MAG_FILTER LINEAR
+                                UnRefImageDataAfterApply TRUE
+                                ResizeNonPowerOfTwoHint TRUE
+                                Image TRUE
+                                {
+                                    UniqueID 9
+                                    FileName "ratatunneli_04.png"
+                                    WriteHint 0 2
+                                    DataVariance STATIC
+                                }
+                            }
+                            Value OFF
+                        }
+                    }
+                }
+            }
+        }
+        osg::Geode
+        {
+            UniqueID 10
+            Name "NAME_HERE"
+            StateSet TRUE
+            {
+                osg::StateSet
+                {
+                    UniqueID 11
+                    Name "generic_stateset"
+                    DataVariance STATIC
+                    ModeList 1
+                    {
+                        GL_CULL_FACE ON
+                    }
+                    AttributeList 2
+                    {
+                        osg::BlendFunc
+                        {
+                            UniqueID 12
+                            SourceRGB SRC_ALPHA
+                            SourceAlpha ONE
+                            DestinationRGB ONE_MINUS_SRC_ALPHA
+                            DestinationAlpha ONE
+                        }
+                        Value OFF
+                        osg::Material
+                        {
+                            UniqueID 13
+                            Ambient   TRUE Front  0.000  0.000  0.000 1      Back  0.000  0.000  0.000 1
+                            Diffuse   TRUE Front  0.000  0.000  0.000  1.000 Back  0.000  0.000  0.000  1.000
+                            Specular  TRUE Front  0.256  0.256  0.256 1      Back  0.256  0.256  0.256 1
+                            Emission  TRUE Front  0.000  0.000  0.000 1      Back  0.000  0.000  0.000 1
+                            Shininess TRUE Front  0.326 Back  0.326
+                        }
+                        Value OFF
+                    }
+                    TextureModeList 1 { Data 1 { GL_TEXTURE_2D ON } }
+                    TextureAttributeList 1
+                    {
+                        Data 1 { osg::Texture2D { UniqueID 2 } Value OFF }
+                    }
+                    UniformList 9
+                    {
+                        osg::Uniform
+                        {
+                            UniqueID 14
+                            Name "fresnel_factor"
+                            Type FLOAT
+                            NumElements 1
+                            Elements TRUE ArrayID 15 FloatArray 1
+                            {
+                                1.250
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 16
+                            Name "fresnel_power"
+                            Type FLOAT
+                            NumElements 1
+                            Elements TRUE ArrayID 17 FloatArray 1
+                            {
+                                0.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 18
+                            Name "gloss_factor"
+                            Type FLOAT
+                            NumElements 1
+                            Elements TRUE ArrayID 19 FloatArray 1
+                            {
+                                1.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 20
+                            Name "invert_z"
+                            Type INT
+                            NumElements 1
+                            Elements TRUE ArrayID 21 IntArray 1
+                            {
+                                0.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 22
+                            Name "material_scale"
+                            Type FLOAT
+                            NumElements 1
+                            Elements TRUE ArrayID 23 FloatArray 1
+                            {
+                                8.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 24
+                            Name "mirror_color"
+                            Type FLOAT_VEC3
+                            NumElements 1
+                            Elements TRUE ArrayID 25 FloatArray 3
+                            {
+                                1.000
+                                1.000
+                                1.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 26
+                            Name "reflect_factor"
+                            Type FLOAT
+                            NumElements 1
+                            Elements TRUE ArrayID 27 FloatArray 1
+                            {
+                                0.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 28
+                            Name "translucency"
+                            Type FLOAT
+                            NumElements 1
+                            Elements TRUE ArrayID 29 FloatArray 1
+                            {
+                                0.000
+                            }
+                        }
+                        Value OFF
+                        osg::Uniform
+                        {
+                            UniqueID 30
+                            Name "transmit_color"
+                            Type FLOAT_VEC3
+                            NumElements 1
+                            Elements TRUE ArrayID 31 FloatArray 3
+                            {
+                                1.000
+                                1.000
+                                1.000
+                            }
+                        }
+                        Value OFF
+                    }
+                }
+            }
+            Drawables 1
+            {
+                osg::Geometry
+                {
+                    UniqueID 32
+                    Name "TODO: some name here"
+                    DataVariance STATIC
+                    PrimitiveSetList 1
+                    {
+                        DrawElementsUInt GL_TRIANGLES 12
+                        {
+                               1    0    2
+                               3    1    2
+                               5    4    6
+                               7    5    6
+                        }
+                    }
+                    VertexData
+                    {
+                        Array TRUE ArrayID 33 Vec3fArray 8
+                        {
+                             768.00000000 -13.81519985 -256.00000000 
+                             768.00000000 -13.81529999  1280.00000000 
+                            -768.00000000 -13.81519985 -256.00000000 
+                            -768.00000000 -13.81529999  1280.00000000 
+                             70.31700134 -12.41399956 -42.64070129 
+                             70.31700134 -12.41399956  57.35929871 
+                            -29.68300056 -12.41399956 -42.64070129 
+                            -29.68309975 -12.41399956  57.35929871 
+                        }
+                        Indices FALSE
+                        Binding BIND_PER_VERTEX
+                        Normalize 0
+                    }
+                    NormalData
+                    {
+                        Array TRUE ArrayID 34 Vec3fArray 8
+                        {
+                              0.00000000   1.00000000   0.00000000 
+                              0.00000000   1.00000000   0.00000000 
+                              0.00000000   1.00000000   0.00000000 
+                              0.00000000   1.00000000   0.00000000 
+                              0.00000000   1.00000000   0.00000000 
+                              0.00000000   1.00000000   0.00000000 
+                              0.00000000   1.00000000   0.00000000 
+                              0.00000000   1.00000000   0.00000000 
+                        }
+                        Indices FALSE
+                        Binding BIND_PER_VERTEX
+                        Normalize 0
+                    }
+                    TexCoordData 1
+                    {
+                        Data
+                        {
+                            Array TRUE ArrayID 35 Vec2fArray 8
+                            {
+                                  0.28700000   0.71300000 
+                                  0.71300000   0.71300000 
+                                  0.28700000   0.28700000 
+                                  0.71300000   0.28700000 
+                                  0.34619999   0.51950002 
+                                  0.37390000   0.51950002 
+                                  0.34619999   0.49180001 
+                                  0.37390000   0.49180001 
+                            }
+                            Indices FALSE
+                            Binding BIND_PER_VERTEX
+                            Normalize 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

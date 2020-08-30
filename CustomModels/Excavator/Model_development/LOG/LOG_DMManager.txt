@@ -1,0 +1,27 @@
+14:09:12: DM Manager started
+14:09:13: Manager selects port 4763
+14:09:13: Manager creating model
+14:09:13: Manager waiting for GUI to connect
+14:09:13: Manager got connect from GUI
+14:09:13: DMHandleNewConnection: Got PDU: ID=1002, Type=1002, dsize=0
+14:09:13: GUI going to receive Environment Parameters
+14:09:13: Manager receiving environment:
+14:09:13: FINISHED RECEIVING ENVIRONMENT, xmlname member: Excavator.mvs
+14:09:13: Manager will parse files
+14:09:13: Manager got environment: 1 solvers
+14:09:13: Adding socket to GUI sockets 0
+14:09:13: GUI connected
+14:09:13: GUI ready, creating solvers
+14:09:13: Creating nSolvers = 1 threads from 1 factories
+14:09:13: Creating solver from Standard Factory
+14:09:14: Solver created using Standard Factory
+14:09:14: Select() returns 2: New Connection
+14:09:14: DMHandleNewConnection: Got PDU: ID=0, Type=1001, dsize=0
+14:09:14: Adding socket to Solver Sockets (solverid)
+14:09:14: Solver 0 ready
+14:10:12: DMRecvPdu(): Connection in sock 0 closed, so quitting
+14:10:12: DMHandlePacket(): Visualization unreachable, closing
+14:10:12: Current packet: sender=0 type=12121
+14:10:12: Visualization connection closed, state 201
+14:10:12: DMHandlePacket: No PDU received
+14:10:12: DMHandlePacket: Connection closed before start, exiting

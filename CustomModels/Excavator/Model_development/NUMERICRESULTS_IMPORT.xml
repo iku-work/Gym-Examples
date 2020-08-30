@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DMInputFile>
+  <PARAMETERS>
+    <SaveResultsToDB description="Save results to database?" name="Save results" type="bool" value="true" minimum="0" maximum="0" xml_command="CommandSaveNumericResults" increment="0" icon="" unit="" address="" query_at="End" />
+  </PARAMETERS>
+</DMInputFile>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DMAssemblyFile>
+  <Graphics>
+    <Bucket_Graphics Body="Bucket" Scale="1" FileName="../Graphics/Excavator/Bucket/Bucket.osgt" Transparency="1" CastShadows="Yes" ReceiveShadows="No" TransparentBin="No" TextureName="" Material="None" scriptName="" BothSides="No" IsActive="Yes" useColor="No" ShaderName="../Shaders/awd" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" bumpMapScale="10" ocean_reflect="No" ocean_refract="No" ocean_discard="No" linkDefaultShaders="No" isTerrain="No" disableCulling="No" translateVertices="Yes" usePagedLoading="No" modShading="GGX untextured">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Bucket_Graphics>
+    <Coll_Bucket_Graphics Body="Bucket" Scale="1" FileName="../Graphics/Excavator/Bucket/COLL_Bucket.3ds" Transparency="1" CastShadows="No" ReceiveShadows="No" TransparentBin="No" TextureName="" Material="None" scriptName="" BothSides="No" IsActive="No" useColor="No" ShaderName="" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" bumpMapScale="10" ocean_reflect="No" ocean_refract="No" ocean_discard="No" linkDefaultShaders="No" isTerrain="No" disableCulling="No" translateVertices="Yes" usePagedLoading="No" modShading="Collision">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Coll_Bucket_Graphics>
+    <Coll_Bucket_HF_Teeths_Graphics Body="Bucket" Scale="1" FileName="../Graphics/Excavator/Bucket/COLL_Bucket_Teeths_HF.3ds" Transparency="1" CastShadows="No" ReceiveShadows="No" TransparentBin="No" TextureName="" Material="None" scriptName="" BothSides="No" IsActive="No" useColor="No" ShaderName="" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" bumpMapScale="10" ocean_reflect="No" ocean_refract="No" ocean_discard="No" linkDefaultShaders="No" isTerrain="No" disableCulling="No" translateVertices="Yes" usePagedLoading="No" modShading="Collision">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </Coll_Bucket_HF_Teeths_Graphics>
+    <COLL_Bucket_HF_TeethSimple_Graphics Body="Bucket" Scale="1" FileName="../Graphics/Excavator/Bucket/COLL_Bucket_Teeths_HF_Simple.3ds" Transparency="1" CastShadows="No" ReceiveShadows="No" TransparentBin="No" TextureName="" Material="None" scriptName="" BothSides="No" IsActive="No" useColor="No" ShaderName="" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" bumpMapScale="10" ocean_reflect="No" ocean_refract="No" ocean_discard="No" linkDefaultShaders="Yes" isTerrain="No" disableCulling="No" translateVertices="Yes" usePagedLoading="No" modShading="Collision">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </COLL_Bucket_HF_TeethSimple_Graphics>
+    <COLL_Bucket_HF_OnlyHF_Graphics Body="Bucket" Scale="1" FileName="../Graphics/Excavator/Bucket/COLL_Bucket_HF_Only.3ds" Transparency="1" CastShadows="No" ReceiveShadows="No" TransparentBin="No" TextureName="" Material="None" scriptName="" BothSides="No" IsActive="No" useColor="No" ShaderName="" use_flexible_shader="No" use_fragment_light="No" use_normal_map="No" bumpMapScale="10" ocean_reflect="No" ocean_refract="No" ocean_discard="No" linkDefaultShaders="Yes" isTerrain="No" disableCulling="No" translateVertices="Yes" usePagedLoading="No" modShading="Collision">
+      <Position x="0" y="0" z="0" />
+      <Orientation rx="0" ry="0" rz="0" />
+      <Colour r="0.5" g="0.5" b="0.5" />
+    </COLL_Bucket_HF_OnlyHF_Graphics>
+  </Graphics>
+  <Constraints>
+    <BucketAttacment_Bucket UsePF="No" Body1="BucketAttachment" NodeBody1="0" Body2="Bucket" NodeBody2="0" Body1CS="BucketAttachment.Bucket" Body2CS="Bucket.BucketAttachment" Type="7" Active="Yes" CutJoint="No" d0="0" JointLength="0" JointDiameter="0">
+      <Position1 x="0" y="0" z="0" />
+      <Position2 x="0" y="0" z="0" />
+      <ua x="1" y="0" z="0" />
+      <ub x="0" y="0" z="1" />
+      <uc x="0" y="1" z="0" />
+      <ud x="0" y="1" z="0" />
+    </BucketAttacment_Bucket>
+  </Constraints>
+  <Forces></Forces>
+  <Particles />
+  <Collisions>
+    <Collision_GroundBucket BodyA="Ground" BodyB="Bucket" GraphA="Environment_COLL" GraphB="Coll_Bucket_Graphics" K="2e5" e="0.1" c="0" myy="0.2" Cvel="0" NormalDirection="Both">
+      <Friction s0="1000" s1="50" v0="0.1" c="10" myys="0.95" myyd="0.7" />
+    </Collision_GroundBucket>
+  </Collisions>
+  <Bodies>
+    <Bucket UsePF="No" RelTo="BucketAttachment" BodyType="Rigid" VisualizationGraphics="Bucket_Graphics" CollisionGraphics="Coll_Bucket_Graphics;Coll_Bucket_HF_Teeths_Graphics;COLL_Bucket_HF_OnlyHF_Graphics">
+      <Position x="-0.31" y="-0.13" z="0" />
+      <Orientation phi="0" theta="0" psi="0" />
+      <Inertia mass="750">
+        <I Ixx="185" Iyy="228.125" Izz="168.125" Ixy="0" Izx="0" Iyz="0" />
+        <CM x="0.2" y="-0.7" z="0" />
+        <CMI x="0.2" y="-0.7" z="0" />
+      </Inertia>
+      <CS>
+        <BucketAttachment RefBody="" Node="0">
+          <Position x="0" y="0" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </BucketAttachment>
+        <RearSupport RefBody="" Node="0">
+          <Position x="0.5" y="-0.04" z="0" />
+          <Orientation rx="0" ry="0" rz="0" />
+        </RearSupport>
+      </CS>
+    </Bucket>
+  </Bodies>
+  <Dummies></Dummies>
+  <DataSources></DataSources>
+  <Particles particlefilename="./Bucket1Particles.xml" />
+</DMAssemblyFile>
