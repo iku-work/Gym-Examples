@@ -41,11 +41,8 @@ path = 'C:\Data\MeveaOpenAIGym\Gym-Examples\CustomModels\Jib_Crane\\'
 kwargs = {'mvs_folder': path}
 sim = gym.make('gym_mevea_single:mevea-custom-v0', **kwargs)
 '''
-path = 'C:\Data\MeveaOpenAIGym\Gym-Examples\CustomModels\Excavator\Model'
-kwargs = {'mvs_folder': path}
-sim = gym.make('gym_mevea_single:mevea-custom-v0', **kwargs)
 # Run tutorial Jib Crane model 
-#sim = gym.make('gym_mevea_single:mevea-custom-v0')
+sim = gym.make('gym_mevea_single:mevea-custom-v0')
 
 # Create the agent
 agent=Agent(

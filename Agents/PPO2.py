@@ -29,20 +29,20 @@ path = 'C:\Data\MeveaOpenAIGym\Gym-Examples\CustomModels\WheelLoader\\'
 
 env_list = []
 
-for i in range(4):
-  kwargs = {'mvs_folder': path}
-  sim = gym.make('gym_mevea_single:mevea-custom-v0', **kwargs)
+for i in range(2):
+  # Run tutorial Jib Crane model 
+  sim = gym.make('gym_mevea_single:mevea-custom-v0')
   env = DummyVecEnv([lambda: sim])
 
 
 
 model = PPO2(MlpPolicy, env, verbose=1)
-model.learn(total_timesteps=20000)
+model.learn(total_timesteps=200000)
 
 for env in env_list:
   obs = env.reset()
 
-for i in range(2000):
+for i in range(20000):
   for env in env_list:
     print(env_list.index(env))
     action, _states = model.predict(obs)
@@ -53,7 +53,7 @@ for env in env_list:
 
 
 '''
-# Our firewall does not allow it, but could be an option
+# Could be an option for parallelizing
 
 import ray
 from ray.tune.registry import register_env
