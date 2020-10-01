@@ -1,5 +1,5 @@
-04:00:17: Model Jib_Crane loaded, using config and resources from C:/Program Files (x86)/Mevea/
-04:00:20: intitializing laser scanners
-04:00:20: NOTE: File "" is not present. Continuing...
-04:00:20: Setting camera to body 0: Ground
-04:00:20: Head Tracking inactive
+23:40:33: Model Jib_Crane loaded, using config and resources from C:/Program Files (x86)/Mevea/
+23:40:35: intitializing laser scanners
+23:40:35: NOTE: File "" is not present. Continuing...
+23:40:35: Setting camera to body 0: Ground
+23:40:35: Head Tracking inactive

@@ -1,0 +1,25 @@
+13:31:42: Model Excavator loaded, using config and resources from C:/Program Files (x86)/Mevea/
+13:31:53: Visualization: Using shader instanced track elements
+13:31:54: NOTE: File "" is not present. Continuing...
+13:31:54: Setting camera to body 2: Uppercarriage
+13:31:54: Head Tracking inactive
+13:32:04: Total loading time 23.733204
+13:32:05: ART DTrack not found, disabling head tracking
+13:32:29: Deactivating script instance Input_Slew
+13:32:29: Deactivating script 1 Input_Slew 1
+13:32:29: Deactivating script Input_Slew 1
+13:32:29: Deactivate done 0
+13:32:32: uniform block SpotLightBlock has no binding.
+Warning: in 3ds loader: file has no nodes, traversing by meshes instead
+13:32:32: Warning: in 3ds loader: file has no nodes, traversing by meshes instead
+13:32:33: Warning: in 3ds loader: file has no nodes, traversing by meshes instead
+13:32:34: Warning: in 3ds loader: file has no nodes, traversing by meshes instead
+13:32:35: ART DTrack not found, disabling head tracking
+13:33:02: Deactivating script instance Input_Slew
+13:33:02: Deactivating script 1 Input_Slew 1
+13:33:02: Deactivating script Input_Slew 1
+13:33:02: Deactivate done 0
+13:33:05: Warning: in 3ds loader: file has no nodes, traversing by meshes instead
+13:33:06: Warning: in 3ds loader: file has no nodes, traversing by meshes instead
+13:33:07: Warning: in 3ds loader: file has no nodes, traversing by meshes instead
+13:33:08: ART DTrack not found, disabling head tracking

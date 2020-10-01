@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MeVEA_Materials_Library>
+  <Collision_Ground_Bucket>
+    <Bucket Body="Bucket" Geometry="Coll_Bucket_Graphics" Material="Bucket_Material" IgnoreObjectNames="" />
+    <Ground Body="Ground" Geometry="COLL_ExGround_Graphics" Material="Ground_soft" IgnoreObjectNames="" />
+    <Bucket_Teeths Body="Bucket" Geometry="Coll_Bucket_Teeths_Graphics" Material="Bucket_SoftTeeth" IgnoreObjectNames="Bucket_Teeth" />
+  </Collision_Ground_Bucket>
+  <CollisionGroups>
+    <Collision_Ground>
+      <Ground Body="Ground" Geometry="Coll_Bridge_Graphics" Material="Bucket_Material" IgnoreObjectNames="" />
+      <Undercarriage Body="Undercarriage" Geometry="Coll_UnderCarr_Track_Graphics" Material="Bucket_Material" IgnoreObjectNames="" />
+      <MainBoom Body="MainBoom" Geometry="Coll_MainBoom_Graphics" Material="Bucket_Material" IgnoreObjectNames="Undercarriage;Bucket" />
+      <DipperArm Body="DipperArm" Geometry="Coll_DipperArm_Graphics" Material="Bucket_Material" IgnoreObjectNames="Undercarriage;MainBoom;Bucket" />
+      <Uppercarriage Body="Uppercarriage" Geometry="Coll_Cabin_Graphics" Material="Bucket_Material" IgnoreObjectNames="Undercarriage;Bucket;MainBoom;DipperArm" />
+      <Bucket Body="Bucket" Geometry="Coll_Bucket_Graphics" Material="Bucket_Material" IgnoreObjectNames="Undercarriage;Bucket;MainBoom;DipperArm" />
+    </Collision_Ground>
+    <ClampAttacmentBucket>
+      <Bucket Body="Bucket" Geometry="Coll_Bucket_Graphics" Material="Bucket_Material" IgnoreObjectNames="" />
+      <BucketAttachment Body="BucketAttachment" Geometry="Coll_BucketAttacment_Graphics" Material="Bucket_Material" IgnoreObjectNames="" />
+    </ClampAttacmentBucket>
+    <Collision_Bucket_Cabin>
+      <Bucket Body="Bucket" Geometry="Coll_Bucket_Graphics" Material="Bucket_Material" IgnoreObjectNames="" />
+      <Bucket_Teeths Body="Bucket" Geometry="COLL_Bucket_HF_TeethSimple_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket" />
+      <MainBoom Body="MainBoom" Geometry="Coll_MainBoom_Graphics" Material="Bucket_Material" IgnoreObjectNames="" />
+      <Uppercarriage Body="Uppercarriage" Geometry="Coll_Cabin_Graphics" Material="Bucket_Material" IgnoreObjectNames="MainBoom" />
+    </Collision_Bucket_Cabin>
+    <Collision_Bucket_Undercarriage>
+      <Bucket Body="Bucket" Geometry="Coll_Bucket_Graphics" Material="Bucket_Material" IgnoreObjectNames="" />
+      <Bucket_Teeths Body="Bucket" Geometry="COLL_Bucket_HF_TeethSimple_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket" />
+      <Undercarriage Body="Undercarriage" Geometry="Coll_UnderCarr_Track_Graphics" Material="Bucket_Material" IgnoreObjectNames="" />
+    </Collision_Bucket_Undercarriage>
+    <Collision_Dumper>
+      <DumperBed Body="DumpingBed" Geometry="Coll_DumpingBed_Graphics" Material="Bucket_Material" IgnoreObjectNames="" />
+      <DumperRearFrame Body="RearFrame" Geometry="Coll_RearFrame_Graphics" Material="Bucket_Material" IgnoreObjectNames="DumperBed" />
+      <DumperFrontFrame Body="FrontFrame" Geometry="Coll_FrontFrame_Graphics" Material="Bucket_Material" IgnoreObjectNames="DumperBed;DumperRearFrame" />
+      <Bucket Body="Bucket" Geometry="Coll_Bucket_Graphics" Material="Bucket_Material" IgnoreObjectNames="" />
+      <Bucket_Teeths Body="Bucket" Geometry="Coll_Bucket_HF_Teeths_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket" />
+      <BucketAttachment Body="BucketAttachment" Geometry="Coll_BucketAttacment_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket;Bucket_Teeths" />
+      <MainBoom Body="MainBoom" Geometry="Coll_MainBoom_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket;Bucket_Teeths;BucketAttachment" />
+      <DipperArm Body="DipperArm" Geometry="Coll_DipperArm_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket;Bucket_Teeths;BucketAttachment;MainBoom" />
+      <Uppercarriage Body="Uppercarriage" Geometry="Coll_Cabin_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket;Bucket_Teeths;BucketAttachment;MainBoom;DipperArm" />
+      <Undercarriage Body="Undercarriage" Geometry="Coll_UnderCarr_Track_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket;Bucket_Teeths;BucketAttachment;MainBoom;DipperArm;Uppercarriage" />
+    </Collision_Dumper>
+    <Collision_Dumper_Tyres>
+      <TyreFR Body="TyreFR" Geometry="COLL_Dumper_Tyre_Full_Graphics" Material="Bucket_Material" IgnoreObjectNames="DumperBed" />
+      <TyreFL Body="TyreFL" Geometry="COLL_Dumper_Tyre_Full_Graphics" Material="Bucket_Material" IgnoreObjectNames="TyreFR" />
+      <TyreRL1 Body="TyreRL1" Geometry="COLL_Dumper_Tyre_Full_Graphics" Material="Bucket_Material" IgnoreObjectNames="TyreFR;TyreFL" />
+      <TyreRL2 Body="TyreRL2" Geometry="COLL_Dumper_Tyre_Full_Graphics" Material="Bucket_Material" IgnoreObjectNames="TyreFR;TyreFL;TyreRL1" />
+      <TyreRR1 Body="TyreRR1" Geometry="COLL_Dumper_Tyre_Full_Graphics" Material="Bucket_Material" IgnoreObjectNames="TyreFR;TyreFL;TyreRL1;TyreRL2" />
+      <TyreRR2 Body="TyreRR2" Geometry="COLL_Dumper_Tyre_Full_Graphics" Material="Bucket_Material" IgnoreObjectNames="TyreFR;TyreFL;TyreRL1;TyreRL2;TyreRR1" />
+      <Bucket Body="Bucket" Geometry="Coll_Bucket_Graphics" Material="Bucket_Material" IgnoreObjectNames="" />
+      <Bucket_Teeths Body="Bucket" Geometry="Coll_Bucket_HF_Teeths_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket" />
+      <BucketAttachment Body="BucketAttachment" Geometry="Coll_BucketAttacment_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket;Bucket_Teeths" />
+      <MainBoom Body="MainBoom" Geometry="Coll_MainBoom_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket;Bucket_Teeths;BucketAttachment" />
+      <DipperArm Body="DipperArm" Geometry="Coll_DipperArm_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket;Bucket_Teeths;BucketAttachment;MainBoom" />
+      <Uppercarriage Body="Uppercarriage" Geometry="Coll_Cabin_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket;Bucket_Teeths;BucketAttachment;MainBoom;DipperArm" />
+      <Undercarriage Body="Undercarriage" Geometry="Coll_UnderCarr_Track_Graphics" Material="Bucket_Material" IgnoreObjectNames="Bucket;Bucket_Teeths;BucketAttachment;MainBoom;DipperArm;Uppercarriage" />
+    </Collision_Dumper_Tyres>
+  </CollisionGroups>
+</MeVEA_Materials_Library>

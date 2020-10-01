@@ -1,0 +1,78 @@
+h[0] = Ground_Undercarriage.z0 = -67.000000
+h[1] = Ground_Undercarriage.z1 = 0.100000
+h[2] = Ground_Undercarriage.z2 = -125.000000
+h[3] = Ground_Undercarriage.z3 = 0.998750
+h[4] = Ground_Undercarriage.z4 = 0.000000
+h[5] = Ground_Undercarriage.z5 = 0.049979
+h[6] = Ground_Undercarriage.z6 = 0.000000
+h[7] = Undercarriage_Uppercarriage.z0 = 0.000000
+h[8] = Uppercarriage_MainBoom.z0 = 0.000000
+h[9] = MainBoom_DipperArm.z0 = 0.000000
+h[10] = DipperArm_BucketLink1.z0 = 0.000000
+h[11] = DipperArm_BucketTilt.z0 = 0.000000
+h[12] = BucketTilt_BucketRotator.z0 = 0.000000
+h[13] = BucketRotator_BucketAttachment.z0 = 0.000000
+h[14] = Ground_Undercarriage.zd0 = 0.000000
+h[15] = Ground_Undercarriage.zd1 = 0.000000
+h[16] = Ground_Undercarriage.zd2 = 0.000000
+h[17] = Ground_Undercarriage.zd3 = 0.000000
+h[18] = Ground_Undercarriage.zd4 = 0.000000
+h[19] = Ground_Undercarriage.zd5 = 0.000000
+h[20] = Undercarriage_Uppercarriage.zd0 = 0.000000
+h[21] = Uppercarriage_MainBoom.zd0 = 0.000000
+h[22] = MainBoom_DipperArm.zd0 = 0.000000
+h[23] = DipperArm_BucketLink1.zd0 = 0.000000
+h[24] = DipperArm_BucketTilt.zd0 = 0.000000
+h[25] = BucketTilt_BucketRotator.zd0 = 0.000000
+h[26] = BucketRotator_BucketAttachment.zd0 = 0.000000
+Number of differential equations 42 -------
+Tyres --------------------------------------
+Motors -------------------------------------
+h[27] =Motor.w  = 0.000000
+h[28] =Motor.wd = 60.000000
+h[29] =Motor.Md = 0.000000
+Pressures ----------------------------------
+h[30] =Volume_Pump.p = 10000000.000000
+h[31] =Volume_Tank.p = 200000.000000
+h[32] =Volume_BoomLiftCylinderA.p = 100000.000000
+h[33] =Volume_BoomLiftCylinderB.p = 100000.000000
+h[34] =Volume_DipperArmCylinder_A.p = 100000.000000
+h[35] =Volume_DipperArmCylinder_B.p = 100000.000000
+h[36] =Volume_BucketCylinder_A.p = 100000.000000
+h[37] =Volume_BucketCylinder_B.p = 100000.000000
+h[38] =Volume_BucketTiltCylinder_A.p = 3000000.000000
+h[39] =Volume_BucketTiltCylinder_B.p = 5000000.000000
+h[40] =Volume_Slew_A.p = 100000.000000
+h[41] =Volume_Slew_B.p = 100000.000000
+h[42] =Volume_BucketRotator_A.p = 1000000.000000
+h[43] =Volume_BucketRotator_B.p = 1000000.000000
+h[44] =Volume_DriveRight_A.p = 100000.000000
+h[45] =Volume_DriveRight_B.p = 100000.000000
+h[46] =Volume_DriveLeft_A.p = 100000.000000
+h[47] =Volume_DriveLeft_B.p = 100000.000000
+h[48] =Volume_PumpCtrl2.p = 100000.000000
+h[49] =Volume_PumpCtrl1.p = 100000.000000
+h[50] =Volume_i_DriveLeft_Slew.p = 100000.000000
+h[51] =Volume_i_Slew_DipperArm.p = 100000.000000
+h[52] =Volume_i_DipperArm_BoomLift.p = 100000.000000
+h[53] =Volume_i_DriveRight_BucketRotator.p = 100000.000000
+h[54] =Volume_i_BucketRotator_BucketTilt.p = 100000.000000
+h[55] =Volume_i_BucketTilt_Bucket.p = 100000.000000
+h[56] =Volume_i_Bucket_BoomLift.p = 100000.000000
+h[57] =Volume_i_BoomLift_DipperArm.p = 100000.000000
+h[58] =Volume_Art1_BoomLift1.p = 100000.000000
+h[59] =Volume_Art2_BoomLift1.p = 100000.000000
+Hydraulic motors ---------------------------
+h[60] =HydMotor_Slew.Theta = 0.000000
+h[61] =HydMotor_BucketRotator.Theta = 0.000000
+h[62] =HydMotor_DriveRight.Theta = 0.000000
+h[63] =HydMotor_DriveLeft.Theta = 0.000000
+2/2 Valves ---------------------------------
+PVG32 Valves ----------------------
+L90LS Valves ----------------------
+D1VW Valves ----------------------
+Pressure Compensated Proportional Valves ---
+M4-15 Valves ----------------------
+M200LS Valves ----------------------
+Bosch Rexroth MHRB Valves ----------
+Bucher CINDY Valves ----------------

@@ -26,23 +26,26 @@ print("Creating simulation environment")
 =============================================================
 To open other mevea simulator provide simulation folder path:
 =============================================================
-path = 'C:\Data\Mevea-Gym-Toolbox2\Jib_Crane\\'
+
+path = 'C:\Data\MeveaOpenAIGym\Gym-Examples\CustomModels\Excavator\Model'
 kwargs = {'mvs_folder': path}
 sim = gym.make('gym_mevea_single:mevea-custom-v0', **kwargs)
 
 
-path = 'C:\Data\Mevea-Gym-Toolbox2\Excavator\Model\\'
+path = 'C:\Data\MeveaOpenAIGym\Gym-Examples\CustomModels\WheelLoader\\'
 kwargs = {'mvs_folder': path}
 sim = gym.make('gym_mevea_single:mevea-custom-v0', **kwargs)
 
 
-path = 'C:\Data\Mevea-Gym-Toolbox2\CustomModels\WheelLoader\\'
+path = 'C:\Data\MeveaOpenAIGym\Gym-Examples\CustomModels\Jib_Crane\\'
 kwargs = {'mvs_folder': path}
 sim = gym.make('gym_mevea_single:mevea-custom-v0', **kwargs)
 '''
-
+path = 'C:\Data\MeveaOpenAIGym\Gym-Examples\CustomModels\Excavator\Model'
+kwargs = {'mvs_folder': path}
+sim = gym.make('gym_mevea_single:mevea-custom-v0', **kwargs)
 # Run tutorial Jib Crane model 
-sim = gym.make('gym_mevea_single:mevea-custom-v0')
+#sim = gym.make('gym_mevea_single:mevea-custom-v0')
 
 # Create the agent
 agent=Agent(

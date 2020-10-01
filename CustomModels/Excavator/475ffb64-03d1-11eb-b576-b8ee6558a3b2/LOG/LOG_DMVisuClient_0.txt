@@ -1,0 +1,5 @@
+13:33:05: DMClient started, nSolvers=0, solverID=1002
+13:33:05: Allocating memory for message vectors, m_nkpl=-1, m_nvis=-1, size=1624
+13:33:05: ID 1002, sending pdu 1002 
+13:33:05: filename: C:\Data\MeveaOpenAIGym\Gym-Examples\CustomModels\Excavator\Model\..\475ffb64-03d1-11eb-b576-b8ee6558a3b2\Scripts\..\Excavator.mvs, length 129
+13:33:07: Simulation started...

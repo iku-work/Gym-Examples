@@ -4,12 +4,32 @@ from stable_baselines.common.vec_env import DummyVecEnv
 from stable_baselines import PPO2
 
 
+'''
+=============================================================
+To open other mevea simulator provide simulation folder path:
+=============================================================
+
+path = 'C:\Data\MeveaOpenAIGym\Gym-Examples\CustomModels\Excavator\Model'
+kwargs = {'mvs_folder': path}
+sim = gym.make('gym_mevea_single:mevea-custom-v0', **kwargs)
+
+
+path = 'C:\Data\MeveaOpenAIGym\Gym-Examples\CustomModels\WheelLoader\\'
+kwargs = {'mvs_folder': path}
+sim = gym.make('gym_mevea_single:mevea-custom-v0', **kwargs)
+
+
+path = 'C:\Data\MeveaOpenAIGym\Gym-Examples\CustomModels\Jib_Crane\\'
+kwargs = {'mvs_folder': path}
+sim = gym.make('gym_mevea_single:mevea-custom-v0', **kwargs)
+'''
+
 # The algorithms require a vectorized environment to run
-path = 'C:\Data\Mevea-Gym-Toolbox2\CustomModels\Jib_Crane\\'
+path = 'C:\Data\MeveaOpenAIGym\Gym-Examples\CustomModels\WheelLoader\\'
 
 env_list = []
 
-for i in range(3):
+for i in range(4):
   kwargs = {'mvs_folder': path}
   sim = gym.make('gym_mevea_single:mevea-custom-v0', **kwargs)
   env = DummyVecEnv([lambda: sim])

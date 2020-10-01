@@ -11,4 +11,5 @@ Creating global wind emitter
 Creating virtual sensors
 Simulation objects created
 Creating PrintRequests
+Creating data collector
 Initializing ScriptEngine

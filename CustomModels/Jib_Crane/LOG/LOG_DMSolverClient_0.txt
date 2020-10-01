@@ -1,3 +1,3 @@
-04:00:19: DMClient started, nSolvers=1, solverID=0
-04:00:19: ID 0, sending pdu 1001 
-04:00:20: Allocating memory for message vectors, m_nkpl=-1, m_nvis=-1, size=504 (additional 100)
+23:40:35: DMClient started, nSolvers=1, solverID=0
+23:40:35: ID 0, sending pdu 1001 
+23:40:35: Allocating memory for message vectors, m_nkpl=-1, m_nvis=-1, size=504

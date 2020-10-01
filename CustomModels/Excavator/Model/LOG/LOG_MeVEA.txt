@@ -1,2 +1,5 @@
-05:29:36: Model Excavator loaded, using config and resources from C:/Program Files (x86)/Mevea/
-05:29:38: Asking for data from existing manager
+13:28:08: Model Excavator loaded, using config and resources from C:/Program Files (x86)/Mevea/
+13:28:16: Visualization: Using shader instanced track elements
+13:28:17: NOTE: File "" is not present. Continuing...
+13:28:17: Setting camera to body 2: Uppercarriage
+13:28:17: Head Tracking inactive

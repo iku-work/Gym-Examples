@@ -91,9 +91,9 @@ Group Collision_Bucket_Cabin:
 
 
 Group Collision_Bucket_Undercarriage:
-		Body1 Bucket --------> Graphic1 Bucket
-											--------> Body2 Undercarriage --------> Graphic2 Undercarriage
 		Body1 Bucket --------> Graphic1 Bucket_Teeths
+											--------> Body2 Undercarriage --------> Graphic2 Undercarriage
+		Body1 Bucket --------> Graphic1 Bucket
 											--------> Body2 Undercarriage --------> Graphic2 Undercarriage
 
 
