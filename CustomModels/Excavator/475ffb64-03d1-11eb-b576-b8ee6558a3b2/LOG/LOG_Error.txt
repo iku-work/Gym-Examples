@@ -1,2 +1,0 @@
-
-Attachment body J Body1 of Constraint PoleObstacle_Ground has not been defined.
